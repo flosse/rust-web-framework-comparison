@@ -10,6 +10,7 @@ in rec {
     buildInputs = with pkgs; [
       git
       rustPlatform.rustc
+      cargo
       pkgconfig
       openssl
     ];
