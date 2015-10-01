@@ -36,13 +36,13 @@ To build web clients with Rust, you can chosse between three libraries:
 |                  Name | iron                                  | nickel                                                | rustful   | rustless  | hyper  | tiny-http  | solicit | ease  | jsonrpc  |
 | --------------------- | ------------------------------------- | ----------------------------------------------------- | --------- | --------- |------- | ---------- | ------- | ----- | -------  |
 |               License | MIT                                   | MIT                                                   | MIT       | MIT       | MIT    | Apache 2.0 | MIT     | MIT   | CC0-1.0  |
-|          Github Stars | 1.8k                                  | 1k                                                    | 0.5k      | 0.1k      | 1.0k   | 0.1k       | 0.1k    | 0.05k | 0k       |
-|          Contributors | 41                                    | 35                                                    | 6         | 7         | 78     | 6          | 2       | 2     | 1        |
+|          Github Stars | 2.1k                                  | 1.1k                                                  | 0.6k      | 0.1k      | 1.0k   | 0.1k       | 0.1k    | 0.05k | 0k       |
+|          Contributors | 44                                    | 39                                                    | 6         | 7         | 78     | 6          | 2       | 2     | 1        |
 |                Server | yes                                   | yes                                                   | yes       | yes       | yes    | yes        | yes     | no    | no       |
 |                Client | ?                                     | ?                                                     | ?         | ?         | ?      | ?          | yes     | yes   | yes      |
-|        Base framework | hyper                                 | hyper                                                 | hyper     | iron      | yes    | -          | -       | hyper | hyper    |
+|        Base framework | hyper                                 | hyper                                                 | hyper     | iron      | yes    | yes        | -       | hyper | hyper    |
 |         HTTPS support | yes                                   | no                                                    | yes       | ?         | yes    | no         | -       | -     | -        |
-         HTTP/2 support | ?                                     | ?                                                     | ?         | ?         | ?      | ?          | yes     | ?     | ?        |
+|        HTTP/2 support | ?                                     | ?                                                     | ?         | ?         | ?      | ?          | yes     | ?     | ?        |
 |   Static File Serving | [yes](https://github.com/iron/static) | yes                                                   | ?         | ?         | -      | -          | -       | -     | -        |
 |     Logger middleware | [yes](https://github.com/iron/logger) | no                                                    | ?         | ?         | -      | -          | -       | -     | -        |
 | PostgreSQL middleware | ?                                     | [yes](https://github.com/nickel-org/nickel-postgres)  | ?         | ?         | -      | -          | -       | -     | -        |
