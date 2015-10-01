@@ -2,8 +2,10 @@
 
 A comparison of some web frameworks written in [Rust](https://rustlang.org).
 
+## Server frameworks
+
 At the moment there are four interesting framworks to build web applications
-with rust:
+with Rust:
 
 - **iron**     ([homepage](http://ironframework.io/) / [repository](https://github.com/iron/iron/)            / [documentation](http://ironframework.io/doc/iron/))
 - **nickel**   ([homepage](http://nickel.rs/)        / [repository](https://github.com/nickel-org/nickel.rs/) / [documentation](http://docs.nickel.rs/nickel/))
@@ -16,12 +18,20 @@ If you need a more low level control you can choose between three libraries:
 - **tiny-http** ( -                           / [repository](https://github.com/frewsxcv/tiny-http)) / [documentation](http://frewsxcv.github.io/tiny-http/tiny_http/index.html))
 - **solicit**   ( -                           / [repository](https://github.com/mlalic/solicit)      / [documentation](https://mlalic.github.io/solicit/solicit/index.html))
 
+## Client frameworks
+
 To build web clients with Rust, you can chosse between three libraries:
 
-- **hyper**
-- **ease**    (- / [repository](https://github.com/SimonPersson/ease)       / [documentation](http://simonpersson.github.io/ease/))
-- **jsonrpc** (- / [repository](https://github.com/apoelstra/rust-jsonrpc/) / [documentation](https://www.wpsoftware.net/rustdoc/jsonrpc/))
+- **hyper**   ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper/hyper/))
+- **ease**    (-                            / [repository](https://github.com/SimonPersson/ease)       / [documentation](http://simonpersson.github.io/ease/))
+- **jsonrpc** (-                            / [repository](https://github.com/apoelstra/rust-jsonrpc/) / [documentation](https://www.wpsoftware.net/rustdoc/jsonrpc/))
 
+## Blog posts
+
+- [Trying Rust for web services](https://blog.wearewizards.io/trying-rust-for-web-services)
+- [Are we web yet?]([http://arewewebyet.com/)
+
+## Comparison
 
 |                  Name | iron                                  | nickel                                                | rustful   | rustless  | hyper  | tiny-http  | solicit | ease  | jsonrpc  |
 | --------------------- | ------------------------------------- | ----------------------------------------------------- | --------- | --------- |------- | ---------- | ------- | ----- | -------  |
