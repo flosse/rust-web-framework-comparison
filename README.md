@@ -29,7 +29,7 @@ To build web clients with Rust, you can chosse between three libraries:
 ## Blog posts
 
 - [Trying Rust for web services](https://blog.wearewizards.io/trying-rust-for-web-services)
-- [Are we web yet?]([http://arewewebyet.com/)
+- [Are we web yet?](http://arewewebyet.com/)
 
 ## Comparison
 
