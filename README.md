@@ -31,6 +31,11 @@ To build web clients with Rust, you can chosse between three libraries:
 - [Trying Rust for web services](https://blog.wearewizards.io/trying-rust-for-web-services)
 - [Are we web yet?](http://arewewebyet.com/)
 
+## Demos
+
+- [rustwebapp](https://github.com/superlogical/rustwebapp) - Iron and Postgres
+- [webrust](https://github.com/Keats/webrust) - Iron and Postgres
+
 ## Comparison
 
 |                  Name | iron                                  | nickel                                                | rustful   | rustless  | hyper  | tiny-http  | solicit | ease  | jsonrpc  |
