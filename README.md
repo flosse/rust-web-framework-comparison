@@ -34,6 +34,7 @@ To build web clients with Rust, you can chosse between three libraries:
 
 - [Trying Rust for web services](https://blog.wearewizards.io/trying-rust-for-web-services)
 - [Are we web yet?](http://arewewebyet.com/)
+- [Reimplementing ashurbanipal.web in Rust](http://maniagnosis.crsr.net/2015/07/reimplementing-ashurbanipalweb-in-rust.html)
 
 ## Demos
 
