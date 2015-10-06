@@ -35,6 +35,7 @@ To build web clients with Rust, you can chosse between three libraries:
 - [Trying Rust for web services](https://blog.wearewizards.io/trying-rust-for-web-services)
 - [Are we web yet?](http://arewewebyet.com/)
 - [Reimplementing ashurbanipal.web in Rust](http://maniagnosis.crsr.net/2015/07/reimplementing-ashurbanipalweb-in-rust.html)
+- [A web app with Nickel: From first line to Heroku deployment](http://blog.thoughtram.io/rust/2015/07/29/a-web-app-with-nickel-from-first-line-to-heroku-deployment.html)
 
 ## Demos
 
