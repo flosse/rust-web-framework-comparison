@@ -44,20 +44,29 @@ To build web clients with Rust, you can chosse between three libraries:
 
 ## Comparison
 
+### General
+
 |                      Name | iron                                  | nickel                                                | rustful   | rustless  | hyper  | tiny-http  | solicit | ease  | jsonrpc | websocket |
-| ------------------------- | ------------------------------------- | ----------------------------------------------------- | --------- | --------- |------- | ---------- | ------- | ----- | ------- | --------- |
+| ------------------------- | ------------------------------------- | ----------------------------------------------------- | --------- | --------- | ------ | ---------- | ------- | ----- | ------- | --------- |
 |               **License** | MIT                                   | MIT                                                   | MIT       | MIT       | MIT    | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |
-|          **Github Stars** | 2.1k                                  | 1.1k                                                  | 0.6k      | 0.1k      | 1.1k   | 0.1k       | 0.1k    | 0.05k | 0k      | 0.1k      |
-|          **Contributors** | 44                                    | 39                                                    | 6         | 7         | 81     | 6          | 2       | 2     | 1       | 9         |
+|          **Github Stars** | 2.2k                                  | 1.1k                                                  | 0.6k      | 0.1k      | 1.1k   | 0.1k       | 0.1k    | 0.05k | 0k      | 0.1k      |
+|          **Contributors** | 47                                    | 39                                                    | 7         | 7         | 82     | 6          | 2       | 2     | 1       | 9         |
 |                **Server** | yes                                   | yes                                                   | yes       | yes       | yes    | yes        | yes     | no    | no      | yes       |
 |                **Client** | ?                                     | ?                                                     | ?         | ?         | ?      | ?          | yes     | yes   | yes     | yes       |
 |        **Base framework** | hyper                                 | hyper                                                 | hyper     | iron      | yes    | yes        | -       | hyper | hyper   | no        |
 |         **HTTPS support** | yes                                   | no                                                    | yes       | ?         | yes    | no         | -       | -     | -       | -         |
 |       ** HTTP/2 support** | ?                                     | ?                                                     | ?         | ?         | ?      | ?          | yes     | ?     | ?       | -         |
-|   **Static File Serving** | [yes](https://github.com/iron/static) | yes                                                   | ?         | ?         | -      | -          | -       | -     | -       | -         |
-|     **Logger middleware** | [yes](https://github.com/iron/logger) | no                                                    | ?         | ?         | -      | -          | -       | -     | -       | -         |
-| **PostgreSQL middleware** | ?                                     | [yes](https://github.com/nickel-org/nickel-postgres)  | ?         | ?         | -      | -          | -       | -     | -       | -         |
-|     **SQLite middleware** | ?                                     | [yes](https://github.com/flosse/nickel-sqlite)        | ?         | ?         | -      | -          | -       | -     | -       | -         |
+
+### Middleware
+
+|                      Name | iron                                  | nickel                                                | rustful   | rustless  |
+| ------------------------- | ------------------------------------- | ----------------------------------------------------- | --------- | --------- |
+|   **Static File Serving** | [yes](https://github.com/iron/static) | yes                                                   | ?         | ?         |
+|              **Mounting** | [yes](https://github.com/iron/mount)  | yes                                                   | ?         | ?         |
+|     **Logger middleware** | [yes](https://github.com/iron/logger) | no                                                    | ?         | ?         |
+| **PostgreSQL middleware** | ?                                     | [yes](https://github.com/nickel-org/nickel-postgres)  | ?         | ?         |
+|     **SQLite middleware** | ?                                     | [yes](https://github.com/flosse/nickel-sqlite)        | ?         | ?         |
+|     **Redis middleware**  | ?                                     | [yes](https://github.com/matthewbentley/nickel-redis) | ?         | ?         |
 
 ## Examples
 
