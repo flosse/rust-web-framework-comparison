@@ -54,7 +54,7 @@ To build web clients with Rust, you can chosse between three libraries:
 |          **Github Stars** | 2.2k                                  | 1.1k                                                  | 0.6k      | 0.1k      | 1.1k   | 0.1k       | 0.1k    | 0.05k | 0k      | 0.1k      |
 |          **Contributors** | 47                                    | 39                                                    | 7         | 7         | 82     | 6          | 2       | 2     | 1       | 9         |
 |                **Server** | yes                                   | yes                                                   | yes       | yes       | yes    | yes        | yes     | no    | no      | yes       |
-|                **Client** | ?                                     | ?                                                     | ?         | ?         | ?      | ?          | yes     | yes   | yes     | yes       |
+|                **Client** | ?                                     | ?                                                     | ?         | ?         | yes    | ?          | yes     | yes   | yes     | yes       |
 |        **Base framework** | hyper                                 | hyper                                                 | hyper     | iron      | yes    | yes        | -       | hyper | hyper   | no        |
 |         **HTTPS support** | yes                                   | no                                                    | yes       | ?         | yes    | no         | -       | -     | -       | -         |
 |       ** HTTP/2 support** | ?                                     | ?                                                     | ?         | ?         | ?      | ?          | yes     | ?     | ?       | -         |
