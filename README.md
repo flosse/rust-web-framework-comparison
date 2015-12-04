@@ -17,6 +17,7 @@ If you need a more low level control you can choose between three libraries:
 - **hyper**     ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)      / [documentation](http://hyper.rs/hyper/hyper/))
 - **tiny-http** ( -                           / [repository](https://github.com/frewsxcv/tiny-http)) / [documentation](http://frewsxcv.github.io/tiny-http/tiny_http/index.html))
 - **solicit**   ( -                           / [repository](https://github.com/mlalic/solicit)      / [documentation](https://mlalic.github.io/solicit/solicit/index.html))
+- **kinglet**   ( -                           / [repository](https://github.com/pyfisch/kinglet)     / - )
 
 ## Client frameworks
 
@@ -51,16 +52,16 @@ To build web clients with Rust, you can chosse between three libraries:
 
 ### General
 
-|                      Name | iron                                  | nickel                                                | rustful   | rustless  | hyper  | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     |
-| ------------------------- | ------------------------------------- | ----------------------------------------------------- | --------- | --------- | ------ | ---------- | ------- | ----- | ------- | --------- |  --------- |
-|               **License** | MIT                                   | MIT                                                   | MIT       | MIT       | MIT    | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       |
-|          **Github Stars** | 2.2k                                  | 1.1k                                                  | 0.6k      | 0.1k      | 1.1k   | 0.1k       | 0.1k    | 0.05k | 0k      | 0.1k      |  0k        |
-|          **Contributors** | 50                                    | 39                                                    | 7         | 7         | 82     | 6          | 2       | 2     | 1       | 9         |  1         |
-|                **Server** | yes                                   | yes                                                   | yes       | yes       | yes    | yes        | yes     | no    | no      | yes       |  yes       |
-|                **Client** | ?                                     | ?                                                     | ?         | ?         | ?      | ?          | yes     | yes   | yes     | yes       |  yes       |
-|        **Base framework** | hyper                                 | hyper                                                 | hyper     | iron      | yes    | yes        | -       | hyper | hyper   | no        |  no        |
-|         **HTTPS support** | yes                                   | no                                                    | yes       | ?         | yes    | no         | -       | -     | -       | -         |  -         |
-|       ** HTTP/2 support** | ?                                     | ?                                                     | ?         | ?         | ?      | ?          | yes     | ?     | ?       | -         |  -         |
+|                      Name | iron   | nickel  | rustful   | rustless  | hyper  | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     | kinglet   |
+| ------------------------- | ------ | ------- | --------- | --------- | ------ | ---------- | ------- | ----- | ------- | --------- |  --------- | --------- |
+|               **License** | MIT    | MIT     | MIT       | MIT       | MIT    | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       | MIT       |
+|          **Github Stars** | 2.2k   | 1.1k    | 0.6k      | 0.1k      | 1.1k   | 0.1k       | 0.1k    | 0.05k | 0k      | 0.1k      |  0k        | 0k        |
+|          **Contributors** | 50     | 39      | 7         | 7         | 82     | 6          | 2       | 2     | 1       | 9         |  1         | 1         |
+|                **Server** | yes    | yes     | yes       | yes       | yes    | yes        | yes     | no    | no      | yes       |  yes       | yes       |
+|                **Client** | ?      | ?       | ?         | ?         | ?      | ?          | yes     | yes   | yes     | yes       |  yes       | no        |
+|        **Base framework** | hyper  | hyper   | hyper     | iron      | yes    | yes        | -       | hyper | hyper   | no        |  no        | yes       |
+|         **HTTPS support** | yes    | no      | yes       | ?         | yes    | no         | -       | -     | -       | -         |  -         | -         |
+|       ** HTTP/2 support** | ?      | ?       | ?         | ?         | ?      | ?          | yes     | ?     | ?       | -         |  -         | -         |
 
 ### Middleware & Plugins
 
