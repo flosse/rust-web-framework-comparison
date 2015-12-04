@@ -60,7 +60,7 @@ To build web clients with Rust, you can chosse between three libraries:
 |                **Server** | yes    | yes     | yes       | yes       | yes    | yes        | yes     | no    | no      | yes       |  yes       | yes       |
 |                **Client** | ?      | ?       | ?         | ?         | ?      | ?          | yes     | yes   | yes     | yes       |  yes       | no        |
 |        **Base framework** | hyper  | hyper   | hyper     | iron      | yes    | yes        | -       | hyper | hyper   | no        |  no        | yes       |
-|         **HTTPS support** | yes    | no      | yes       | ?         | yes    | no         | -       | -     | -       | -         |  -         | -         |
+|         **HTTPS support** | yes    | no      | yes       | ?         | yes    | yes        | -       | -     | -       | -         |  -         | -         |
 |        **HTTP/2 support** | ?      | ?       | ?         | ?         | ?      | ?          | yes     | ?     | ?       | -         |  -         | -         |
 
 ### Middleware & Plugins
