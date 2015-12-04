@@ -61,7 +61,7 @@ To build web clients with Rust, you can chosse between three libraries:
 |                **Client** | ?      | ?       | ?         | ?         | ?      | ?          | yes     | yes   | yes     | yes       |  yes       | no        |
 |        **Base framework** | hyper  | hyper   | hyper     | iron      | yes    | yes        | -       | hyper | hyper   | no        |  no        | yes       |
 |         **HTTPS support** | yes    | no      | yes       | ?         | yes    | no         | -       | -     | -       | -         |  -         | -         |
-|       ** HTTP/2 support** | ?      | ?       | ?         | ?         | ?      | ?          | yes     | ?     | ?       | -         |  -         | -         |
+|        **HTTP/2 support** | ?      | ?       | ?         | ?         | ?      | ?          | yes     | ?     | ?       | -         |  -         | -         |
 
 ### Middleware & Plugins
 
@@ -75,8 +75,8 @@ To build web clients with Rust, you can chosse between three libraries:
 |               **Cookies** | [yes](https://github.com/iron/cookie)       | ?                                                     | ?         | ?         |
 | **PostgreSQL middleware** | ?                                           | [yes](https://github.com/nickel-org/nickel-postgres)  | ?         | ?         |
 |     **SQLite middleware** | ?                                           | [yes](https://github.com/flosse/nickel-sqlite)        | ?         | ?         |
-|     ** Redis middleware** | ?                                           | [yes](https://github.com/matthewbentley/nickel-redis) | ?         | ?         |
-|     ** MySQL middleware** | ?                                           | [yes](https://github.com/zither/nickel-mysql)         | ?         | ?         |
+|      **Redis middleware** | ?                                           | [yes](https://github.com/matthewbentley/nickel-redis) | ?         | ?         |
+|      **MySQL middleware** | ?                                           | [yes](https://github.com/zither/nickel-mysql)         | ?         | ?         |
 
 ## Examples
 
