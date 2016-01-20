@@ -55,8 +55,8 @@ To build web clients with Rust, you can chosse between three libraries:
 |                      Name | iron   | nickel  | rustful   | rustless  | hyper  | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     | kinglet   |
 | ------------------------- | ------ | ------- | --------- | --------- | ------ | ---------- | ------- | ----- | ------- | --------- |  --------- | --------- |
 |               **License** | MIT    | MIT     | MIT       | MIT       | MIT    | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       | MIT       |
-|          **Github Stars** | 2.2k   | 1.1k    | 0.6k      | 0.1k      | 1.1k   | 0.1k       | 0.1k    | 0.05k | 0k      | 0.1k      |  0k        | 0k        |
-|          **Contributors** | 50     | 39      | 7         | 7         | 82     | 6          | 2       | 2     | 1       | 9         |  1         | 1         |
+|          **Github Stars** | 2.5k   | 1.3k    | 0.7k      | 0.2k      | 1.4k   | 0.2k       | 0.1k    | 0.1k  | 0k      | 0.2k      |  0.1k      | 0.1k      |
+|          **Contributors** | 51     | 39      | 9         | 8         | 88     | 7          | 2       | 2     | 2       | 16        |  2         | 1         |
 |                **Server** | yes    | yes     | yes       | yes       | yes    | yes        | yes     | no    | no      | yes       |  yes       | yes       |
 |                **Client** | ?      | ?       | ?         | ?         | ?      | ?          | yes     | yes   | yes     | yes       |  yes       | no        |
 |        **Base framework** | hyper  | hyper   | hyper     | iron      | yes    | yes        | -       | hyper | hyper   | no        |  no        | yes       |
