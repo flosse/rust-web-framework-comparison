@@ -4,13 +4,14 @@ A comparison of some web frameworks written in [Rust](https://rustlang.org).
 
 ## Server frameworks
 
-At the moment there are four interesting framworks to build web applications
+At the moment there are five interesting framworks to build web applications
 with Rust:
 
 - **iron**     ([homepage](http://ironframework.io/) / [repository](https://github.com/iron/iron/)            / [documentation](http://ironframework.io/doc/iron/))
 - **nickel**   ([homepage](http://nickel.rs/)        / [repository](https://github.com/nickel-org/nickel.rs/) / [documentation](http://docs.nickel.rs/nickel/))
 - **rustful**  ( -                                   / [repository](https://github.com/Ogeon/rustful)         / [documentation](http://ogeon.github.io/docs/rustful/master/rustful/))
 - **rustless** ([homepage](http://rustless.org/)     / [repository](https://github.com/rustless/rustless)     / [documentation](http://rustless.org/rustless/doc/rustless/))
+- **conduit**  ( -                                   / [repository](https://github.com/conduit-rust/conduit)  / - )
 
 If you need a more low level control you can choose between three libraries:
 
@@ -53,31 +54,31 @@ To build web clients with Rust, you can chosse between three libraries:
 
 ### General
 
-|                      Name | iron   | nickel  | rustful   | rustless  | hyper  | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     | kinglet   |
-| ------------------------- | ------ | ------- | --------- | --------- | ------ | ---------- | ------- | ----- | ------- | --------- |  --------- | --------- |
-|               **License** | MIT    | MIT     | MIT       | MIT       | MIT    | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       | MIT       |
-|          **Github Stars** | 2.5k   | 1.3k    | 0.7k      | 0.2k      | 1.4k   | 0.2k       | 0.1k    | 0.1k  | 0k      | 0.2k      |  0.1k      | 0.1k      |
-|          **Contributors** | 51     | 39      | 9         | 8         | 88     | 7          | 2       | 2     | 2       | 16        |  2         | 1         |
-|                **Server** | yes    | yes     | yes       | yes       | yes    | yes        | yes     | no    | no      | yes       |  yes       | yes       |
-|                **Client** | ?      | ?       | ?         | ?         | ?      | ?          | yes     | yes   | yes     | yes       |  yes       | no        |
-|        **Base framework** | hyper  | hyper   | hyper     | iron      | yes    | yes        | -       | hyper | hyper   | no        |  no        | yes       |
-|         **HTTPS support** | yes    | no      | yes       | ?         | yes    | yes        | -       | -     | -       | -         |  -         | -         |
-|        **HTTP/2 support** | ?      | ?       | ?         | ?         | ?      | ?          | yes     | ?     | ?       | -         |  -         | -         |
+|                      Name | iron   | nickel  | rustful   | rustless  | conduit | hyper  | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     | kinglet   |
+| ------------------------- | ------ | ------- | --------- | --------- | ------- | ------ | ---------- | ------- | ----- | ------- | --------- |  --------- | --------- |
+|               **License** | MIT    | MIT     | MIT       | MIT       | MIT     | MIT    | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       | MIT       |
+|          **Github Stars** | 2.5k   | 1.3k    | 0.7k      | 0.2k      | 0.1k    | 1.4k   | 0.2k       | 0.1k    | 0.1k  | 0k      | 0.2k      |  0.1k      | 0.1k      |
+|          **Contributors** | 51     | 39      | 9         | 8         | 4       | 88     | 7          | 2       | 2     | 2       | 16        |  2         | 1         |
+|                **Server** | yes    | yes     | yes       | yes       | yes     | yes    | yes        | yes     | no    | no      | yes       |  yes       | yes       |
+|                **Client** | ?      | ?       | ?         | ?         | no      | yes    | ?          | yes     | yes   | yes     | yes       |  yes       | no        |
+|        **Base framework** | hyper  | hyper   | hyper     | iron      | civet   | yes    | yes        | -       | hyper | hyper   | no        |  no        | yes       |
+|         **HTTPS support** | yes    | no      | yes       | ?         | ?       | yes    | yes        | -       | -     | -       | -         |  -         | -         |
+|        **HTTP/2 support** | ?      | ?       | ?         | ?         | ?       | ?      | ?          | yes     | ?     | ?       | -         |  -         | -         |
 
 ### Middleware & Plugins
 
-|                      Name | iron                                        | nickel                                                | rustful   | rustless  |
-| ------------------------- | ------------------------------------------- | ----------------------------------------------------- | --------- | --------- |
-|   **Static File Serving** | [yes](https://github.com/iron/static)       | yes                                                   | ?         | ?         |
-|              **Mounting** | [yes](https://github.com/iron/mount)        | yes                                                   | ?         | ?         |
-|               **Logging** | [yes](https://github.com/iron/logger)       | no                                                    | ?         | ?         |
-|     **JSON-Body-Parsing** | [yes](https://github.com/iron/body-parser)  | yes                                                   | ?         | ?         |
-|              **Sessions** | [yes](https://github.com/iron/session)      | ?                                                     | ?         | ?         |
-|               **Cookies** | [yes](https://github.com/iron/cookie)       | ?                                                     | ?         | ?         |
-| **PostgreSQL middleware** | ?                                           | [yes](https://github.com/nickel-org/nickel-postgres)  | ?         | ?         |
-|     **SQLite middleware** | ?                                           | [yes](https://github.com/flosse/nickel-sqlite)        | ?         | ?         |
-|      **Redis middleware** | ?                                           | [yes](https://github.com/matthewbentley/nickel-redis) | ?         | ?         |
-|      **MySQL middleware** | ?                                           | [yes](https://github.com/zither/nickel-mysql)         | ?         | ?         |
+|                      Name | iron                                        | nickel                                                | conduit | rustful   | rustless  |
+| ------------------------- | ------------------------------------------- | ----------------------------------------------------- | ------- | --------- | --------- |
+|   **Static File Serving** | [yes](https://github.com/iron/static)       | yes                                                   | yes     | ?         | ?         |
+|              **Mounting** | [yes](https://github.com/iron/mount)        | yes                                                   | ?       | ?         | ?         |
+|               **Logging** | [yes](https://github.com/iron/logger)       | no                                                    | ?       | ?         | ?         |
+|     **JSON-Body-Parsing** | [yes](https://github.com/iron/body-parser)  | yes                                                   | ?       | ?         | ?         |
+|              **Sessions** | [yes](https://github.com/iron/session)      | ?                                                     | ?       | ?         | ?         |
+|               **Cookies** | [yes](https://github.com/iron/cookie)       | ?                                                     | ?       | ?         | ?         |
+| **PostgreSQL middleware** | ?                                           | [yes](https://github.com/nickel-org/nickel-postgres)  | ?       | ?         | ?         |
+|     **SQLite middleware** | ?                                           | [yes](https://github.com/flosse/nickel-sqlite)        | ?       | ?         | ?         |
+|      **Redis middleware** | ?                                           | [yes](https://github.com/matthewbentley/nickel-redis) | ?       | ?         | ?         |
+|      **MySQL middleware** | ?                                           | [yes](https://github.com/zither/nickel-mysql)         | ?       | ?         | ?         |
 
 ## Examples
 
