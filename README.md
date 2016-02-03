@@ -43,6 +43,7 @@ To build web clients with Rust, you can chosse between three libraries:
 - [What features Iron does not have compared to a web server like nginx?](https://www.reddit.com/r/rust/comments/3t1mze/what_features_iron_does_not_have_compared_to_a/)
 - [Build an API in Rust with JWT Authentication using Nickel.rs](https://auth0.com/blog/2015/11/30/build-an-api-in-rust-with-jwt-authentication-using-nickelrs/)
 - [Selective Middleware for Iron](http://gregchapple.com/selective-middleware-for-iron/)
+- [Rust for the Web - RESTful API in Rust, impressions](https://medium.com/@eugeniyoz/restful-api-in-rust-impressions-63250d611d15)
 
 ## Demos
 
