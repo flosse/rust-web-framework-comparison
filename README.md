@@ -13,7 +13,7 @@ with Rust:
 - **rustless** ([homepage](http://rustless.org/)     / [repository](https://github.com/rustless/rustless)     / [documentation](http://rustless.org/rustless/doc/rustless/))
 - **conduit**  ( -                                   / [repository](https://github.com/conduit-rust/conduit)  / - )
 - **rouille**  ( -                                   / [repository](https://github.com/tomaka/rouille)        / [documentation](http://tomaka.github.io/rouille/rouille/index.html))
-- **pencil**   ( -                                   / [repository](https://github.com/fengsp/pencil)         / - )
+- **pencil**   ( -                                   / [repository](https://github.com/fengsp/pencil)         / [documentation](http://fengsp.github.io/pencil/))
 
 If you need a more low level control you can choose between three libraries:
 
@@ -37,6 +37,8 @@ To build web clients with Rust, you can chosse between three libraries:
 
 ## Blog posts
 
+
+- [Introducing Pencil: A Microframework Inspired By Flask For Rust](https://fengsp.github.io/blog/2016/3/introducing-pencil/)
 - [Trying Rust for web services](https://blog.wearewizards.io/trying-rust-for-web-services)
 - [Are we web yet?](http://arewewebyet.com/)
 - [Reimplementing ashurbanipal.web in Rust](http://maniagnosis.crsr.net/2015/07/reimplementing-ashurbanipalweb-in-rust.html)
@@ -72,9 +74,9 @@ To build web clients with Rust, you can chosse between three libraries:
 
 |                      Name | iron                                        | nickel                                                | conduit | rouille | rustful   | rustless  | pencil    |
 | ------------------------- | ------------------------------------------- | ----------------------------------------------------- | ------- | ------- | --------- | --------- | --------- |
-|   **Static File Serving** | [yes](https://github.com/iron/static)       | yes                                                   | yes     | no      | ?         | ?         | ?         |
+|   **Static File Serving** | [yes](https://github.com/iron/static)       | yes                                                   | yes     | no      | ?         | ?         | yes       |
 |              **Mounting** | [yes](https://github.com/iron/mount)        | yes                                                   | ?       | no      | ?         | ?         | ?         |
-|               **Logging** | [yes](https://github.com/iron/logger)       | no                                                    | ?       | no      | ?         | ?         | ?         |
+|               **Logging** | [yes](https://github.com/iron/logger)       | no                                                    | ?       | no      | ?         | ?         | yes       |
 |     **JSON-Body-Parsing** | [yes](https://github.com/iron/body-parser)  | yes                                                   | ?       | no      | ?         | ?         | ?         |
 |              **Sessions** | [yes](https://github.com/iron/session)      | ?                                                     | ?       | no      | ?         | ?         | ?         |
 |               **Cookies** | [yes](https://github.com/iron/cookie)       | ?                                                     | ?       | no      | ?         | ?         | ?         |
