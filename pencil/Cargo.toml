@@ -1,0 +1,6 @@
+[package]
+name = "pencil-example"
+version = "0.1.0"
+
+[dependencies]
+pencil = "*"
