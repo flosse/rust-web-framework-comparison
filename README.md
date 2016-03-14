@@ -24,7 +24,7 @@ If you need a more low level control you can choose between three libraries:
 
 ## Client frameworks
 
-To build web clients with Rust, you can chosse between three libraries:
+To build web clients with Rust, you can choose between three libraries:
 
 - **hyper**   ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper/hyper/))
 - **ease**    (-                            / [repository](https://github.com/SimonPersson/ease)       / [documentation](http://simonpersson.github.io/ease/))
