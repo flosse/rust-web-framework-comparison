@@ -55,6 +55,10 @@ To build web clients with Rust, you can choose between three libraries:
 - [httptest](https://github.com/brson/httptest) - Iron
 - [nickel-todo-backend](https://github.com/Ryman/nickel-todo-backend/) - Nickel and Postgres
 
+## Real-world web projects using Rust
+
+- [racerd](https://github.com/jwilm/racerd) - Iron
+
 ## Comparison
 
 ### General
