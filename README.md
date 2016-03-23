@@ -37,7 +37,7 @@ To build web clients with Rust, you can choose between three libraries:
 
 ## Blog posts
 
-
+- [async hyper](http://seanmonstar.com/post/141495445652/async-hyper)
 - [Introducing Pencil: A Microframework Inspired By Flask For Rust](https://fengsp.github.io/blog/2016/3/introducing-pencil/)
 - [Trying Rust for web services](https://blog.wearewizards.io/trying-rust-for-web-services)
 - [Are we web yet?](http://arewewebyet.org/)
