@@ -52,6 +52,7 @@ To build web clients with Rust, you can choose between three libraries:
 
 ## Demos
 
+- [Example webapp using Rust + Iron + React + Webpack](https://github.com/cmsd2/rust-iron-react-webpack)
 - [rustwebapp](https://github.com/superlogical/rustwebapp) - Iron and Postgres
 - [webrust](https://github.com/Keats/webrust) - Iron and Postgres
 - [httptest](https://github.com/brson/httptest) - Iron
