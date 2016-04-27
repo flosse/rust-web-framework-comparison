@@ -38,7 +38,7 @@ To build web clients with Rust, you can choose between three libraries:
 
 ## Blog posts
 
-- [Iron on uwsgi](http://i.shibe.ml/blog/?id=iron_on_uwsgi)
+- [Iron on uWSGI](http://i.shibe.ml/blog/?id=iron_on_uwsgi)
 - [Deploying a Rust App to Google App Engine](http://blog.jecrooks.com/posts/rust-on-appengine.html)
 - [async hyper](http://seanmonstar.com/post/141495445652/async-hyper)
 - [Introducing Pencil: A Microframework Inspired By Flask For Rust](https://fengsp.github.io/blog/2016/3/introducing-pencil/)
