@@ -33,8 +33,18 @@ To build web clients with Rust, you can choose between three libraries:
 
 ## Supplemental libraries
 
-- **websocket** ([homepage](http://cyderize.github.io/rust-websocket/) / [repository](https://github.com/cyderize/rust-websocket) / [documentation](http://cyderize.github.io/rust-websocket/doc/websocket/))
-- **ws-rs**     (-                                                     / [repository](https://github.com/housleyjk/ws-rs)         / [documentation](http://housleyjk.github.io/ws-rs/ws))
+### Websocket
+
+- **websocket** ([homepage](http://cyderize.github.io/rust-websocket/) / [repository](https://github.com/cyderize/rust-websocket)  / [documentation](http://cyderize.github.io/rust-websocket/doc/websocket/))
+- **ws-rs**     (-                                                     / [repository](https://github.com/housleyjk/ws-rs)          / [documentation](http://housleyjk.github.io/ws-rs/ws))
+
+### Templating
+
+- **mustache**   (-                                                     / [repository](https://github.com/nickel-org/rust-mustache) / [documentation](http://nickel-org.github.io/rust-mustache))
+- **liquid**     (-                                                     / [repository](https://github.com/cobalt-org/liquid-rust)   / - )
+- **handlebars** (-                                                     / [repository](https://github.com/sunng87/handlebars-rust   / - )
+- **horrorshow** (-                                                     / [repository](https://github.com/Stebalien/horrorshow-rs)  / [documentation](https://stebalien.github.io/horrorshow-rs/horrorshow/))
+- **maud**       ([homepage](https://lfairy.gitbooks.io/maud/content/)  / [repository](https://github.com/lfairy/maud)              / [documentation](https://lambda.xyz/maud/maud/))
 
 ## Blog posts
 
