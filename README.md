@@ -70,16 +70,16 @@ To build web clients with Rust, you can choose between three libraries:
 
 ### General
 
-|                      Name | iron   | nickel  | rustful   | rustless  | conduit | rouille   | hyper  | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     | kinglet   |  pencil       |  sappers      |
-| ------------------------- | ------ | ------- | --------- | --------- | ------- | --------- | ------ | ---------- | ------- | ----- | ------- | --------- |  --------- | --------- |  ------------ |  ------------ |
-|               **License** | MIT    | MIT     | MIT       | MIT       | MIT     | ?         | MIT    | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       | MIT       |  BSD-3-Clause |  MIT          |
-|          **Github Stars** | 2.8k   | 1.4k    | 0.7k      | 0.2k      | 0.1k    | 0k        | 1.6k   | 0.2k       | 0.2k    | 0.1k  | 0k      | 0.2k      |  0.1k      | 0.1k      |  0.6k         |  0k           |
-|          **Contributors** | 57     | 44      | 10        | 8         | 4       | 1         | 95     | 7          | 7       | 2     | 2       | 16        |  2         | 1         |  3            |  0            |
-|                **Server** | yes    | yes     | yes       | yes       | yes     | yes       | yes    | yes        | yes     | no    | no      | yes       |  yes       | yes       |  yes          |  yes          |
-|                **Client** | ?      | ?       | ?         | ?         | no      | no        | yes    | ?          | yes     | yes   | yes     | yes       |  yes       | no        |  no           |  no           |
-|        **Base framework** | hyper  | hyper   | hyper     | iron      | civet   | tiny-http | yes    | yes        | -       | hyper | hyper   | no        |  no        | yes       |  hyper        |  hyper        |
-|         **HTTPS support** | yes    | no      | yes       | ?         | ?       | ?         | yes    | yes        | -       | -     | -       | -         |  -         | -         |  ?            |  ?            |
-|        **HTTP/2 support** | ?      | ?       | ?         | ?         | ?       | ?         | ?      | ?          | yes     | ?     | ?       | -         |  -         | -         |  ?            |  ?            |
+|                      Name | iron   | nickel  | rustful   | rustless  | conduit | rouille   | hyper   | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     | kinglet   |  pencil       |  sappers      |
+| ------------------------- | ------ | ------- | --------- | --------- | ------- | --------- | ------- | ---------- | ------- | ----- | ------- | --------- |  --------- | --------- |  ------------ |  ------------ |
+|               **License** | MIT    | MIT     | MIT       | MIT       | MIT     | ?         | MIT     | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       | MIT       |  BSD-3-Clause |  MIT          |
+|          **Github Stars** | 2.8k   | 1.4k    | 0.7k      | 0.2k      | 0.1k    | 0k        | 1.6k    | 0.2k       | 0.2k    | 0.1k  | 0k      | 0.2k      |  0.1k      | 0.1k      |  0.6k         |  0k           |
+|          **Contributors** | 57     | 44      | 10        | 8         | 4       | 1         | 95      | 7          | 7       | 2     | 2       | 16        |  2         | 1         |  3            |  0            |
+|                **Server** | yes    | yes     | yes       | yes       | yes     | yes       | yes     | yes        | yes     | no    | no      | yes       |  yes       | yes       |  yes          |  yes          |
+|                **Client** | ?      | ?       | ?         | ?         | no      | no        | yes     | ?          | yes     | yes   | yes     | yes       |  yes       | no        |  no           |  no           |
+|        **Base framework** | hyper  | hyper   | hyper     | iron      | civet   | tiny-http | yes     | yes        | yes     | hyper | hyper   | no        |  no        | yes       |  hyper        |  hyper        |
+|         **HTTPS support** | yes    | no      | yes       | ?         | ?       | ?         | yes     | yes        | -       | -     | -       | -         |  -         | -         |  ?            |  ?            |
+|        **HTTP/2 support** | ?      | ?       | ?         | ?         | ?       | ?         | solicit | ?          | yes     | ?     | ?       | -         |  -         | -         |  ?            |  ?            |
 
 ### Middleware & Plugins
 
