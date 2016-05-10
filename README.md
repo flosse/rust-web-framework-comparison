@@ -16,12 +16,13 @@ with Rust:
 - **pencil**   ( -                                   / [repository](https://github.com/fengsp/pencil)         / [documentation](http://fengsp.github.io/pencil/))
 - **sappers**  ( -                                   / [repository](https://github.com/daogangtang/sappers)   / - )
 
-If you need a more low level control you can choose between three libraries:
+If you need a more low level control you can choose between five libraries:
 
-- **hyper**     ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)      / [documentation](http://hyper.rs/hyper/hyper/))
-- **tiny-http** ( -                           / [repository](https://github.com/frewsxcv/tiny-http)) / [documentation](http://frewsxcv.github.io/tiny-http/tiny_http/index.html))
-- **solicit**   ( -                           / [repository](https://github.com/mlalic/solicit)      / [documentation](https://mlalic.github.io/solicit/solicit/index.html))
-- **kinglet**   ( -                           / [repository](https://github.com/pyfisch/kinglet)     / - )
+- **hyper**     ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper/hyper/))
+- **tiny-http** ( -                           / [repository](https://github.com/frewsxcv/tiny-http))     / [documentation](http://frewsxcv.github.io/tiny-http/tiny_http/index.html))
+- **solicit**   ( -                           / [repository](https://github.com/mlalic/solicit)          / [documentation](https://mlalic.github.io/solicit/solicit/index.html))
+- **kinglet**   ( -                           / [repository](https://github.com/pyfisch/kinglet)         / - )
+- **hydrogen**  ( -                           / [repository](https://github.com/nathansizemore/hydrogen) / [documentation](https://nathansizemore.github.io/hydrogen/hydrogen/index.html))
 
 ## Client frameworks
 
@@ -81,16 +82,16 @@ To build web clients with Rust, you can choose between three libraries:
 
 ### General
 
-|                      Name | iron   | nickel  | rustful   | rustless  | conduit | rouille   | hyper   | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     | kinglet   |  pencil       |  sappers      |
-| ------------------------- | ------ | ------- | --------- | --------- | ------- | --------- | ------- | ---------- | ------- | ----- | ------- | --------- |  --------- | --------- |  ------------ |  ------------ |
-|               **License** | MIT    | MIT     | MIT       | MIT       | MIT     | ?         | MIT     | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       | MIT       |  BSD-3-Clause |  MIT          |
-|          **Github Stars** | 2.8k   | 1.4k    | 0.7k      | 0.2k      | 0.1k    | 0k        | 1.6k    | 0.2k       | 0.2k    | 0.1k  | 0k      | 0.2k      |  0.1k      | 0.1k      |  0.6k         |  0k           |
-|          **Contributors** | 57     | 44      | 10        | 8         | 4       | 1         | 95      | 7          | 7       | 2     | 2       | 16        |  2         | 1         |  3            |  0            |
-|                **Server** | yes    | yes     | yes       | yes       | yes     | yes       | yes     | yes        | yes     | no    | no      | yes       |  yes       | yes       |  yes          |  yes          |
-|                **Client** | ?      | ?       | ?         | ?         | no      | no        | yes     | ?          | yes     | yes   | yes     | yes       |  yes       | no        |  no           |  no           |
-|        **Base framework** | hyper  | hyper   | hyper     | iron      | civet   | tiny-http | yes     | yes        | yes     | hyper | hyper   | no        |  no        | yes       |  hyper        |  hyper        |
-|         **HTTPS support** | yes    | no      | yes       | ?         | ?       | ?         | yes     | yes        | -       | -     | -       | -         |  -         | -         |  ?            |  ?            |
-|        **HTTP/2 support** | ?      | ?       | ?         | ?         | ?       | ?         | solicit | ?          | yes     | ?     | ?       | -         |  -         | -         |  ?            |  ?            |
+|                      Name | iron   | nickel  | rustful   | rustless  | conduit | rouille   | hyper   | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     | kinglet   |  pencil       |  sappers      | hydrogen     |
+| ------------------------- | ------ | ------- | --------- | --------- | ------- | --------- | ------- | ---------- | ------- | ----- | ------- | --------- |  --------- | --------- |  ------------ |  ------------ | ------------ |
+|               **License** | MIT    | MIT     | MIT       | MIT       | MIT     | ?         | MIT     | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       | MIT       |  BSD-3-Clause |  MIT          | MPL 2.0      |
+|          **Github Stars** | 2.8k   | 1.4k    | 0.7k      | 0.2k      | 0.1k    | 0k        | 1.6k    | 0.2k       | 0.2k    | 0.1k  | 0k      | 0.2k      |  0.1k      | 0.1k      |  0.6k         |  0k           | 0.1k         |
+|          **Contributors** | 57     | 44      | 10        | 8         | 4       | 1         | 95      | 7          | 7       | 2     | 2       | 16        |  2         | 1         |  3            |  0            | 1            |
+|                **Server** | yes    | yes     | yes       | yes       | yes     | yes       | yes     | yes        | yes     | no    | no      | yes       |  yes       | yes       |  yes          |  yes          | yes          |
+|                **Client** | ?      | ?       | ?         | ?         | no      | no        | yes     | ?          | yes     | yes   | yes     | yes       |  yes       | no        |  no           |  no           | no           |
+|        **Base framework** | hyper  | hyper   | hyper     | iron      | civet   | tiny-http | yes     | yes        | yes     | hyper | hyper   | no        |  no        | yes       |  hyper        |  hyper        | yes          |
+|         **HTTPS support** | yes    | no      | yes       | ?         | ?       | ?         | yes     | yes        | -       | -     | -       | -         |  -         | -         |  ?            |  ?            | no           |
+|        **HTTP/2 support** | ?      | ?       | ?         | ?         | ?       | ?         | solicit | ?          | yes     | ?     | ?       | -         |  -         | -         |  ?            |  ?            | no           |
 
 ### Middleware & Plugins
 
