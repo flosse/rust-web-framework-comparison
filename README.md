@@ -41,6 +41,8 @@ To build web clients with Rust, you can choose between three libraries:
 
 ### Templating
 
+- **tera**   (-                                                     / [repository](https://github.com/Keats/tera
+))
 - **mustache**   (-                                                     / [repository](https://github.com/nickel-org/rust-mustache) / [documentation](http://nickel-org.github.io/rust-mustache))
 - **liquid**     (-                                                     / [repository](https://github.com/cobalt-org/liquid-rust)   / - )
 - **handlebars** (-                                                     / [repository](https://github.com/sunng87/handlebars-rust   / - )
