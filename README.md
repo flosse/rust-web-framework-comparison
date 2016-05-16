@@ -79,6 +79,7 @@ To build web clients with Rust, you can choose between three libraries:
 - [rust-passivetotal](https://github.com/passivetotal/rust_api) - Hyper
 - [mars](https://github.com/Ticki/mars) - Hyper
 - [openfairdb](https://github.com/flosse/openfairdb) - Nickel
+- [ruma](https://github.com/ruma/ruma) - Iron
 
 ## Comparison
 
