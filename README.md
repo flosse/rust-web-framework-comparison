@@ -51,6 +51,7 @@ To build web clients with Rust, you can choose between three libraries:
 
 ## Blog posts
 
+- [Let's Build a Web Server in Rust](https://dfockler.github.io/2016/05/20/web-server.html)
 - [Creating a basic webservice in Rust](http://hermanradtke.com/2016/05/16/creating-a-basic-webservice-in-rust.html)
 - [Iron on uWSGI](http://i.shibe.ml/blog/?id=iron_on_uwsgi)
 - [Deploying a Rust App to Google App Engine](http://blog.jecrooks.com/posts/rust-on-appengine.html)
