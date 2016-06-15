@@ -41,8 +41,7 @@ To build web clients with Rust, you can choose between three libraries:
 
 ### Templating
 
-- **tera**   (-                                                     / [repository](https://github.com/Keats/tera
-))
+- **tera**       (-                                                     / [repository](https://github.com/Keats/tera)               / - )
 - **mustache**   (-                                                     / [repository](https://github.com/nickel-org/rust-mustache) / [documentation](http://nickel-org.github.io/rust-mustache))
 - **liquid**     (-                                                     / [repository](https://github.com/cobalt-org/liquid-rust)   / - )
 - **handlebars** (-                                                     / [repository](https://github.com/sunng87/handlebars-rust   / - )
@@ -51,6 +50,7 @@ To build web clients with Rust, you can choose between three libraries:
 
 ## Blog posts
 
+- [Writing a simple REST app in Rust](https://gsquire.github.io/static/post/rest-in-rust/)
 - [Getting started with Rust](https://tech.zalando.de/blog/getting-started-with-rust/)
 - [Let's Build a Web Server in Rust](https://dfockler.github.io/2016/05/20/web-server.html)
 - [Creating a basic webservice in Rust](http://hermanradtke.com/2016/05/16/creating-a-basic-webservice-in-rust.html)
