@@ -48,7 +48,9 @@ To build web clients with Rust, you can choose between three libraries:
 - **horrorshow** (-                                                     / [repository](https://github.com/Stebalien/horrorshow-rs)  / [documentation](https://stebalien.github.io/horrorshow-rs/horrorshow/))
 - **maud**       ([homepage](https://lfairy.gitbooks.io/maud/content/)  / [repository](https://github.com/lfairy/maud)              / [documentation](https://lambda.xyz/maud/maud/))
 
-## Blog posts
+## Resources
+
+### Blog posts
 
 - [Writing a simple REST app in Rust](https://gsquire.github.io/static/post/rest-in-rust/)
 - [Getting started with Rust](https://tech.zalando.de/blog/getting-started-with-rust/)
@@ -67,7 +69,7 @@ To build web clients with Rust, you can choose between three libraries:
 - [Selective Middleware for Iron](http://gregchapple.com/selective-middleware-for-iron/)
 - [Rust for the Web - RESTful API in Rust, impressions](https://medium.com/@eugeniyoz/restful-api-in-rust-impressions-63250d611d15)
 
-## Demos
+### Demos
 
 - [exoskeleton](https://github.com/redo-studios/exoskeleton) - Iron
 - [Example webapp using Rust + Iron + React + Webpack](https://github.com/cmsd2/rust-iron-react-webpack)
@@ -76,13 +78,17 @@ To build web clients with Rust, you can choose between three libraries:
 - [httptest](https://github.com/brson/httptest) - Iron
 - [nickel-todo-backend](https://github.com/Ryman/nickel-todo-backend/) - Nickel and Postgres
 
-## Real-world web projects using Rust
+### Real-world web projects using Rust
 
 - [racerd](https://github.com/jwilm/racerd) - Iron
 - [rust-passivetotal](https://github.com/passivetotal/rust_api) - Hyper
 - [mars](https://github.com/Ticki/mars) - Hyper
 - [openfairdb](https://github.com/flosse/openfairdb) - Nickel
 - [ruma](https://github.com/ruma/ruma) - Iron
+
+### Other
+
+- [Rust for Node developers](https://github.com/Mercateo/rust-for-node-developers)
 
 ## Comparison
 
