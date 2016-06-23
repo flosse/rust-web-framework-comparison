@@ -37,7 +37,7 @@ To build web clients with Rust, you can choose between three libraries:
 ### Websocket
 
 - **websocket** ([homepage](http://cyderize.github.io/rust-websocket/) / [repository](https://github.com/cyderize/rust-websocket)  / [documentation](http://cyderize.github.io/rust-websocket/doc/websocket/))
-- **ws-rs**     (-                                                     / [repository](https://github.com/housleyjk/ws-rs)          / [documentation](http://housleyjk.github.io/ws-rs/ws))
+- **ws-rs**     ([homepage](https://ws-rs.org) /                                                [repository](https://github.com/housleyjk/ws-rs) / [documentation](https://ws-rs.org/docs))
 
 ### Templating
 
@@ -102,7 +102,7 @@ To build web clients with Rust, you can choose between three libraries:
 |                **Server** | yes    | yes     | yes       | yes       | yes     | yes       | yes     | yes        | yes     | no    | no      | yes       |  yes       | yes       |  yes          |  yes          | yes          |
 |                **Client** | ?      | ?       | ?         | ?         | no      | no        | yes     | ?          | yes     | yes   | yes     | yes       |  yes       | no        |  no           |  no           | no           |
 |        **Base framework** | hyper  | hyper   | hyper     | iron      | civet   | tiny-http | yes     | yes        | yes     | hyper | hyper   | no        |  no        | yes       |  hyper        |  hyper        | yes          |
-|         **HTTPS support** | yes    | no      | yes       | ?         | ?       | ?         | yes     | yes        | -       | -     | -       | -         |  -         | -         |  ?            |  ?            | no           |
+|         **HTTPS support** | yes    | no      | yes       | ?         | ?       | ?         | yes     | yes        | -       | -     | -       | -         |  yes         | -         |  ?            |  ?            | no           |
 |        **HTTP/2 support** | ?      | ?       | ?         | ?         | ?       | ?         | solicit | ?          | yes     | ?     | ?       | -         |  -         | -         |  ?            |  ?            | no           |
 
 ### Middleware & Plugins
