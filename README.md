@@ -52,6 +52,7 @@ To build web clients with Rust, you can choose between three libraries:
 
 ### Blog posts
 
+- [Shipping forgettable microservices with Rust](https://precompile.com/2016/06/23/shipping-forgettable-microservices-with-rust.html)
 - [Writing a simple REST app in Rust](https://gsquire.github.io/static/post/rest-in-rust/)
 - [Getting started with Rust](https://tech.zalando.de/blog/getting-started-with-rust/)
 - [Let's Build a Web Server in Rust](https://dfockler.github.io/2016/05/20/web-server.html)
