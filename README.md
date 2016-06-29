@@ -73,11 +73,11 @@ To build web clients with Rust, you can choose between three libraries:
 ### Demos
 
 - [exoskeleton](https://github.com/redo-studios/exoskeleton) - Iron
-- [Example webapp using Rust + Iron + React + Webpack](https://github.com/cmsd2/rust-iron-react-webpack)
-- [rustwebapp](https://github.com/superlogical/rustwebapp) - Iron and Postgres
-- [webrust](https://github.com/Keats/webrust) - Iron and Postgres
+- [Example webapp using React + Webpack](https://github.com/cmsd2/rust-iron-react-webpack) - Iron
+- [rustwebapp](https://github.com/superlogical/rustwebapp) - Iron and Postgres (r2d2)
+- [webrust](https://github.com/Keats/webrust) - Iron and Postgres (r2d2)
 - [httptest](https://github.com/brson/httptest) - Iron
-- [nickel-todo-backend](https://github.com/Ryman/nickel-todo-backend/) - Nickel and Postgres
+- [nickel-todo-backend](https://github.com/Ryman/nickel-todo-backend/) - Nickel and Postgres (r2d2)
 
 ### Real-world web projects using Rust
 
@@ -85,8 +85,8 @@ To build web clients with Rust, you can choose between three libraries:
 - [racerd](https://github.com/jwilm/racerd) - Iron
 - [rust-passivetotal](https://github.com/passivetotal/rust_api) - Hyper
 - [mars](https://github.com/Ticki/mars) - Hyper
-- [openfairdb](https://github.com/flosse/openfairdb) - Nickel
-- [ruma](https://github.com/ruma/ruma) - Iron
+- [openfairdb](https://github.com/flosse/openfairdb) - Nickel and Neo4j (r2d2)
+- [ruma](https://github.com/ruma/ruma) - Iron and Posgres (diesel + r2d2)
 
 ### Other
 
