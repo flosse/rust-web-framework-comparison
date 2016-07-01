@@ -14,7 +14,7 @@ with Rust:
 - **conduit**  ( -                                   / [repository](https://github.com/conduit-rust/conduit)  / - )
 - **rouille**  ( -                                   / [repository](https://github.com/tomaka/rouille)        / [documentation](http://tomaka.github.io/rouille/rouille/index.html))
 - **pencil**   ( -                                   / [repository](https://github.com/fengsp/pencil)         / [documentation](http://fengsp.github.io/pencil/))
-- **sappers**  ( -                                   / [repository](https://github.com/daogangtang/sappers)   / - )
+- **sappers**  ( -                                   / [repository](https://github.com/sappworks/sapper)   / - )
 
 If you need a more low level control you can choose between five libraries:
 
@@ -62,12 +62,12 @@ To build web clients with Rust, you can choose between three libraries:
 - [async hyper](http://seanmonstar.com/post/141495445652/async-hyper)
 - [Introducing Pencil: A Microframework Inspired By Flask For Rust](https://fengsp.github.io/blog/2016/3/introducing-pencil/)
 - [Trying Rust for web services](https://blog.wearewizards.io/trying-rust-for-web-services)
-- [Are we web yet?](http://arewewebyet.org/)
+- [Are we web yet?](http://www.arewewebyet.org)
 - [Reimplementing ashurbanipal.web in Rust](http://maniagnosis.crsr.net/2015/07/reimplementing-ashurbanipalweb-in-rust.html)
 - [A web app with Nickel: From first line to Heroku deployment](http://blog.thoughtram.io/rust/2015/07/29/a-web-app-with-nickel-from-first-line-to-heroku-deployment.html)
 - [What features Iron does not have compared to a web server like nginx?](https://www.reddit.com/r/rust/comments/3t1mze/what_features_iron_does_not_have_compared_to_a/)
 - [Build an API in Rust with JWT Authentication using Nickel.rs](https://auth0.com/blog/2015/11/30/build-an-api-in-rust-with-jwt-authentication-using-nickelrs/)
-- [Selective Middleware for Iron](http://gregchapple.com/selective-middleware-for-iron/)
+- [Selective Middleware for Iron](https://gregchapple.com/selective-middleware-for-iron/)
 - [Rust for the Web - RESTful API in Rust, impressions](https://medium.com/@eugeniyoz/restful-api-in-rust-impressions-63250d611d15)
 
 ### Demos
@@ -112,7 +112,7 @@ To build web clients with Rust, you can choose between three libraries:
 
 |                      Name | iron                                        | nickel                                                | conduit | rouille | rustful   | rustless  | pencil    | sappers   |
 | ------------------------- | ------------------------------------------- | ----------------------------------------------------- | ------- | ------- | --------- | --------- | --------- | --------- |
-|   **Static File Serving** | [yes](https://github.com/iron/static)       | yes                                                   | yes     | no      | ?         | ?         | yes       | ?         |
+|   **Static File Serving** | [yes](https://github.com/iron/staticfile)       | yes                                                   | yes     | no      | ?         | ?         | yes       | ?         |
 |              **Mounting** | [yes](https://github.com/iron/mount)        | yes                                                   | ?       | no      | ?         | ?         | ?         | ?         |
 |               **Logging** | [yes](https://github.com/iron/logger)       | no                                                    | ?       | no      | ?         | ?         | yes       | ?         |
 |     **JSON-Body-Parsing** | [yes](https://github.com/iron/body-parser)  | yes                                                   | ?       | no      | ?         | ?         | ?         | ?         |
