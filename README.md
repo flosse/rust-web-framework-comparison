@@ -105,14 +105,14 @@ To build web clients with Rust, you can choose between three libraries:
 |                **Server** | yes    | yes     | yes       | yes       | yes     | yes       | yes     | yes        | yes     | no    | no      | yes       |  yes       | yes       |  yes          |  yes          | yes          |
 |                **Client** | ?      | ?       | ?         | ?         | no      | no        | yes     | ?          | yes     | yes   | yes     | yes       |  yes       | no        |  no           |  no           | no           |
 |        **Base framework** | hyper  | hyper   | hyper     | iron      | civet   | tiny-http | yes     | yes        | yes     | hyper | hyper   | no        |  no        | yes       |  hyper        |  hyper        | yes          |
-|         **HTTPS support** | yes    | no      | yes       | ?         | ?       | ?         | yes     | yes        | -       | -     | -       | -         |  yes         | -         |  ?            |  ?            | no           |
+|         **HTTPS support** | yes    | no      | yes       | ?         | ?       | ?         | yes     | yes        | -       | -     | -       | -         |  yes       | -         |  ?            |  ?            | no           |
 |        **HTTP/2 support** | ?      | ?       | ?         | ?         | ?       | ?         | solicit | ?          | yes     | ?     | ?       | -         |  -         | -         |  ?            |  ?            | no           |
 
 ### Middleware & Plugins
 
 |                      Name | iron                                        | nickel                                                | conduit | rouille | rustful   | rustless  | pencil    | sappers   |
 | ------------------------- | ------------------------------------------- | ----------------------------------------------------- | ------- | ------- | --------- | --------- | --------- | --------- |
-|   **Static File Serving** | [yes](https://github.com/iron/staticfile)       | yes                                                   | yes     | no      | ?         | ?         | yes       | ?         |
+|   **Static File Serving** | [yes](https://github.com/iron/staticfile)   | yes                                                   | yes     | no      | ?         | ?         | yes       | ?         |
 |              **Mounting** | [yes](https://github.com/iron/mount)        | yes                                                   | ?       | no      | ?         | ?         | ?         | ?         |
 |               **Logging** | [yes](https://github.com/iron/logger)       | no                                                    | ?       | no      | ?         | ?         | yes       | ?         |
 |     **JSON-Body-Parsing** | [yes](https://github.com/iron/body-parser)  | yes                                                   | ?       | no      | ?         | ?         | ?         | ?         |
