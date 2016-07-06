@@ -4,7 +4,7 @@ A comparison of some web frameworks written in [Rust](https://rustlang.org).
 
 ## Server frameworks
 
-At the moment there are eight interesting framworks to build web applications
+At the moment there are nine interesting framworks to build web applications
 with Rust:
 
 - **iron**     ([homepage](http://ironframework.io/) / [repository](https://github.com/iron/iron/)            / [documentation](http://ironframework.io/doc/iron/))
@@ -14,7 +14,8 @@ with Rust:
 - **conduit**  ( -                                   / [repository](https://github.com/conduit-rust/conduit)  / - )
 - **rouille**  ( -                                   / [repository](https://github.com/tomaka/rouille)        / [documentation](http://tomaka.github.io/rouille/rouille/index.html))
 - **pencil**   ( -                                   / [repository](https://github.com/fengsp/pencil)         / [documentation](http://fengsp.github.io/pencil/))
-- **sappers**  ( -                                   / [repository](https://github.com/sappworks/sapper)   / - )
+- **sappers**  ( -                                   / [repository](https://github.com/sappworks/sapper)      / - )
+- **boron**    ( -                                   / [repository](https://github.com/troposphere/boron)     / - )
 
 If you need a more low level control you can choose between five libraries:
 
@@ -97,16 +98,16 @@ To build web clients with Rust, you can choose between three libraries:
 
 ### General
 
-|                      Name | iron   | nickel  | rustful   | rustless  | conduit | rouille   | hyper   | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     | kinglet   |  pencil       |  sappers      | hydrogen     |
-| ------------------------- | ------ | ------- | --------- | --------- | ------- | --------- | ------- | ---------- | ------- | ----- | ------- | --------- |  --------- | --------- |  ------------ |  ------------ | ------------ |
-|               **License** | MIT    | MIT     | MIT       | MIT       | MIT     | ?         | MIT     | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       | MIT       |  BSD-3-Clause |  MIT          | MPL 2.0      |
-|          **Github Stars** | 3.1k   | 1.6k    | 0.8k      | 0.3k      | 0.1k    | 0k        | 1.8k    | 0.2k       | 0.2k    | 0.1k  | 0k      | 0.2k      |  0.1k      | 0.1k      |  0.6k         |  0k           | 0.4k         |
-|          **Contributors** | 57     | 44      | 10        | 8         | 4       | 1         | 95      | 7          | 7       | 2     | 2       | 16        |  2         | 1         |  3            |  0            | 1            |
-|                **Server** | yes    | yes     | yes       | yes       | yes     | yes       | yes     | yes        | yes     | no    | no      | yes       |  yes       | yes       |  yes          |  yes          | yes          |
-|                **Client** | ?      | ?       | ?         | ?         | no      | no        | yes     | ?          | yes     | yes   | yes     | yes       |  yes       | no        |  no           |  no           | no           |
-|        **Base framework** | hyper  | hyper   | hyper     | iron      | civet   | tiny-http | yes     | yes        | yes     | hyper | hyper   | no        |  no        | yes       |  hyper        |  hyper        | yes          |
-|         **HTTPS support** | yes    | no      | yes       | ?         | ?       | ?         | yes     | yes        | -       | -     | -       | -         |  yes       | -         |  ?            |  ?            | no           |
-|        **HTTP/2 support** | ?      | ?       | ?         | ?         | ?       | ?         | solicit | ?          | yes     | ?     | ?       | -         |  -         | -         |  ?            |  ?            | no           |
+|                      Name | iron   | nickel  | rustful   | rustless  | conduit | rouille   | hyper   | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     | kinglet   |  pencil       |  sappers      | hydrogen     |  boron        |
+| ------------------------- | ------ | ------- | --------- | --------- | ------- | --------- | ------- | ---------- | ------- | ----- | ------- | --------- |  --------- | --------- |  ------------ |  ------------ | ------------ |  ------------ |
+|               **License** | MIT    | MIT     | MIT       | MIT       | MIT     | ?         | MIT     | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       | MIT       |  BSD-3-Clause |  MIT          | MPL 2.0      |  MIT          |
+|          **Github Stars** | 3.1k   | 1.6k    | 0.8k      | 0.3k      | 0.1k    | 0k        | 1.8k    | 0.2k       | 0.2k    | 0.1k  | 0k      | 0.2k      |  0.1k      | 0.1k      |  0.6k         |  0k           | 0.4k         |  0k           |
+|          **Contributors** | 57     | 44      | 10        | 8         | 4       | 1         | 95      | 7          | 7       | 2     | 2       | 16        |  2         | 1         |  3            |  0            | 1            |  2            |
+|                **Server** | yes    | yes     | yes       | yes       | yes     | yes       | yes     | yes        | yes     | no    | no      | yes       |  yes       | yes       |  yes          |  yes          | yes          |  yes          |
+|                **Client** | ?      | ?       | ?         | ?         | no      | no        | yes     | ?          | yes     | yes   | yes     | yes       |  yes       | no        |  no           |  no           | no           |  no           |
+|        **Base framework** | hyper  | hyper   | hyper     | iron      | civet   | tiny-http | yes     | yes        | yes     | hyper | hyper   | no        |  no        | yes       |  hyper        |  hyper        | yes          |  hyper        |
+|         **HTTPS support** | yes    | no      | yes       | ?         | ?       | ?         | yes     | yes        | -       | -     | -       | -         |  yes       | -         |  ?            |  ?            | no           |  no           |
+|        **HTTP/2 support** | ?      | ?       | ?         | ?         | ?       | ?         | solicit | ?          | yes     | ?     | ?       | -         |  -         | -         |  ?            |  ?            | no           |  no           |
 
 ### Middleware & Plugins
 
