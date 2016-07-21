@@ -95,6 +95,7 @@ To build web clients with Rust, you can choose between three libraries:
 - [mars](https://github.com/Ticki/mars) - Hyper
 - [openfairdb](https://github.com/flosse/openfairdb) - Nickel and Neo4j (r2d2)
 - [ruma](https://github.com/ruma/ruma) - Iron and Posgres (diesel + r2d2)
+- [html2pdf](https://github.com/rap2hpoutre/htmltopdf) - Iron
 
 ### Other
 
