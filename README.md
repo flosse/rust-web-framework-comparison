@@ -4,7 +4,7 @@ A comparison of some web frameworks written in [Rust](https://rustlang.org).
 
 ## Server frameworks
 
-At the moment there are nine interesting framworks to build web applications
+At the moment there are nine interesting frameworks to build web applications
 with Rust:
 
 - **iron**     ([homepage](http://ironframework.io/) / [repository](https://github.com/iron/iron/)            / [documentation](http://ironframework.io/doc/iron/))
