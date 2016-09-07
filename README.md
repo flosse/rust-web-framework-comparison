@@ -1,6 +1,6 @@
 # Rust web framework comparison
 
-A comparison of some web frameworks written in [Rust](https://rust-lang.org).
+A comparison of some web frameworks written in [Rust](https://www.rust-lang.org).
 
 ## Server frameworks
 
