@@ -101,6 +101,7 @@ To build web clients with Rust, you can choose between three libraries:
 
 ### Other
 
+- [Compiling to the web with Rust and emscripten](https://users.rust-lang.org/t/compiling-to-the-web-with-rust-and-emscripten/7627)
 - [Rust for Node developers](https://github.com/Mercateo/rust-for-node-developers)
 
 ## Comparison
