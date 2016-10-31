@@ -92,6 +92,7 @@ To build web clients with Rust, you can choose between three libraries:
 
 ### Real-world web projects using Rust
 
+- [Portier](https://portier.github.io/) - Iron and Redis
 - [yaus](https://github.com/gsquire/yaus) - Iron and SQLite
 - [racerd](https://github.com/jwilm/racerd) - Iron
 - [rust-passivetotal](https://github.com/passivetotal/rust_api) - Hyper
