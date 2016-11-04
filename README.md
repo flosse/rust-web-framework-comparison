@@ -79,6 +79,7 @@ To build web clients with Rust, you can choose between three libraries:
 - [Build an API in Rust with JWT Authentication using Nickel.rs](https://auth0.com/blog/2015/11/30/build-an-api-in-rust-with-jwt-authentication-using-nickelrs/)
 - [Selective Middleware for Iron](https://gregchapple.com/selective-middleware-for-iron/)
 - [Rust for the Web - RESTful API in Rust, impressions](https://medium.com/@eugeniyoz/restful-api-in-rust-impressions-63250d611d15)
+- [Rust for Node developers](https://github.com/Mercateo/rust-for-node-developers)
 
 ### Demos
 
@@ -101,10 +102,11 @@ To build web clients with Rust, you can choose between three libraries:
 - [ruma](https://github.com/ruma/ruma) - Iron and Posgres (diesel + r2d2)
 - [html2pdf](https://github.com/rap2hpoutre/htmltopdf) - Iron
 
-### Other
+### JS & [asm.js](http://asmjs.org/) & [WASM](http://webassembly.org/)
 
 - [Compiling to the web with Rust and emscripten](https://users.rust-lang.org/t/compiling-to-the-web-with-rust-and-emscripten/7627)
-- [Rust for Node developers](https://github.com/Mercateo/rust-for-node-developers)
+- [webplatform](https://github.com/tcr/rust-webplatform) - a library for use with emscripten to access the DOM.
+- [rust-todomvc](http://github.com/tcr/rust-todomvc) - an example application build with webplatform
 
 ## Comparison
 
