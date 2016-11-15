@@ -4,7 +4,7 @@ A comparison of some web frameworks written in [Rust](https://www.rust-lang.org)
 
 ## Server frameworks
 
-At the moment there are nine interesting frameworks to build web applications
+At the moment there are several interesting frameworks to build web applications
 with Rust:
 
 - **iron**     ([homepage](http://ironframework.io/) / [repository](https://github.com/iron/iron/)            / [documentation](http://ironframework.io/doc/iron/))
@@ -27,8 +27,9 @@ If you need a more low level control you can choose between five libraries:
 
 ## Client frameworks
 
-To build web clients with Rust, you can choose between three libraries:
+To build web clients with Rust, you can choose between these libraries:
 
+- **reqwest** (-                            / [repository](https://github.com/seanmonstar/reqwest)     / [documentation](https://docs.rs/reqwest))
 - **hyper**   ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper/hyper/))
 - **ease**    (-                            / [repository](https://github.com/SimonPersson/ease)       / [documentation](http://simonpersson.github.io/ease/))
 - **jsonrpc** (-                            / [repository](https://github.com/apoelstra/rust-jsonrpc/) / [documentation](https://www.wpsoftware.net/rustdoc/jsonrpc/))
