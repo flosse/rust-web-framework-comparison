@@ -129,16 +129,16 @@ To build web clients with Rust, you can choose between these libraries:
 
 |                      Name | iron                                        | nickel                                                | conduit | rouille | rustful   | rustless  | pencil    | sappers   |
 | ------------------------- | ------------------------------------------- | ----------------------------------------------------- | ------- | ------- | --------- | --------- | --------- | --------- |
-|   **Static File Serving** | [yes](https://github.com/iron/staticfile)   | yes                                                   | yes     | no      | ?         | ?         | yes       | ?         |
-|              **Mounting** | [yes](https://github.com/iron/mount)        | yes                                                   | ?       | no      | ?         | ?         | ?         | ?         |
-|               **Logging** | [yes](https://github.com/iron/logger)       | no                                                    | ?       | no      | ?         | ?         | yes       | ?         |
-|     **JSON-Body-Parsing** | [yes](https://github.com/iron/body-parser)  | yes                                                   | ?       | no      | ?         | ?         | ?         | ?         |
-|              **Sessions** | [yes](https://github.com/iron/session)      | ?                                                     | ?       | no      | ?         | ?         | ?         | ?         |
-|               **Cookies** | [yes](https://github.com/iron/cookie)       | ?                                                     | ?       | no      | ?         | ?         | ?         | ?         |
-| **PostgreSQL middleware** | ?                                           | [yes](https://github.com/nickel-org/nickel-postgres)  | ?       | no      | ?         | ?         | ?         | ?         |
-|     **SQLite middleware** | ?                                           | [yes](https://github.com/flosse/nickel-sqlite)        | ?       | no      | ?         | ?         | ?         | ?         |
-|      **Redis middleware** | ?                                           | [yes](https://github.com/matthewbentley/nickel-redis) | ?       | no      | ?         | ?         | ?         | ?         |
-|      **MySQL middleware** | ?                                           | [yes](https://github.com/zither/nickel-mysql)         | ?       | no      | ?         | ?         | ?         | ?         |
+|   **Static File Serving** | [yes](https://github.com/iron/staticfile)   | yes                                                   | yes     | n/a     | ?         | ?         | yes       | ?         |
+|              **Mounting** | [yes](https://github.com/iron/mount)        | yes                                                   | ?       | n/a     | ?         | ?         | ?         | ?         |
+|               **Logging** | [yes](https://github.com/iron/logger)       | no                                                    | ?       | n/a     | ?         | ?         | yes       | ?         |
+|     **JSON-Body-Parsing** | [yes](https://github.com/iron/body-parser)  | yes                                                   | ?       | n/a     | ?         | ?         | ?         | ?         |
+|              **Sessions** | [yes](https://github.com/iron/session)      | ?                                                     | ?       | n/a     | ?         | ?         | ?         | ?         |
+|               **Cookies** | [yes](https://github.com/iron/cookie)       | ?                                                     | ?       | n/a     | ?         | ?         | ?         | ?         |
+| **PostgreSQL middleware** | ?                                           | [yes](https://github.com/nickel-org/nickel-postgres)  | ?       | n/a     | ?         | ?         | ?         | ?         |
+|     **SQLite middleware** | ?                                           | [yes](https://github.com/flosse/nickel-sqlite)        | ?       | n/a     | ?         | ?         | ?         | ?         |
+|      **Redis middleware** | ?                                           | [yes](https://github.com/matthewbentley/nickel-redis) | ?       | n/a     | ?         | ?         | ?         | ?         |
+|      **MySQL middleware** | ?                                           | [yes](https://github.com/zither/nickel-mysql)         | ?       | n/a     | ?         | ?         | ?         | ?         |
 
 ## Examples
 
