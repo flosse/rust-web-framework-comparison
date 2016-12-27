@@ -16,6 +16,7 @@ with Rust:
 - **pencil**   ( -                                   / [repository](https://github.com/fengsp/pencil)         / [documentation](http://fengsp.github.io/pencil/))
 - **sappers**  ( -                                   / [repository](https://github.com/sappworks/sapper)      / - )
 - **boron**    ( -                                   / [repository](https://github.com/troposphere/boron)     / - )
+- **rocket**   ([homepage](https://rocket.rs/)       / [repository](https://github.com/SergioBenitez/rocket)  / - )
 
 If you need a more low level control you can choose between five libraries:
 
@@ -114,16 +115,16 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### General
 
-|                      Name | iron   | nickel  | rustful   | rustless  | conduit | rouille    | hyper   | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     | kinglet   |  pencil       |  sappers      | hydrogen     |  boron        |
-| ------------------------- | ------ | ------- | --------- | --------- | ------- | ---------- | ------- | ---------- | ------- | ----- | ------- | --------- |  --------- | --------- |  ------------ |  ------------ | ------------ |  ------------ |
-|               **License** | MIT    | MIT     | MIT       | MIT       | MIT     | Apache 2.0 | MIT     | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       | MIT       |  BSD-3-Clause |  MIT          | MPL 2.0      |  MIT          |
-|          **Github Stars** | 3.5k   | 1.7k    | 0.8k      | 0.3k      | 0.1k    | 0.1k       | 2.0k    | 0.2k       | 0.2k    | 0.1k  | 0k      | 0.2k      |  0.1k      | 0.1k      |  0.8k         |  0.4k         | 0.4k         |  0k           |
-|          **Contributors** | 67     | 49      | 11        | 11        | 5       | 4          | 112     | 9          | 8       | 2     | 2       | 16        |  2         | 1         |  4            |  1            | 2            |  2            |
-|                **Server** | yes    | yes     | yes       | yes       | yes     | yes        | yes     | yes        | yes     | no    | no      | yes       |  yes       | yes       |  yes          |  yes          | yes          |  yes          |
-|                **Client** | no     | no      | no        | no        | no      | no         | yes     | ?          | yes     | yes   | yes     | yes       |  yes       | no        |  no           |  no           | no           |  no           |
-|        **Base framework** | hyper  | hyper   | hyper     | iron      | civet   | tiny-http  | yes     | yes        | yes     | hyper | hyper   | no        |  no        | yes       |  hyper        |  hyper        | yes          |  hyper        |
-|         **HTTPS support** | yes    | no      | yes       | ?         | ?       | ?          | yes     | yes        | -       | -     | -       | -         |  yes       | -         |  ?            |  ?            | no           |  no           |
-|        **HTTP/2 support** | ?      | ?       | ?         | ?         | ?       | ?          | solicit | ?          | yes     | ?     | ?       | -         |  -         | -         |  ?            |  ?            | no           |  no           |
+|                      Name | iron   | nickel  | rustful   | rustless  | rocket           | conduit | rouille    | hyper   | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     | kinglet   |  pencil       |  sappers      | hydrogen     |  boron        |
+| ------------------------- | ------ | ------- | --------- | --------- | ---------------- | ------- | ---------- | ------- | ---------- | ------- | ----- | ------- | --------- |  --------- | --------- |  ------------ |  ------------ | ------------ |  ------------ |
+|               **License** | MIT    | MIT     | MIT       | MIT       | MIT / Apache 2.0 | MIT     | Apache 2.0 | MIT     | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       | MIT       |  BSD-3-Clause |  MIT          | MPL 2.0      |  MIT          |
+|          **Github Stars** | 3.5k   | 1.7k    | 0.8k      | 0.3k      | 0.3k             | 0.1k    | 0.1k       | 2.0k    | 0.2k       | 0.2k    | 0.1k  | 0k      | 0.2k      |  0.1k      | 0.1k      |  0.8k         |  0.4k         | 0.4k         |  0k           |
+|          **Contributors** | 67     | 49      | 11        | 11        | 2                | 5       | 4          | 112     | 9          | 8       | 2     | 2       | 16        |  2         | 1         |  4            |  1            | 2            |  2            |
+|                **Server** | yes    | yes     | yes       | yes       | yes              | yes     | yes        | yes     | yes        | yes     | no    | no      | yes       |  yes       | yes       |  yes          |  yes          | yes          |  yes          |
+|                **Client** | no     | no      | no        | no        | no               | no      | no         | yes     | ?          | yes     | yes   | yes     | yes       |  yes       | no        |  no           |  no           | no           |  no           |
+|        **Base framework** | hyper  | hyper   | hyper     | iron      |                  | civet   | tiny-http  | yes     | yes        | yes     | hyper | hyper   | no        |  no        | yes       |  hyper        |  hyper        | yes          |  hyper        |
+|         **HTTPS support** | yes    | no      | yes       | ?         |                  | ?       | ?          | yes     | yes        | -       | -     | -       | -         |  yes       | -         |  ?            |  ?            | no           |  no           |
+|        **HTTP/2 support** | ?      | ?       | ?         | ?         |                  | ?       | ?          | solicit | ?          | yes     | ?     | ?       | -         |  -         | -         |  ?            |  ?            | no           |  no           |
 
 ### Middleware & Plugins
 
