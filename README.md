@@ -55,6 +55,8 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Blog posts
 
+- [Diesel Powered Rocket](https://mgattozzi.com/diesel-powered-rocket)
+- [Using Stainless with Rocket](http://neikos.me/Using_Stainless_with_Rocket.html)
 - [Integration testing a service written in Rust and Iron](https://www.nibor.org/blog/integration-testing-a-service-written-in-rust-and-iron/)
 - [Actually using Iron: A grumpy introduction to web development in Rust](https://wiki.alopex.li/ActuallyUsingIron)
 - [Using Rust for Webdev as a Hobby Programmer](http://neikos.me/Using_Rust_for_Webdev_as_a_Hobby_Programmer.html)
