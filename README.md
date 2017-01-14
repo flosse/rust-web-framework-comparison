@@ -9,6 +9,7 @@ with Rust:
 
 - **iron**     ([homepage](http://ironframework.io/) / [repository](https://github.com/iron/iron/)            / [documentation](http://ironframework.io/doc/iron/))
 - **nickel**   ([homepage](http://nickel.rs/)        / [repository](https://github.com/nickel-org/nickel.rs/) / [documentation](http://docs.nickel.rs/nickel/))
+- **rocket**   ([homepage](https://rocket.rs/)       / [repository](https://github.com/SergioBenitez/rocket)  / [documentation](https://rocket.rs/guide/) )
 - **rustful**  ( -                                   / [repository](https://github.com/Ogeon/rustful)         / [documentation](http://ogeon.github.io/docs/rustful/master/rustful/))
 - **rustless** ([homepage](http://rustless.org/)     / [repository](https://github.com/rustless/rustless)     / [documentation](http://rustless.org/rustless/doc/rustless/))
 - **conduit**  ( -                                   / [repository](https://github.com/conduit-rust/conduit)  / - )
@@ -16,7 +17,6 @@ with Rust:
 - **pencil**   ( -                                   / [repository](https://github.com/fengsp/pencil)         / [documentation](http://fengsp.github.io/pencil/))
 - **sappers**  ( -                                   / [repository](https://github.com/sappworks/sapper)      / - )
 - **boron**    ( -                                   / [repository](https://github.com/troposphere/boron)     / - )
-- **rocket**   ([homepage](https://rocket.rs/)       / [repository](https://github.com/SergioBenitez/rocket)  / [documentation](https://rocket.rs/guide/) )
 
 If you need a more low level control you can choose between five libraries:
 
