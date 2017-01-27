@@ -55,6 +55,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Blog posts
 
+- [Building an Asynchronous Hyper Server](https://mgattozzi.com/hyper-async)
 - [JWT & Access Roles in Rocket](https://skinkade.github.io/rocket-jwt-roles-demo/)
 - [Writing a basic JSON response web server in Rust using Iron](https://www.jamestease.co.uk/blether/writing-a-basic-json-web-server-in-rust-using-iron)
 - [Diesel Powered Rocket](https://mgattozzi.com/diesel-powered-rocket)
