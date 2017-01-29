@@ -55,6 +55,8 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Blog posts
 
+- [Basic 2FA in Rocket](https://skinkade.github.io/rocket-auth-demo/)
+- [Building high performance REST APIs with Rust and Rocket](https://github.com/sebasmagri/rocket-loadavg-api/blob/master/README.md)
 - [Rocket Rocks! Using FromFormValue Traits to protect your website](http://blog.stephanbuys.com/2017/01/rocket-rocks-using-fromformvalue-traits.html)
 - [Building an Asynchronous Hyper Server](https://mgattozzi.com/hyper-async)
 - [JWT & Access Roles in Rocket](https://skinkade.github.io/rocket-jwt-roles-demo/)
