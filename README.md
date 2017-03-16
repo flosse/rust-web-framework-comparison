@@ -9,7 +9,7 @@ with Rust:
 
 - **iron**     ([homepage](http://ironframework.io/) / [repository](https://github.com/iron/iron/)            / [documentation](http://ironframework.io/doc/iron/))
 - **nickel**   ([homepage](http://nickel.rs/)        / [repository](https://github.com/nickel-org/nickel.rs/) / [documentation](http://docs.nickel.rs/nickel/))
-- **rocket**   ([homepage](https://rocket.rs/)       / [repository](https://github.com/SergioBenitez/rocket)  / [documentation](https://rocket.rs/guide/) )
+- **rocket**   ([homepage](https://rocket.rs/)       / [repository](https://github.com/SergioBenitez/rocket)  / [documentation](https://rocket.rs/guide/))
 - **rustful**  ( -                                   / [repository](https://github.com/Ogeon/rustful)         / [documentation](http://ogeon.github.io/docs/rustful/master/rustful/))
 - **rustless** (-                                    / [repository](https://github.com/rustless/rustless)     / - )
 - **conduit**  ( -                                   / [repository](https://github.com/conduit-rust/conduit)  / - )
@@ -105,6 +105,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Real-world web projects using Rust
 
+- [paste.rs](https://paste.rs/) - Rocket
 - [Portier](https://portier.github.io/) - Iron and Redis
 - [yaus](https://github.com/gsquire/yaus) - Iron and SQLite
 - [racerd](https://github.com/jwilm/racerd) - Iron
@@ -127,8 +128,8 @@ To build web clients with Rust, you can choose between these libraries:
 |                      Name | iron   | nickel  | rocket            | rustful   | rustless  | conduit | rouille    | hyper   | tiny-http  | solicit | ease  | jsonrpc | websocket |  ws-rs     | kinglet   |  pencil       |  sappers      | hydrogen     |  boron        |
 | ------------------------- | ------ | ------- | ----------------  | --------- | --------- | ------- | ---------- | ------- | ---------- | ------- | ----- | ------- | --------- |  --------- | --------- |  ------------ |  ------------ | ------------ |  ------------ |
 |               **License** | MIT    | MIT     | MIT / Apache 2.0  | MIT       | MIT       | MIT     | Apache 2.0 | MIT     | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT       |  MIT       | MIT       |  BSD-3-Clause |  MIT          | MPL 2.0      |  MIT          |
-|          **Github Stars** | 3.5k   | 1.7k    | 1.3k              | 0.8k      | 0.3k      | 0.1k    | 0.1k       | 2.0k    | 0.2k       | 0.2k    | 0.1k  | 0k      | 0.2k      |  0.1k      | 0.1k      |  0.8k         |  0.4k         | 0.4k         |  0k           |
-|          **Contributors** | 67     | 49      | 14                | 11        | 11        | 5       | 4          | 112     | 9          | 8       | 2     | 2       | 16        |  2         | 1         |  4            |  1            | 2            |  2            |
+|          **Github Stars** | 3.5k   | 1.8k    | 1.8k              | 0.8k      | 0.3k      | 0.1k    | 0.1k       | 2.0k    | 0.2k       | 0.2k    | 0.1k  | 0k      | 0.2k      |  0.1k      | 0.1k      |  0.8k         |  0.4k         | 0.4k         |  0k           |
+|          **Contributors** | 67     | 49      | 25                | 11        | 11        | 5       | 4          | 112     | 9          | 8       | 2     | 2       | 16        |  2         | 1         |  4            |  1            | 2            |  2            |
 |                **Server** | yes    | yes     | yes               | yes       | yes       | yes     | yes        | yes     | yes        | yes     | no    | no      | yes       |  yes       | yes       |  yes          |  yes          | yes          |  yes          |
 |                **Client** | no     | no      | no                | no        | no        | no      | no         | yes     | ?          | yes     | yes   | yes     | yes       |  yes       | no        |  no           |  no           | no           |  no           |
 |        **Base framework** | hyper  | hyper   |                   | hyper     | iron      | civet   | tiny-http  | yes     | yes        | yes     | hyper | hyper   | no        |  no        | yes       |  hyper        |  hyper        | yes          |  hyper        |
