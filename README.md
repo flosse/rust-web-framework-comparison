@@ -55,6 +55,8 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Blog posts
 
+- [Rendering Vector Map Tiles (Rust + asm.js demo)](https://pyfisch.org/blog/rendering-vector-map-tiles/)
+- [Compiling to the web with Rust and emscripten](https://users.rust-lang.org/t/compiling-to-the-web-with-rust-and-emscripten/7627)
 - [Basic 2FA in Rocket](https://skinkade.github.io/rocket-auth-demo/)
 - [Building high performance REST APIs with Rust and Rocket](https://github.com/sebasmagri/rocket-loadavg-api/blob/master/README.md)
 - [Rocket Rocks! Using FromFormValue Traits to protect your website](http://blog.stephanbuys.com/2017/01/rocket-rocks-using-fromformvalue-traits.html)
@@ -117,7 +119,6 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### JS & [asm.js](http://asmjs.org/) & [WASM](http://webassembly.org/)
 
-- [Compiling to the web with Rust and emscripten](https://users.rust-lang.org/t/compiling-to-the-web-with-rust-and-emscripten/7627)
 - [webplatform](https://github.com/tcr/rust-webplatform) - a library for use with emscripten to access the DOM.
 - [rust-todomvc](http://github.com/tcr/rust-todomvc) - an example application build with webplatform
 
