@@ -55,6 +55,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Blog posts
 
+- [The Path to Rust on the Web](http://asquera.de/blog/2017-04-10/the-path-to-rust-on-the-web/)
 - [Rendering Vector Map Tiles (Rust + asm.js demo)](https://pyfisch.org/blog/rendering-vector-map-tiles/)
 - [Compiling to the web with Rust and emscripten](https://users.rust-lang.org/t/compiling-to-the-web-with-rust-and-emscripten/7627)
 - [Basic 2FA in Rocket](https://skinkade.github.io/rocket-auth-demo/)
