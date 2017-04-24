@@ -1,12 +1,9 @@
 extern crate tiny_http;
 
-use tiny_http::{Response, StatusCode};
+use tiny_http::{Server, Response, StatusCode};
 
 fn main() {
-  let server = tiny_http::ServerBuilder::new()
-    .with_port(3000)
-    .build()
-    .unwrap();
+  let server = Server::http("0.0.0.0:3000").unwrap();
 
   loop {
     match server.recv() {
