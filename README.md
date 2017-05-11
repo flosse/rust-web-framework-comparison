@@ -56,6 +56,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Blog posts
 
+- [Writing a GitHub webhook with Rust! Part 1: Rocket](https://medium.com/@aergonaut/writing-a-github-webhook-with-rust-part-1-rocket-4426dd06d45d)
 - [Hello, Botket! (Rocket)](http://ootoovak.com/2017/04/08/botket/)
 - [Launching a URL Shortener in Rust using Rocket](http://matthias-endler.de/2017/rust-url-shortener/)
 - [Rocket + sodiumoxide = ♥](https://skinkade.github.io/rocket-encrypted-rest/)
