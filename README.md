@@ -7,16 +7,17 @@ A comparison of some web frameworks written in [Rust](https://www.rust-lang.org)
 At the moment there are several interesting frameworks to build web applications
 with Rust:
 
-- **iron**     ([homepage](http://ironframework.io/) / [repository](https://github.com/iron/iron/)            / [documentation](http://ironframework.io/doc/iron/))
-- **rocket**   ([homepage](https://rocket.rs/)       / [repository](https://github.com/SergioBenitez/rocket)  / [documentation](https://rocket.rs/guide/))
-- **nickel**   ([homepage](http://nickel.rs/)        / [repository](https://github.com/nickel-org/nickel.rs/) / [documentation](http://docs.nickel.rs/nickel/))
-- **rustful**  ( -                                   / [repository](https://github.com/Ogeon/rustful)         / [documentation](http://ogeon.github.io/docs/rustful/master/rustful/))
-- **rustless** (-                                    / [repository](https://github.com/rustless/rustless)     / - )
-- **conduit**  ( -                                   / [repository](https://github.com/conduit-rust/conduit)  / - )
-- **rouille**  ( -                                   / [repository](https://github.com/tomaka/rouille)        / [documentation](http://tomaka.github.io/rouille/rouille/index.html))
-- **pencil**   ( -                                   / [repository](https://github.com/fengsp/pencil)         / [documentation](http://fengsp.github.io/pencil/))
-- **sappers**  ( -                                   / [repository](https://github.com/sappworks/sapper)      / - )
-- **boron**    ( -                                   / [repository](https://github.com/troposphere/boron)     / - )
+- **iron**        ([homepage](http://ironframework.io/)                     / [repository](https://github.com/iron/iron/)               / [documentation](http://ironframework.io/doc/iron/))
+- **rocket**      ([homepage](https://rocket.rs/)                           / [repository](https://github.com/SergioBenitez/rocket)     / [documentation](https://rocket.rs/guide/))
+- **nickel**      ([homepage](http://nickel.rs/)                            / [repository](https://github.com/nickel-org/nickel.rs/)    / [documentation](http://docs.nickel.rs/nickel/))
+- **rustful**     ( -                                                       / [repository](https://github.com/Ogeon/rustful)            / [documentation](http://ogeon.github.io/docs/rustful/master/rustful/))
+- **rustless**    (-                                                        / [repository](https://github.com/rustless/rustless)        / - )
+- **conduit**     ( -                                                       / [repository](https://github.com/conduit-rust/conduit)     / - )
+- **rouille**     ( -                                                       / [repository](https://github.com/tomaka/rouille)           / [documentation](http://tomaka.github.io/rouille/rouille/index.html))
+- **pencil**      ( -                                                       / [repository](https://github.com/fengsp/pencil)            / [documentation](http://fengsp.github.io/pencil/))
+- **sappers**     ( -                                                       / [repository](https://github.com/sappworks/sapper)         / - )
+- **boron**       ( -                                                       / [repository](https://github.com/troposphere/boron)        / - )
+- **cargonaouts** ([homepage](https://cargonauts-rs.github.io/cargonauts/)  / [repository](https://github.com/cargonauts-rs/cargonauts) / - )
 
 If you need a more low level control you can choose between five libraries:
 
@@ -56,6 +57,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Blog posts
 
+- [Announcing cargonauts - A Rust async web framework](https://medium.com/@withoutboats/announcing-cargonauts-db5efaaaf7d2)
 - [Writing a GitHub webhook with Rust! Part 1: Rocket](https://medium.com/@aergonaut/writing-a-github-webhook-with-rust-part-1-rocket-4426dd06d45d)
 - [Hello, Botket! (Rocket)](http://ootoovak.com/2017/04/08/botket/)
 - [Launching a URL Shortener in Rust using Rocket](http://matthias-endler.de/2017/rust-url-shortener/)
