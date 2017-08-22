@@ -22,13 +22,14 @@ with Rust:
 - **susanoo**     (-                                                        / [repository](https://github.com/ubnt-intrepid/susanoo/)   / - )
 - **salt**        (-                                                        / [repository](https://github.com/mehcode/salt-rs/)         / - )
 
-If you need a more low level control you can choose between five libraries:
+If you need a more low level control you can choose between six libraries:
 
 - **hyper**     ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper))
 - **tiny-http** ( -                           / [repository](https://github.com/frewsxcv/tiny-http))     / [documentation](http://frewsxcv.github.io/tiny-http/tiny_http/index.html))
 - **solicit**   ( -                           / [repository](https://github.com/mlalic/solicit)          / [documentation](https://mlalic.github.io/solicit/solicit/index.html))
 - **kinglet**   ( -                           / [repository](https://github.com/pyfisch/kinglet)         / - )
 - **hydrogen**  ( -                           / [repository](https://github.com/nathansizemore/hydrogen) / [documentation](https://nathansizemore.github.io/hydrogen/hydrogen/index.html))
+- **civet**     ( -                           / [repository](https://github.com/wycats/rust-civet)       / - )
 
 ## Client frameworks
 
@@ -137,19 +138,33 @@ To build web clients with Rust, you can choose between these libraries:
 
 ## Comparison
 
-### General
+### High-Level Frameworks
 
-|        Name        | iron  | gotham           |      rocket      | nickel | rustful | rustless | conduit |  rouille   |  hyper  | tiny-http  | solicit | ease  | jsonrpc | kinglet |    pencil    | sappers | hydrogen | boron |     susanoo      |     salt         |
-| ------------------ | ----- | ---------------- | ---------------- | ------ | ------- | -------- | ------- | ---------- | ------- | ---------- | ------- | ----- | ------- | ------- | ------------ | ------- | -------- | ----- | ---------------- | ---------------- |
-| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT     | Apache 2.0 | MIT     | MIT   | CC0-1.0 | MIT     | BSD-3-Clause | MIT     | MPL 2.0  | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 |
-| **Github Stars**   | 3.5k  | 0.3k             | 2.0k             | 1.8k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 2.0k    | 0.2k       | 0.2k    | 0.1k  | 0k      | 0.1k    | 0.8k         | 0.4k    | 0.4k     | 0k    | 0k               | 0k               |
-| **Contributors**   | 67    | 5                | 28               | 49     | 11      | 11       | 5       | 4          | 112     | 9          | 8       | 2     | 2       | 1       | 4            | 1       | 2        | 2     | 1                | 2                |
-| **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | yes     | yes        | yes     | no    | no      | yes     | yes          | yes     | yes      | yes   | yes              | yes              |
-| **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes     | ?          | yes     | yes   | yes     | no      | no           | no      | no       | no    | no               | no               |
-| **Base framework** | hyper | hyper            |                  | hyper  | hyper   | iron     | civet   | tiny-http  | yes     | yes        | yes     | hyper | hyper   | yes     | hyper        | hyper   | yes      | hyper | hyper            | hyper            |
-| **HTTPS support**  | yes   | yes              |                  | no     | yes     | ?        | ?       | ?          | yes     | yes        | -       | -     | -       | -       | ?            | ?       | no       | no    |                  |                  |
-| **HTTP/2 support** | ?     | no               |                  | ?      | ?       | ?        | ?       | ?          | solicit | ?          | yes     | ?     | ?       | -       | ?            | ?       | no       | no    |                  |                  |
-| **Async**          |       | yes              | no               |        |         |          |         |            | yes     |            |         |       |         |         |              |         |          |       | yes              | yes              |
+|        Name        | iron  | gotham           |      rocket      | nickel | rustful | rustless | conduit |  rouille   | ease  | jsonrpc |    pencil    | sappers | boron |     susanoo      |     salt         |
+| ------------------ | ----- | ---------------- | ---------------- | ------ | ------- | -------- | ------- | ---------- | ----- | ------- | ------------ | ------- | ----- | ---------------- | ---------------- |
+| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT   | CC0-1.0 | BSD-3-Clause | MIT     | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 |
+| **Github Stars**   | 4.4k  | 0.3k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.8k         | 0.4k    | 0k    | 0k               | 0k               |
+| **Contributors**   | 67    | 5                | 28               | 49     | 11      | 11       | 5       | 4          | 2     | 2       | 4            | 1       | 2     | 1                | 2                |
+| **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes          | yes     | yes   | yes              | yes              |
+| **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no           | no      | no    | no               | no               |
+| **Base framework** | hyper | hyper            | hyper            | hyper  | hyper   | iron     | civet   | tiny-http  | hyper | hyper   | hyper        | hyper   | hyper | hyper            | hyper            |
+| **HTTPS support**  | yes   | yes              |                  | no     | yes     | ?        | ?       | ?          | -     | -       | ?            | ?       | no    |                  |                  |
+| **HTTP/2 support** | ?     | no               |                  | ?      | ?       | ?        | ?       | ?          | ?     | ?       | ?            | ?       | no    |                  |                  |
+| **Async**          |       | yes              | no               |        |         |          |         |            |       |         |              |         |       | yes              | yes              |
+
+### Low-Level Frameworks
+
+|        Name        | civet  | hyper   | tiny-http  | solicit | kinglet | hydrogen |
+| ------------------ | ------ | ------- | ---------- | ------- | ------- | -------- |
+| **License**        | MIT    | MIT     | Apache 2.0 | MIT     | MIT     | MPL 2.0  |
+| **Github Stars**   | 0k     | 2.7k    | 0.2k       | 0.2k    | 0.1k    | 0.4k     |
+| **Contributors**   | 4      | 112     | 9          | 8       | 1       | 2        |
+| **Server**         | yes    | yes     | yes        | yes     | yes     | yes      |
+| **Client**         | no     | yes     | ?          | yes     | no      | no       |
+| **HTTPS support**  |        | yes     | yes        | -       | -       | no       |
+| **HTTP/2 support** |        | solicit | ?          | yes     | -       | no       |
+| **Async**          |        | yes     |            |         |         |          |
+
 
 ### Middleware & Plugins
 
@@ -171,7 +186,7 @@ To build web clients with Rust, you can choose between these libraries:
 ### Websocket Libraries
 
 |        Name        | websocket | ws-rs | twist            | tungstenite      |
-| ------------------ | --------- | ----- | ---------------  | ---------------  |
+| ------------------ | --------- | ----- | ---------------- | ---------------- |
 | **License**        | MIT       | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 |
 | **Github Stars**   | 0.4k      | 0.4k  | 0k               | 0k               |
 | **Contributors**   | 30        | 20    | 2                | 7                |
