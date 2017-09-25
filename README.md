@@ -20,9 +20,8 @@ There are several interesting frameworks to build web applications with Rust:
 - **cargonaouts** ([homepage](https://cargonauts-rs.github.io/cargonauts/)  / [repository](https://github.com/cargonauts-rs/cargonauts) / - )
 - **susanoo**     (-                                                        / [repository](https://github.com/ubnt-intrepid/susanoo/)   / - )
 - **shio**        (-                                                        / [repository](https://github.com/mehcode/shio-rs)          / - )
-- **tk-http**     (-                                                        / [repository](https://github.com/swindon-rs/tk-http)       / - )
 
-If you need a more low level control you can choose between six libraries:
+If you need a more low level control you can choose between these libraries:
 
 - **hyper**     ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper))
 - **tiny-http** ( -                           / [repository](https://github.com/frewsxcv/tiny-http))     / [documentation](http://frewsxcv.github.io/tiny-http/tiny_http/index.html))
@@ -30,6 +29,7 @@ If you need a more low level control you can choose between six libraries:
 - **kinglet**   ( -                           / [repository](https://github.com/pyfisch/kinglet)         / - )
 - **hydrogen**  ( -                           / [repository](https://github.com/nathansizemore/hydrogen) / [documentation](https://nathansizemore.github.io/hydrogen/hydrogen/index.html))
 - **civet**     ( -                           / [repository](https://github.com/wycats/rust-civet)       / - )
+- **tk-http**   ( -                           / [repository](https://github.com/swindon-rs/tk-http)      / - )
 
 ## Client frameworks
 
@@ -142,30 +142,30 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### High-Level Frameworks
 
-|        Name        | iron  | gotham           |      rocket      | nickel | rustful | rustless | conduit |  rouille   | ease  | jsonrpc |    pencil    | sappers | boron |     susanoo      |     shio         |     tk-http      |
-| ------------------ | ----- | ---------------- | ---------------- | ------ | ------- | -------- | ------- | ---------- | ----- | ------- | ------------ | ------- | ----- | ---------------- | ---------------- | ---------------- |
-| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT   | CC0-1.0 | BSD-3-Clause | MIT     | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 |
-| **Github Stars**   | 4.4k  | 0.3k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.8k         | 0.4k    | 0k    | 0k               | 0.1k             | 0.0k             |
-| **Contributors**   | 67    | 5                | 28               | 49     | 11      | 11       | 5       | 4          | 2     | 2       | 4            | 1       | 2     | 1                | 3                | 5                |
-| **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes          | yes     | yes   | yes              | yes              | yes              |
-| **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no           | no      | no    | no               | no               | yes              |
-| **Base framework** | hyper | hyper            | hyper            | hyper  | hyper   | iron     | civet   | tiny-http  | hyper | hyper   | hyper        | hyper   | hyper | hyper            | hyper            | tokio            |
-| **HTTPS support**  | yes   | yes              |                  | no     | yes     | ?        | ?       | ?          | -     | -       | ?            | ?       | no    |                  |                  | yes              |
-| **HTTP/2 support** | ?     | no               |                  | ?      | ?       | ?        | ?       | ?          | ?     | ?       | ?            | ?       | no    |                  |                  | no               |
-| **Async**          |       | yes              | no               |        |         |          |         |            |       |         |              |         |       | yes              | yes              | yes              |
+|        Name        | iron  | gotham           |      rocket      | nickel | rustful | rustless | conduit |  rouille   | ease  | jsonrpc |    pencil    | sappers | boron |     susanoo      |     shio         |
+| ------------------ | ----- | ---------------- | ---------------- | ------ | ------- | -------- | ------- | ---------- | ----- | ------- | ------------ | ------- | ----- | ---------------- | ---------------- |
+| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT   | CC0-1.0 | BSD-3-Clause | MIT     | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 |
+| **Github Stars**   | 4.4k  | 0.3k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.8k         | 0.4k    | 0k    | 0k               | 0.1k             |
+| **Contributors**   | 67    | 5                | 28               | 49     | 11      | 11       | 5       | 4          | 2     | 2       | 4            | 1       | 2     | 1                | 3                |
+| **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes          | yes     | yes   | yes              | yes              |
+| **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no           | no      | no    | no               | no               |
+| **Base framework** | hyper | hyper            | hyper            | hyper  | hyper   | iron     | civet   | tiny-http  | hyper | hyper   | hyper        | hyper   | hyper | hyper            | hyper            |
+| **HTTPS support**  | yes   | yes              |                  | no     | yes     | ?        | ?       | ?          | -     | -       | ?            | ?       | no    |                  |                  |
+| **HTTP/2 support** | ?     | no               |                  | ?      | ?       | ?        | ?       | ?          | ?     | ?       | ?            | ?       | no    |                  |                  |
+| **Async**          |       | yes              | no               |        |         |          |         |            |       |         |              |         |       | yes              | yes              |
 
 ### Low-Level Frameworks
 
-|        Name        | civet  | hyper   | tiny-http  | solicit | kinglet | hydrogen |
-| ------------------ | ------ | ------- | ---------- | ------- | ------- | -------- |
-| **License**        | MIT    | MIT     | Apache 2.0 | MIT     | MIT     | MPL 2.0  |
-| **Github Stars**   | 0k     | 2.7k    | 0.2k       | 0.2k    | 0.1k    | 0.4k     |
-| **Contributors**   | 4      | 112     | 9          | 8       | 1       | 2        |
-| **Server**         | yes    | yes     | yes        | yes     | yes     | yes      |
-| **Client**         | no     | yes     | ?          | yes     | no      | no       |
-| **HTTPS support**  |        | yes     | yes        | -       | -       | no       |
-| **HTTP/2 support** |        | solicit | ?          | yes     | -       | no       |
-| **Async**          |        | yes     |            |         |         |          |
+|        Name        | civet  | hyper   | tiny-http  | solicit | kinglet | hydrogen | tk-http          |
+| ------------------ | ------ | ------- | ---------- | ------- | ------- | -------- | ---------------- |
+| **License**        | MIT    | MIT     | Apache 2.0 | MIT     | MIT     | MPL 2.0  | MIT / Apache 2.0 |
+| **Github Stars**   | 0k     | 2.7k    | 0.2k       | 0.2k    | 0.1k    | 0.4k     | 0.1k             |
+| **Contributors**   | 4      | 112     | 9          | 8       | 1       | 2        | 5                |
+| **Server**         | yes    | yes     | yes        | yes     | yes     | yes      | yes              |
+| **Client**         | no     | yes     | ?          | yes     | no      | no       | yes              |
+| **HTTPS support**  |        | yes     | yes        | -       | -       | no       | yes              |
+| **HTTP/2 support** |        | solicit | ?          | yes     | -       | no       | no               |
+| **Async**          |        | yes     |            |         |         |          | yes              |
 
 
 ### Middleware & Plugins
@@ -187,15 +187,15 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Websocket Libraries
 
-|        Name        | websocket | ws-rs | twist            | tungstenite      |
-| ------------------ | --------- | ----- | ---------------- | ---------------- |
-| **License**        | MIT       | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 |
-| **Github Stars**   | 0.4k      | 0.4k  | 0k               | 0k               |
-| **Contributors**   | 30        | 20    | 2                | 7                |
-| **Server**         | yes       | yes   | yes              | yes              |
-| **Client**         | yes       | yes   | yes              | yes              |
-| **Base framework** | - / tokio | mio   | tokio            | - / tokio        |
-| **Async**          | no / yes  | yes   | yes              | no / yes         |
+|        Name        | websocket | ws-rs | twist            | tungstenite      | tk-http          |
+| ------------------ | --------- | ----- | ---------------- | ---------------- | ---------------- |
+| **License**        | MIT       | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 |
+| **Github Stars**   | 0.4k      | 0.4k  | 0k               | 0k               | 0.1k             |
+| **Contributors**   | 30        | 20    | 2                | 7                | 5                |
+| **Server**         | yes       | yes   | yes              | yes              | yes              |
+| **Client**         | yes       | yes   | yes              | yes              | yes              |
+| **Base framework** | - / tokio | mio   | tokio            | - / tokio        | tokio            |
+| **Async**          | no / yes  | yes   | yes              | no / yes         | yes              |
 
 
 ## Examples
