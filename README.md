@@ -135,7 +135,12 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### JS & [asm.js](http://asmjs.org/) & [WASM](http://webassembly.org/)
 
+- [stdweb](https://github.com/koute/stdweb) - A standard library for the client-side Web
 - [webplatform](https://github.com/tcr/rust-webplatform) - a library for use with emscripten to access the DOM.
+
+#### Examples
+
+- [rust-webapp-template](https://github.com/huytd/rust-webapp-template) - Template project for Rust web app using *stdweb*
 - [rust-todomvc](http://github.com/tcr/rust-todomvc) - an example application build with webplatform
 
 ## Comparison
