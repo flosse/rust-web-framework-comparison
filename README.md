@@ -62,6 +62,7 @@ To build web clients with Rust, you can choose between these libraries:
 ### Blog posts
 
 
+- [Rust for the web](https://thefullsnack.com/en/rust-for-the-web.html)
 - [Rocket on Fedora](https://sumantrom.blogspot.de/2017/04/rocket-on-fedora.html)
 - [Announcing Gotham - A flexible web framework for stable Rust that does not sacrifice safety, security or speed.](https://gotham.rs/2017/08/09/announcing-gotham.html)
 - [Announcing cargonauts - A Rust async web framework](https://medium.com/@withoutboats/announcing-cargonauts-db5efaaaf7d2)
