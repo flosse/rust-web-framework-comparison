@@ -47,6 +47,7 @@ To build web clients with Rust, you can choose between these libraries:
 - **websocket**   ([homepage](http://cyderize.github.io/rust-websocket/)  / [repository](https://github.com/cyderize/rust-websocket)  / [documentation](http://cyderize.github.io/rust-websocket/doc/websocket/))
 - **ws-rs**       ([homepage](https://ws-rs.org)                          / [repository](https://github.com/housleyjk/ws-rs)          / [documentation](https://ws-rs.org/docs))
 - **tungstenite** (-                                                      / [repository](https://github.com/snapview/tungstenite-rs)  / [documentation](https://docs.rs/crate/tungstenite/))
+- **tk-http**     ( -                                                     / [repository](https://github.com/swindon-rs/tk-http)       / - )
 
 ### Templating
 
