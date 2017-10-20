@@ -30,6 +30,7 @@ If you need a more low level control you can choose between these libraries:
 - **hydrogen**  ( -                           / [repository](https://github.com/nathansizemore/hydrogen) / [documentation](https://nathansizemore.github.io/hydrogen/hydrogen/index.html))
 - **civet**     ( -                           / [repository](https://github.com/wycats/rust-civet)       / - )
 - **tk-http**   ( -                           / [repository](https://github.com/swindon-rs/tk-http)      / - )
+- **h2**        ( -                           / [repository](https://github.com/carllerche/h2)           / - )
 
 ## Client frameworks
 
@@ -164,16 +165,16 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Low-Level Frameworks
 
-|        Name        | civet  | hyper   | tiny-http  | solicit | kinglet | hydrogen | tk-http          |
-| ------------------ | ------ | ------- | ---------- | ------- | ------- | -------- | ---------------- |
-| **License**        | MIT    | MIT     | Apache 2.0 | MIT     | MIT     | MPL 2.0  | MIT / Apache 2.0 |
-| **Github Stars**   | 0k     | 2.7k    | 0.2k       | 0.2k    | 0.1k    | 0.4k     | 0.1k             |
-| **Contributors**   | 4      | 112     | 9          | 8       | 1       | 2        | 5                |
-| **Server**         | yes    | yes     | yes        | yes     | yes     | yes      | yes              |
-| **Client**         | no     | yes     | ?          | yes     | no      | no       | yes              |
-| **HTTPS support**  |        | yes     | yes        | -       | -       | no       | yes              |
-| **HTTP/2 support** |        | solicit | ?          | yes     | -       | no       | no               |
-| **Async**          |        | yes     |            |         |         |          | yes              |
+|        Name        | civet  | hyper   | tiny-http  | solicit | kinglet | hydrogen | tk-http          | h2               |
+| ------------------ | ------ | ------- | ---------- | ------- | ------- | -------- | ---------------- | ---------------- |
+| **License**        | MIT    | MIT     | Apache 2.0 | MIT     | MIT     | MPL 2.0  | MIT / Apache 2.0 | MIT / Apache 2.0 |
+| **Github Stars**   | 0k     | 2.7k    | 0.2k       | 0.2k    | 0.1k    | 0.4k     | 0.1k             | 0.1k             |
+| **Contributors**   | 4      | 112     | 9          | 8       | 1       | 2        | 5                | 8                |
+| **Server**         | yes    | yes     | yes        | yes     | yes     | yes      | yes              | yes              |
+| **Client**         | no     | yes     | ?          | yes     | no      | no       | yes              | yes              |
+| **HTTPS support**  |        | yes     | yes        | -       | -       | no       | yes              | no               |
+| **HTTP/2 support** |        | solicit | ?          | yes     | -       | no       | no               | yes              |
+| **Async**          |        | yes     |            |         |         |          | yes              | yes              |
 
 
 ### Middleware & Plugins
