@@ -9,7 +9,7 @@ There are several interesting frameworks to build web applications with Rust:
 - **gotham**      ([homepage](http://gotham.rs/)                            / [repository](https://github.com/gotham-rs/gotham/)        / [documentation](https://book.gotham.rs/))
 - **iron**        ([homepage](http://ironframework.io/)                     / [repository](https://github.com/iron/iron/)               / [documentation](http://ironframework.io/doc/iron/))
 - **rocket**      ([homepage](https://rocket.rs/)                           / [repository](https://github.com/SergioBenitez/rocket)     / [documentation](https://rocket.rs/guide/))
-- **nickel**      ([homepage](http://nickel.rs/)                            / [repository](https://github.com/nickel-org/nickel.rs/)    / [documentation](http://docs.nickel.rs/nickel/))
+- **nickel**      ([homepage](http://nickel-org.github.io/)                            / [repository](https://github.com/nickel-org/nickel.rs/)    / [documentation](http://nickel-org.github.io/nickel.rs))
 - **rustful**     ( -                                                       / [repository](https://github.com/Ogeon/rustful)            / [documentation](http://ogeon.github.io/docs/rustful/master/rustful/))
 - **rustless**    (-                                                        / [repository](https://github.com/rustless/rustless)        / - )
 - **conduit**     ( -                                                       / [repository](https://github.com/conduit-rust/conduit)     / - )
