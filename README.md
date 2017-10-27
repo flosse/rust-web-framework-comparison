@@ -65,6 +65,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Blog posts
 
+- [How to Deploy a Rocket Application to Heroku](http://www.duelinmarkers.com/2017/10/21/how-to-deploy-a-rocket-application-to-heroku.html)
 - [Rust to WebAssembly, Made Easy](https://lord.io/blog/2017/wargo/)
 - [Rust for the web](https://thefullsnack.com/en/rust-for-the-web.html)
 - [Rocket on Fedora](https://sumantrom.blogspot.de/2017/04/rocket-on-fedora.html)
