@@ -148,6 +148,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 - [rust-webapp-template](https://github.com/huytd/rust-webapp-template) - Template project for Rust web app using *stdweb*
 - [rust-todomvc](http://github.com/tcr/rust-todomvc) - an example application build with webplatform
+- [wasm-experiments](https://github.com/killercup/wasm-experiments) - experiments with `wasm32-unknown-unknown`
 
 ## Comparison
 
