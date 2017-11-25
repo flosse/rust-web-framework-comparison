@@ -20,7 +20,7 @@ There are several interesting frameworks to build web applications with Rust:
 - **cargonaouts** ([homepage](https://cargonauts-rs.github.io/cargonauts/)  / [repository](https://github.com/cargonauts-rs/cargonauts) / - )
 - **susanoo**     (-                                                        / [repository](https://github.com/ubnt-intrepid/susanoo/)   / - )
 - **shio**        (-                                                        / [repository](https://github.com/mehcode/shio-rs)          / - )
-- **actix-web**   (-                                                        / [repository](https://github.com/actix/actix-web)          / - )
+- **actix-web**   (-                                                        / [repository](https://github.com/actix/actix-web)          / [documentation](https://actix.github.io/actix-web/actix_web/))
 
 If you need a more low level control you can choose between these libraries:
 
@@ -50,6 +50,7 @@ To build web clients with Rust, you can choose between these libraries:
 - **ws-rs**       ([homepage](https://ws-rs.org)                          / [repository](https://github.com/housleyjk/ws-rs)          / [documentation](https://ws-rs.org/docs))
 - **tungstenite** (-                                                      / [repository](https://github.com/snapview/tungstenite-rs)  / [documentation](https://docs.rs/crate/tungstenite/))
 - **tk-http**     ( -                                                     / [repository](https://github.com/swindon-rs/tk-http)       / - )
+- **actix-web**   ( -                                                     / [repository](https://github.com/actix/actix-web)          / [documentation](https://actix.github.io/actix-web/actix_web/))
 
 ### Templating
 
@@ -126,6 +127,7 @@ To build web clients with Rust, you can choose between these libraries:
 - [nickel-todo-backend](https://github.com/Ryman/nickel-todo-backend/) - Nickel and Postgres (r2d2)
 - [rust-playground](https://github.com/integer32llc/rust-playground) - Iron
 - [rust-web-example](https://github.com/DavidBM/rust-webserver-example-with-iron-diesel-r2d2-serde) - Iron + Diesel (r2d2) + Serde
+- [websocket chat](https://github.com/actix/actix-web/tree/master/examples/websocket-chat) - Actix: Browser Websocket + tcp chat
 
 ### Real-world web projects using Rust
 
@@ -162,8 +164,8 @@ To build web clients with Rust, you can choose between these libraries:
 | **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes          | yes     | yes   | yes              | yes              | yes              |
 | **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no           | no      | no    | no               | no               | no               |
 | **Base framework** | hyper | hyper            | hyper            | hyper  | hyper   | iron     | civet   | tiny-http  | hyper | hyper   | hyper        | hyper   | hyper | hyper            | hyper            | tokio            |
-| **HTTPS support**  | yes   | yes              |                  | no     | yes     | ?        | ?       | ?          | -     | -       | ?            | ?       | no    |                  |                  |                  |
-| **HTTP/2 support** | ?     | no               |                  | ?      | ?       | ?        | ?       | ?          | ?     | ?       | ?            | ?       | no    |                  |                  | no               |
+| **HTTPS support**  | yes   | yes              |                  | no     | yes     | ?        | ?       | ?          | -     | -       | ?            | ?       | no    |                  |                  | yes              |
+| **HTTP/2 support** | ?     | no               |                  | ?      | ?       | ?        | ?       | ?          | ?     | ?       | ?            | ?       | no    |                  |                  | yes              |
 | **Async**          |       | yes              | no               |        |         |          |         |            |       |         |              |         |       | yes              | yes              | yes              |
 
 ### Low-Level Frameworks
@@ -182,32 +184,32 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Middleware & Plugins
 
-|           Name            |                    iron                    | gotham |                        nickel                         | conduit | rouille | rustful | rustless | pencil | sappers |
-| ------------------------- | ------------------------------------------ | ------ | ----------------------------------------------------- | ------- | ------- | ------- | -------- | ------ | ------- |
-| **Static File Serving**   | [yes](https://github.com/iron/staticfile)  | no^    | yes                                                   | yes     | n/a     | ?       | ?        | yes    | ?       |
-| **Mounting**              | [yes](https://github.com/iron/mount)       | yes    | yes                                                   | ?       | n/a     | ?       | ?        | ?      | ?       |
-| **Logging**               | [yes](https://github.com/iron/logger)      | yes    | no                                                    | ?       | n/a     | ?       | ?        | yes    | ?       |
-| **JSON-Body-Parsing**     | [yes](https://github.com/iron/body-parser) | yes    | yes                                                   | ?       | n/a     | ?       | ?        | ?      | ?       |
-| **Sessions**              | [yes](https://github.com/iron/session)     | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?      | ?       |
-| **Cookies**               | [yes](https://github.com/iron/cookie)      | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?      | ?       |
-| **PostgreSQL middleware** | ?                                          | no^    | [yes](https://github.com/nickel-org/nickel-postgres)  | ?       | n/a     | ?       | ?        | ?      | ?       |
-| **SQLite middleware**     | ?                                          | no^    | [yes](https://github.com/flosse/nickel-sqlite)        | ?       | n/a     | ?       | ?        | ?      | ?       |
-| **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | ?       | n/a     | ?       | ?        | ?      | ?       |
-| **MySQL middleware**      | ?                                          | no^    | [yes](https://github.com/zither/nickel-mysql)         | ?       | n/a     | ?       | ?        | ?      | ?       |
+|           Name            |                    iron                    | gotham |                        nickel                         | conduit | rouille | rustful | rustless | pencil | sappers | actix-web |
+| ------------------------- | ------------------------------------------ | ------ | ----------------------------------------------------- | ------- | ------- | ------- | -------- | ------ | ------- | --------- |
+| **Static File Serving**   | [yes](https://github.com/iron/staticfile)  | no^    | yes                                                   | yes     | n/a     | ?       | ?        | yes    | ?       | yes       |
+| **Mounting**              | [yes](https://github.com/iron/mount)       | yes    | yes                                                   | ?       | n/a     | ?       | ?        | ?      | ?       | ?         |
+| **Logging**               | [yes](https://github.com/iron/logger)      | yes    | no                                                    | ?       | n/a     | ?       | ?        | yes    | ?       | yes       |
+| **JSON-Body-Parsing**     | [yes](https://github.com/iron/body-parser) | yes    | yes                                                   | ?       | n/a     | ?       | ?        | ?      | ?       | ?         |
+| **Sessions**              | [yes](https://github.com/iron/session)     | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?      | ?       | ?         |
+| **Cookies**               | [yes](https://github.com/iron/cookie)      | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?      | ?       | yes       |
+| **PostgreSQL middleware** | ?                                          | no^    | [yes](https://github.com/nickel-org/nickel-postgres)  | ?       | n/a     | ?       | ?        | ?      | ?       | ?         |
+| **SQLite middleware**     | ?                                          | no^    | [yes](https://github.com/flosse/nickel-sqlite)        | ?       | n/a     | ?       | ?        | ?      | ?       | ?         |
+| **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | ?       | n/a     | ?       | ?        | ?      | ?       | ?         |
+| **MySQL middleware**      | ?                                          | no^    | [yes](https://github.com/zither/nickel-mysql)         | ?       | n/a     | ?       | ?        | ?      | ?       | ?         |
 
 (^ Planned in current roadmap)
 
 ### Websocket Libraries
 
-|        Name        | websocket | ws-rs | twist            | tungstenite      | tk-http          |
-| ------------------ | --------- | ----- | ---------------- | ---------------- | ---------------- |
-| **License**        | MIT       | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 |
-| **Github Stars**   | 0.4k      | 0.4k  | 0k               | 0k               | 0.1k             |
-| **Contributors**   | 30        | 20    | 2                | 7                | 5                |
-| **Server**         | yes       | yes   | yes              | yes              | yes              |
-| **Client**         | yes       | yes   | yes              | yes              | yes              |
-| **Base framework** | - / tokio | mio   | tokio            | - / tokio        | tokio            |
-| **Async**          | no / yes  | yes   | yes              | no / yes         | yes              |
+|        Name        | websocket | ws-rs | twist            | tungstenite      | tk-http          | actix-web
+| ------------------ | --------- | ----- | ---------------- | ---------------- | ---------------- | ---------- |
+| **License**        | MIT       | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 | Apache 2.0 |
+| **Github Stars**   | 0.4k      | 0.4k  | 0k               | 0k               | 0.1k             | 0k         |
+| **Contributors**   | 30        | 20    | 2                | 7                | 5                | 1          |
+| **Server**         | yes       | yes   | yes              | yes              | yes              | yes        |
+| **Client**         | yes       | yes   | yes              | yes              | yes              | no         |
+| **Base framework** | - / tokio | mio   | tokio            | - / tokio        | tokio            | tokio      |
+| **Async**          | no / yes  | yes   | yes              | no / yes         | yes              | yes        |
 
 
 ## Examples
