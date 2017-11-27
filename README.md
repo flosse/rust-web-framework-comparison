@@ -65,6 +65,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Blog posts
 
+- [wasm32-unknown-unknown landed & enabled](https://www.hellorust.com/news/native-wasm-target.html)
 - [How to Deploy a Rocket Application to Heroku](http://www.duelinmarkers.com/2017/10/21/how-to-deploy-a-rocket-application-to-heroku.html)
 - [Rust to WebAssembly, Made Easy](https://lord.io/blog/2017/wargo/)
 - [Rust for the web](https://thefullsnack.com/en/rust-for-the-web.html)
@@ -143,6 +144,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 - [stdweb](https://github.com/koute/stdweb) - A standard library for the client-side Web
 - [webplatform](https://github.com/tcr/rust-webplatform) - a library for use with emscripten to access the DOM.
+- [hellorust.com](https://www.hellorust.com) - a website with news, resources and demos
 
 #### Examples
 
