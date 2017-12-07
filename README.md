@@ -61,6 +61,7 @@ To build web clients with Rust, you can choose between these libraries:
 - **horrorshow** (-                                                     / [repository](https://github.com/Stebalien/horrorshow-rs)  / [documentation](https://stebalien.github.io/horrorshow-rs/horrorshow/))
 - **maud**       ([homepage](https://lfairy.gitbooks.io/maud/content/)  / [repository](https://github.com/lfairy/maud)              / [documentation](https://lambda.xyz/maud/maud/))
 - **askama**     (-                                                     / [repository](https://github.com/djc/askama)               / - )
+ - **stpl**      (-                                                     / [repository](https://github.com/dpc/stpl)                 / - )
 
 ## Resources
 
