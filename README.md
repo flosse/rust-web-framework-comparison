@@ -197,16 +197,16 @@ To build web clients with Rust, you can choose between these libraries:
 
 |           Name            |                    iron                    | gotham |                        nickel                         | conduit | rouille | rustful | rustless | pencil | sappers | actix-web |
 | ------------------------- | ------------------------------------------ | ------ | ----------------------------------------------------- | ------- | ------- | ------- | -------- | ------ | ------- | --------- |
-| **Static File Serving**   | [yes](https://github.com/iron/staticfile)  | no^    | yes                                                   | yes     | n/a     | ?       | ?        | yes    | ?       | yes       |
+| **Static File Serving**   | [yes](https://github.com/iron/staticfile)  | no^    | yes                                                   | yes     | n/a     | ?       | ?        | yes    | ?       | [yes](https://actix.github.io/actix-web/guide/qs_12.html)       |
 | **Mounting**              | [yes](https://github.com/iron/mount)       | yes    | yes                                                   | ?       | n/a     | ?       | ?        | ?      | ?       | ?         |
-| **Logging**               | [yes](https://github.com/iron/logger)      | yes    | no                                                    | ?       | n/a     | ?       | ?        | yes    | ?       | yes       |
+| **Logging**               | [yes](https://github.com/iron/logger)      | yes    | no                                                    | ?       | n/a     | ?       | ?        | yes    | ?       | [yes](https://actix.github.io/actix-web/guide/qs_10.html#logging)       |
 | **JSON-Body-Parsing**     | [yes](https://github.com/iron/body-parser) | yes    | yes                                                   | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/json)         |
-| **Sessions**              | [yes](https://github.com/iron/session)     | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?      | ?       | ?         |
-| **Cookies**               | [yes](https://github.com/iron/cookie)      | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?      | ?       | yes       |
-| **PostgreSQL middleware** | ?                                          | no^    | [yes](https://github.com/nickel-org/nickel-postgres)  | ?       | n/a     | ?       | ?        | ?      | ?       | yes         |
+| **Sessions**              | [yes](https://github.com/iron/session)     | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions)         |
+| **Cookies**               | [yes](https://github.com/iron/cookie)      | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions)       |
+| **PostgreSQL middleware** | ?                                          | no^    | [yes](https://github.com/nickel-org/nickel-postgres)  | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)        |
 | **SQLite middleware**     | ?                                          | no^    | [yes](https://github.com/flosse/nickel-sqlite)        | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)         |
-| **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | ?       | n/a     | ?       | ?        | ?      | ?       | yes         |
-| **MySQL middleware**      | ?                                          | no^    | [yes](https://github.com/zither/nickel-mysql)         | ?       | n/a     | ?       | ?        | ?      | ?       | yes         |
+| **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | ?       | n/a     | ?       | ?        | ?      | ?       | ?         |
+| **MySQL middleware**      | ?                                          | no^    | [yes](https://github.com/zither/nickel-mysql)         | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)        |
 
 (^ Planned in current roadmap)
 
