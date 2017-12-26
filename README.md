@@ -67,6 +67,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Blog posts
 
+- [Dose Response ported to WebAssembly!](https://aimlesslygoingforward.com/blog/2017/12/25/dose-response-ported-to-webassembly/)
 - [Rust and the case for WebAssembly in 2018](https://mgattozzi.com/rust-wasm)
 - [wasm32-unknown-unknown landed & enabled](https://www.hellorust.com/news/native-wasm-target.html)
 - [How to Deploy a Rocket Application to Heroku](http://www.duelinmarkers.com/2017/10/21/how-to-deploy-a-rocket-application-to-heroku.html)
