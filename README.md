@@ -214,14 +214,14 @@ To build web clients with Rust, you can choose between these libraries:
 ### Websocket Libraries
 
 |        Name        | websocket | ws-rs | twist            | tungstenite      | tk-http          | actix-web
-| ------------------ | --------- | ----- | ---------------- | ---------------- | ---------------- | ---------- |
+| ------------------ | --------- | ----- | ---------------- | ---------------- | ---------------- | ---------------- |
 | **License**        | MIT       | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 |
-| **Github Stars**   | 0.4k      | 0.4k  | 0k               | 0k               | 0.1k             | 0k         |
-| **Contributors**   | 30        | 20    | 2                | 7                | 5                | 1          |
-| **Server**         | yes       | yes   | yes              | yes              | yes              | yes        |
-| **Client**         | yes       | yes   | yes              | yes              | yes              | no         |
-| **Base framework** | - / tokio | mio   | tokio            | - / tokio        | tokio            | tokio      |
-| **Async**          | no / yes  | yes   | yes              | no / yes         | yes              | yes        |
+| **Github Stars**   | 0.4k      | 0.5k  | 0k               | 0.1k             | 0.1k             | 0.1k             |
+| **Contributors**   | 31        | 25    | 2                | 8                | 5                | 1                |
+| **Server**         | yes       | yes   | yes              | yes              | yes              | yes              |
+| **Client**         | yes       | yes   | yes              | yes              | yes              | no               |
+| **Base framework** | - / tokio | mio   | tokio            | - / tokio        | tokio            | tokio            |
+| **Async**          | no / yes  | yes   | yes              | no / yes         | yes              | yes              |
 
 
 ## Examples
