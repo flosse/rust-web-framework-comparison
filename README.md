@@ -133,6 +133,7 @@ To build web clients with Rust, you can choose between these libraries:
 - [rust-web-example](https://github.com/DavidBM/rust-webserver-example-with-iron-diesel-r2d2-serde) - Iron + Diesel (r2d2) + Serde
 - [websocket chat](https://github.com/actix/actix-web/tree/master/examples/websocket-chat) - Actix: Browser Websocket + tcp chat
 - [diesel](https://github.com/actix/actix-web/tree/master/examples/diesel) - Actix + Diesel
+- [json](https://github.com/actix/actix-web/tree/master/examples/json) - Actix + serde\_json or json\_rust
 
 ### Real-world web projects using Rust
 
@@ -171,7 +172,7 @@ To build web clients with Rust, you can choose between these libraries:
 |        Name        | iron  | gotham           |      rocket      | nickel | rustful | rustless | conduit |  rouille   | ease  | jsonrpc |    pencil    | sappers | boron |     susanoo      |     shio         |    actix-web     |
 | ------------------ | ----- | ---------------- | ---------------- | ------ | ------- | -------- | ------- | ---------- | ----- | ------- | ------------ | ------- | ----- | ---------------- | ---------------- | ---------------- |
 | **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT   | CC0-1.0 | BSD-3-Clause | MIT     | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0       |
-| **Github Stars**   | 4.4k  | 0.3k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.8k         | 0.4k    | 0k    | 0k               | 0.1k             | 0k               |
+| **Github Stars**   | 4.4k  | 0.3k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.8k         | 0.4k    | 0k    | 0k               | 0.1k             | 0.1k               |
 | **Contributors**   | 67    | 5                | 28               | 49     | 11      | 11       | 5       | 4          | 2     | 2       | 4            | 1       | 2     | 1                | 3                | 1                |
 | **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes          | yes     | yes   | yes              | yes              | yes              |
 | **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no           | no      | no    | no               | no               | no               |
@@ -199,14 +200,14 @@ To build web clients with Rust, you can choose between these libraries:
 |           Name            |                    iron                    | gotham |                        nickel                         | conduit | rouille | rustful | rustless | pencil | sappers | actix-web |
 | ------------------------- | ------------------------------------------ | ------ | ----------------------------------------------------- | ------- | ------- | ------- | -------- | ------ | ------- | --------- |
 | **Static File Serving**   | [yes](https://github.com/iron/staticfile)  | no^    | yes                                                   | yes     | n/a     | ?       | ?        | yes    | ?       | [yes](https://actix.github.io/actix-web/guide/qs_12.html)       |
-| **Mounting**              | [yes](https://github.com/iron/mount)       | yes    | yes                                                   | ?       | n/a     | ?       | ?        | ?      | ?       | ?         |
+| **Mounting**              | [yes](https://github.com/iron/mount)       | yes    | yes                                                   | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://actix.github.io/actix-web/guide/qs_3.html#application)         |
 | **Logging**               | [yes](https://github.com/iron/logger)      | yes    | no                                                    | ?       | n/a     | ?       | ?        | yes    | ?       | [yes](https://actix.github.io/actix-web/guide/qs_10.html#logging)       |
 | **JSON-Body-Parsing**     | [yes](https://github.com/iron/body-parser) | yes    | yes                                                   | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/json)         |
 | **Sessions**              | [yes](https://github.com/iron/session)     | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions)         |
 | **Cookies**               | [yes](https://github.com/iron/cookie)      | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions)       |
 | **PostgreSQL middleware** | ?                                          | no^    | [yes](https://github.com/nickel-org/nickel-postgres)  | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)        |
 | **SQLite middleware**     | ?                                          | no^    | [yes](https://github.com/flosse/nickel-sqlite)        | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)         |
-| **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | ?       | n/a     | ?       | ?        | ?      | ?       | ?         |
+| **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-redis)         |
 | **MySQL middleware**      | ?                                          | no^    | [yes](https://github.com/zither/nickel-mysql)         | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)        |
 
 (^ Planned in current roadmap)
