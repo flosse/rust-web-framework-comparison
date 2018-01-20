@@ -146,6 +146,8 @@ To build web clients with Rust, you can choose between these libraries:
 - [openfairdb](https://github.com/flosse/openfairdb) - Rocket and Neo4j (r2d2)
 - [ruma](https://github.com/ruma/ruma) - Iron and Posgres (diesel + r2d2)
 - [html2pdf](https://github.com/rap2hpoutre/htmltopdf) - Iron
+- [Kaizen 改善日本語 Japanese](https://kaizenjapanese.com) - Hyper
+
 
 ### JS & [asm.js](http://asmjs.org/) & [WASM](http://webassembly.org/)
 
