@@ -21,6 +21,7 @@ There are several interesting frameworks to build web applications with Rust:
 - **susanoo**     (-                                                        / [repository](https://github.com/ubnt-intrepid/susanoo/)   / - )
 - **shio**        (-                                                        / [repository](https://github.com/mehcode/shio-rs)          / - )
 - **actix-web**   (-                                                        / [repository](https://github.com/actix/actix-web)          / [documentation](https://actix.github.io/actix-web/actix_web/))
+- **fanta**       (-                                                        / [repository](https://github.com/trezm/fanta)              / -)
 
 If you need a more low level control you can choose between these libraries:
 
@@ -61,7 +62,8 @@ To build web clients with Rust, you can choose between these libraries:
 - **horrorshow** (-                                                     / [repository](https://github.com/Stebalien/horrorshow-rs)  / [documentation](https://stebalien.github.io/horrorshow-rs/horrorshow/))
 - **maud**       ([homepage](https://lfairy.gitbooks.io/maud/content/)  / [repository](https://github.com/lfairy/maud)              / [documentation](https://lambda.xyz/maud/maud/))
 - **askama**     (-                                                     / [repository](https://github.com/djc/askama)               / - )
- - **stpl**      (-                                                     / [repository](https://github.com/dpc/stpl)                 / - )
+- **stpl**       (-                                                     / [repository](https://github.com/dpc/stpl)                 / - )
+- **ructe**      (-                                                     / [repository](https://github.com/kaj/ructe)                 / [documentation](https://docs.rs/ructe/) )
 
 ## Resources
 
