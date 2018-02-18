@@ -163,6 +163,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 #### Benchmark
 
+- [TechEmpower Web Framework Benchmarks](https://www.techempower.com/benchmarks/#section=data-r15&hw=ph&test=plaintext)
 - [benchmarks](https://github.com/fafhrd91/benchmarks) - Rust web frameworks benchmarks
 - [which_is_the_fastest](https://github.com/tbrand/which_is_the_fastest) - Measuring response times (routing times) for each framework (middleware). Each framework has to have two features; routing and parsing path parameters.
 
@@ -174,8 +175,8 @@ To build web clients with Rust, you can choose between these libraries:
 |        Name        | iron  | gotham           |      rocket      | nickel | rustful | rustless | conduit |  rouille   | ease  | jsonrpc |    pencil    | sappers | boron |     susanoo      |     shio         |    actix-web     |
 | ------------------ | ----- | ---------------- | ---------------- | ------ | ------- | -------- | ------- | ---------- | ----- | ------- | ------------ | ------- | ----- | ---------------- | ---------------- | ---------------- |
 | **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT   | CC0-1.0 | BSD-3-Clause | MIT     | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0       |
-| **Github Stars**   | 4.4k  | 0.3k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.8k         | 0.4k    | 0k    | 0k               | 0.1k             | 0.1k               |
-| **Contributors**   | 67    | 5                | 28               | 49     | 11      | 11       | 5       | 4          | 2     | 2       | 4            | 1       | 2     | 1                | 3                | 1                |
+| **Github Stars**   | 4.4k  | 0.3k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.8k         | 0.4k    | 0k    | 0k               | 0.1k             | 0.3k               |
+| **Contributors**   | 67    | 5                | 28               | 49     | 11      | 11       | 5       | 4          | 2     | 2       | 4            | 1       | 2     | 1                | 3                | 7                |
 | **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes          | yes     | yes   | yes              | yes              | yes              |
 | **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no           | no      | no    | no               | no               | no               |
 | **Base framework** | hyper | hyper            | hyper            | hyper  | hyper   | iron     | civet   | tiny-http  | hyper | hyper   | hyper        | hyper   | hyper | hyper            | hyper            | tokio            |
@@ -219,10 +220,10 @@ To build web clients with Rust, you can choose between these libraries:
 |        Name        | websocket | ws-rs | twist            | tungstenite      | tk-http          | actix-web
 | ------------------ | --------- | ----- | ---------------- | ---------------- | ---------------- | ---------------- |
 | **License**        | MIT       | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 |
-| **Github Stars**   | 0.4k      | 0.5k  | 0k               | 0.1k             | 0.1k             | 0.1k             |
-| **Contributors**   | 31        | 25    | 2                | 8                | 5                | 1                |
+| **Github Stars**   | 0.4k      | 0.5k  | 0k               | 0.1k             | 0.1k             | 0.3k             |
+| **Contributors**   | 31        | 25    | 2                | 8                | 5                | 7                |
 | **Server**         | yes       | yes   | yes              | yes              | yes              | yes              |
-| **Client**         | yes       | yes   | yes              | yes              | yes              | no               |
+| **Client**         | yes       | yes   | yes              | yes              | yes              | yes              |
 | **Base framework** | - / tokio | mio   | tokio            | - / tokio        | tokio            | tokio            |
 | **Async**          | no / yes  | yes   | yes              | no / yes         | yes              | yes              |
 
