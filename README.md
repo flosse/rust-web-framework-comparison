@@ -6,8 +6,9 @@ A comparison of some web frameworks written in [Rust](https://www.rust-lang.org)
 
 There are several interesting frameworks to build web applications with Rust:
 
+- **actix-web**   (-                                                        / [repository](https://github.com/actix/actix-web)          / [api docs](https://actix.github.io/actix-web/actix_web/) / [user guide](https://actix.github.io/actix-web/guide/))
 - **gotham**      ([homepage](http://gotham.rs/)                            / [repository](https://github.com/gotham-rs/gotham/)        / [documentation](https://book.gotham.rs/))
-- **iron**        ([homepage](http://ironframework.io/)                     / [repository](https://github.com/iron/iron/)               / [documentation](http://ironframework.io/doc/iron/))
+- **iron**        ([homepage](http://ironframework.io/)                     / [repository](https://github.com/iron/iron/)               / [documentation](http://ironframework.io/doc/iron/)) - deprecated
 - **rocket**      ([homepage](https://rocket.rs/)                           / [repository](https://github.com/SergioBenitez/rocket)     / [documentation](https://rocket.rs/guide/))
 - **nickel**      ([homepage](http://nickel-org.github.io/)                            / [repository](https://github.com/nickel-org/nickel.rs/)    / [documentation](http://nickel-org.github.io/nickel.rs))
 - **rustful**     ( -                                                       / [repository](https://github.com/Ogeon/rustful)            / [documentation](http://ogeon.github.io/docs/rustful/master/rustful/))
@@ -20,7 +21,6 @@ There are several interesting frameworks to build web applications with Rust:
 - **cargonaouts** ([homepage](https://cargonauts-rs.github.io/cargonauts/)  / [repository](https://github.com/cargonauts-rs/cargonauts) / - )
 - **susanoo**     (-                                                        / [repository](https://github.com/ubnt-intrepid/susanoo/)   / - )
 - **shio**        (-                                                        / [repository](https://github.com/mehcode/shio-rs)          / - )
-- **actix-web**   (-                                                        / [repository](https://github.com/actix/actix-web)          / [documentation](https://actix.github.io/actix-web/actix_web/))
 - **fanta**       (-                                                        / [repository](https://github.com/trezm/fanta)              / -)
 
 If you need a more low level control you can choose between these libraries:
@@ -38,6 +38,7 @@ If you need a more low level control you can choose between these libraries:
 
 To build web clients with Rust, you can choose between these libraries:
 
+- **actix-web**   (-                                                        / [repository](https://github.com/actix/actix-web)          / [api docs](https://actix.github.io/actix-web/actix_web/client/index.html))
 - **reqwest** (-                            / [repository](https://github.com/seanmonstar/reqwest)     / [documentation](https://docs.rs/reqwest))
 - **hyper**   ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper/hyper/))
 - **ease**    (-                            / [repository](https://github.com/SimonPersson/ease)       / [documentation](http://simonpersson.github.io/ease/))
@@ -178,7 +179,7 @@ To build web clients with Rust, you can choose between these libraries:
 | **Github Stars**   | 4.4k  | 0.3k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.8k         | 0.4k    | 0k    | 0k               | 0.1k             | 0.3k               |
 | **Contributors**   | 67    | 5                | 28               | 49     | 11      | 11       | 5       | 4          | 2     | 2       | 4            | 1       | 2     | 1                | 3                | 7                |
 | **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes          | yes     | yes   | yes              | yes              | yes              |
-| **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no           | no      | no    | no               | no               | no               |
+| **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no           | no      | no    | no               | no               | yes              |
 | **Base framework** | hyper | hyper            | hyper            | hyper  | hyper   | iron     | civet   | tiny-http  | hyper | hyper   | hyper        | hyper   | hyper | hyper            | hyper            | tokio            |
 | **HTTPS support**  | yes   | yes              |                  | no     | yes     | ?        | ?       | ?          | -     | -       | ?            | ?       | no    |                  |                  | yes              |
 | **HTTP/2 support** | ?     | no               |                  | ?      | ?       | ?        | ?       | ?          | ?     | ?       | ?            | ?       | no    |                  |                  | yes              |
