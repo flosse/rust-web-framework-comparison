@@ -1,9 +1,0 @@
-[package]
-name = "gotham-examples"
-version = "0.1.0"
-
-[dependencies]
-gotham = "0.1"
-hyper = "0.11"
-futures = "~0.1.11"
-mime = "0.3"
