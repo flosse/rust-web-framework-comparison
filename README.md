@@ -6,7 +6,7 @@ A comparison of some web frameworks written in [Rust](https://www.rust-lang.org)
 
 There are several interesting frameworks to build web applications with Rust:
 
-- **actix-web**   (-                                                        / [repository](https://github.com/actix/actix-web)          / [api docs](https://actix.github.io/actix-web/actix_web/) / [user guide](https://actix.github.io/actix-web/guide/))
+- **actix-web**   (-                                                        / [repository](https://github.com/actix/actix-web)          / [api docs](https://actix.github.io/actix-web/actix_web/) / [user guide](https://actix.rs/book/actix-web/))
 - **gotham**      ([homepage](http://gotham.rs/)                            / [repository](https://github.com/gotham-rs/gotham/)        / [documentation](https://docs.rs/gotham/) / [examples](https://github.com/gotham-rs/gotham/tree/master/examples))
 - **iron**        ([homepage](http://ironframework.io/)                     / [repository](https://github.com/iron/iron/)               / [documentation](http://ironframework.io/doc/iron/)) - deprecated
 - **rocket**      ([homepage](https://rocket.rs/)                           / [repository](https://github.com/SergioBenitez/rocket)     / [documentation](https://rocket.rs/guide/))
