@@ -70,6 +70,13 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Blog posts
 
+#### 2018
+
+- [Migrating to Actix Web from Rocket for Stability](https://nbsoftsolutions.com/blog/migrating-to-actix-web-from-rocket-for-stability)
+- [Creating a Rusty Rocket fuelled with Diesel](https://lankydanblog.com/2018/05/20/creating-a-rusty-rocket-fuelled-with-diesel/)
+
+#### Until 2017
+
 - [Dose Response ported to WebAssembly!](https://aimlesslygoingforward.com/blog/2017/12/25/dose-response-ported-to-webassembly/)
 - [Rust and the case for WebAssembly in 2018](https://mgattozzi.com/rust-wasm)
 - [wasm32-unknown-unknown landed & enabled](https://www.hellorust.com/news/native-wasm-target.html)
