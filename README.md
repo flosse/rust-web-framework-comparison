@@ -184,7 +184,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 |        Name        | iron  | gotham           |      rocket      | nickel | rustful | rustless | conduit |  rouille   | ease  | jsonrpc |    pencil    | sappers | boron |     susanoo      |     shio         |    actix-web     | Thruster
 | ------------------ | ----- | ---------------- | ---------------- | ------ | ------- | -------- | ------- | ---------- | ----- | ------- | ------------ | ------- | ----- | ---------------- | ---------------- | ---------------- | ---------
-| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT   | CC0-1.0 | BSD-3-Clause | MIT     | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 | ?
+| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT   | CC0-1.0 | BSD-3-Clause | MIT     | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT
 | **Github Stars**   | 4.4k  | 0.7k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.8k         | 0.4k    | 0k    | 0k               | 0.1k             | 0.3k             | 0k
 | **Contributors**   | 67    | 19               | 28               | 49     | 11      | 11       | 5       | 4          | 2     | 2       | 4            | 1       | 2     | 1                | 3                | 7                | 4
 | **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes          | yes     | yes   | yes              | yes              | yes              | yes
