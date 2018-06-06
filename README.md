@@ -19,7 +19,6 @@ There are several interesting frameworks to build web applications with Rust:
 - **sappers**     ( -                                                       / [repository](https://github.com/sappworks/sapper)         / - )
 - **boron**       ( -                                                       / [repository](https://github.com/troposphere/boron)        / - )
 - **cargonaouts** ([homepage](https://cargonauts-rs.github.io/cargonauts/)  / [repository](https://github.com/cargonauts-rs/cargonauts) / - )
-- **susanoo**     (-                                                        / [repository](https://github.com/ubnt-intrepid/susanoo/)   / - )
 - **shio**        (-                                                        / [repository](https://github.com/mehcode/shio-rs)          / - )
 - **fanta**       (-                                                        / [repository](https://github.com/trezm/fanta)              / - )
 - **Thruster**    (-                                                        / [repository](https://github.com/trezm/Thruster)           / - )
@@ -184,17 +183,17 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### High-Level Frameworks
 
-|        Name        | iron  | gotham           |      rocket      | nickel | rustful | rustless | conduit |  rouille   | ease  | jsonrpc |    pencil    | sappers | boron |     susanoo      |     shio         |    actix-web     | Thruster
-| ------------------ | ----- | ---------------- | ---------------- | ------ | ------- | -------- | ------- | ---------- | ----- | ------- | ------------ | ------- | ----- | ---------------- | ---------------- | ---------------- | ---------
-| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT   | CC0-1.0 | BSD-3-Clause | MIT     | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT
-| **Github Stars**   | 4.4k  | 0.7k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.8k         | 0.4k    | 0k    | 0k               | 0.1k             | 0.3k             | 0k
-| **Contributors**   | 67    | 19               | 28               | 49     | 11      | 11       | 5       | 4          | 2     | 2       | 4            | 1       | 2     | 1                | 3                | 7                | 4
-| **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes          | yes     | yes   | yes              | yes              | yes              | yes
-| **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no           | no      | no    | no               | no               | yes              | no
-| **Base framework** | hyper | hyper            | hyper            | hyper  | hyper   | iron     | civet   | tiny-http  | hyper | hyper   | hyper        | hyper   | hyper | hyper            | hyper            | tokio            | tokio
-| **HTTPS support**  | yes   | yes              |                  | no     | yes     | ?        | ?       | ?          | -     | -       | ?            | ?       | no    |                  |                  | yes              |
-| **HTTP/2 support** | ?     | no               |                  | ?      | ?       | ?        | ?       | ?          | ?     | ?       | ?            | ?       | no    |                  |                  | yes              |
-| **Async**          |       | yes              | no               |        |         |          |         |            |       |         |              |         |       | yes              | yes              | yes              | yes
+|        Name        | iron  | gotham           |      rocket      | nickel | rustful | rustless | conduit |  rouille   | ease  | jsonrpc |    pencil    | sappers | boron |     shio         |    actix-web     | Thruster
+| ------------------ | ----- | ---------------- | ---------------- | ------ | ------- | -------- | ------- | ---------- | ----- | ------- | ------------ | ------- | ----- | ---------------- | ---------------- | ---------
+| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT   | CC0-1.0 | BSD-3-Clause | MIT     | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT
+| **Github Stars**   | 4.4k  | 0.7k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.8k         | 0.4k    | 0k    | 0.1k             | 0.3k             | 0k
+| **Contributors**   | 67    | 19               | 28               | 49     | 11      | 11       | 5       | 4          | 2     | 2       | 4            | 1       | 2     | 3                | 7                | 4
+| **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes          | yes     | yes   | yes              | yes              | yes
+| **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no           | no      | no    | no               | yes              | no
+| **Base framework** | hyper | hyper            | hyper            | hyper  | hyper   | iron     | civet   | tiny-http  | hyper | hyper   | hyper        | hyper   | hyper | hyper            | tokio            | tokio
+| **HTTPS support**  | yes   | yes              |                  | no     | yes     | ?        | ?       | ?          | -     | -       | ?            | ?       | no    |                  | yes              |
+| **HTTP/2 support** | ?     | no               |                  | ?      | ?       | ?        | ?       | ?          | ?     | ?       | ?            | ?       | no    |                  | yes              |
+| **Async**          |       | yes              | no               |        |         |          |         |            |       |         |              |         |       | yes              | yes              | yes
 
 ### Low-Level Frameworks
 
