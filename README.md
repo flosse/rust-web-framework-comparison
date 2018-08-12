@@ -6,7 +6,7 @@ A comparison of some web frameworks written in [Rust](https://www.rust-lang.org)
 
 There are several interesting frameworks to build web applications with Rust:
 
-- **actix-web**   (-                                                        / [repository](https://github.com/actix/actix-web)          / [api docs](https://actix.github.io/actix-web/actix_web/) / [user guide](https://actix.rs/book/actix-web/))
+- **actix-web**   ([homepage](https://actix.rs/)                            / [repository](https://github.com/actix/actix-web)          / [api docs](https://actix.github.io/actix-web/actix_web/) / [user guide](https://actix.rs/book/actix-web/))
 - **gotham**      ([homepage](http://gotham.rs/)                            / [repository](https://github.com/gotham-rs/gotham/)        / [documentation](https://docs.rs/gotham/) / [examples](https://github.com/gotham-rs/gotham/tree/master/examples))
 - **iron**        ([homepage](http://ironframework.io/)                     / [repository](https://github.com/iron/iron/)               / [documentation](http://ironframework.io/doc/iron/)) - deprecated
 - **rocket**      ([homepage](https://rocket.rs/)                           / [repository](https://github.com/SergioBenitez/rocket)     / [documentation](https://rocket.rs/guide/))
@@ -38,21 +38,21 @@ If you need a more low level control you can choose between these libraries:
 
 To build web clients with Rust, you can choose between these libraries:
 
-- **actix-web**   (-                                                        / [repository](https://github.com/actix/actix-web)          / [api docs](https://actix.github.io/actix-web/actix_web/client/index.html))
-- **reqwest** (-                            / [repository](https://github.com/seanmonstar/reqwest)     / [documentation](https://docs.rs/reqwest))
-- **hyper**   ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper/hyper/))
-- **ease**    (-                            / [repository](https://github.com/SimonPersson/ease)       / [documentation](http://simonpersson.github.io/ease/))
-- **jsonrpc** (-                            / [repository](https://github.com/apoelstra/rust-jsonrpc/) / [documentation](https://www.wpsoftware.net/rustdoc/jsonrpc/))
+- **actix-web**  ([homepage](https://actix.rs/)                            / [repository](https://github.com/actix/actix-web)          / [api docs](https://actix.github.io/actix-web/actix_web/client/index.html))
+- **reqwest**    (-                                                        / [repository](https://github.com/seanmonstar/reqwest)     / [documentation](https://docs.rs/reqwest))
+- **hyper**      ([homepage](http://hyper.rs/)                             / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper/hyper/))
+- **ease**       (-                                                        / [repository](https://github.com/SimonPersson/ease)       / [documentation](http://simonpersson.github.io/ease/))
+- **jsonrpc**    (-                                                        / [repository](https://github.com/apoelstra/rust-jsonrpc/) / [documentation](https://www.wpsoftware.net/rustdoc/jsonrpc/))
 
 ## Supplemental libraries
 
 ### Websocket
 
-- **websocket**   ([homepage](http://cyderize.github.io/rust-websocket/)  / [repository](https://github.com/cyderize/rust-websocket)  / [documentation](http://cyderize.github.io/rust-websocket/doc/websocket/))
-- **ws-rs**       ([homepage](https://ws-rs.org)                          / [repository](https://github.com/housleyjk/ws-rs)          / [documentation](https://ws-rs.org/docs))
-- **tungstenite** (-                                                      / [repository](https://github.com/snapview/tungstenite-rs)  / [documentation](https://docs.rs/crate/tungstenite/))
-- **tk-http**     ( -                                                     / [repository](https://github.com/swindon-rs/tk-http)       / - )
-- **actix-web**   ( -                                                     / [repository](https://github.com/actix/actix-web)          / [documentation](https://actix.github.io/actix-web/actix_web/))
+- **websocket**   ([homepage](http://cyderize.github.io/rust-websocket/)   / [repository](https://github.com/cyderize/rust-websocket)  / [documentation](http://cyderize.github.io/rust-websocket/doc/websocket/))
+- **ws-rs**       ([homepage](https://ws-rs.org)                           / [repository](https://github.com/housleyjk/ws-rs)          / [documentation](https://ws-rs.org/docs))
+- **tungstenite** (-                                                       / [repository](https://github.com/snapview/tungstenite-rs)  / [documentation](https://docs.rs/crate/tungstenite/))
+- **tk-http**     ( -                                                      / [repository](https://github.com/swindon-rs/tk-http)       / - )
+- **actix-web**   ([homepage](https://actix.rs/)                           / [repository](https://github.com/actix/actix-web)          / [documentation](https://actix.github.io/actix-web/actix_web/))
 
 ### Templating
 
