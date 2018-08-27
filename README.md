@@ -43,7 +43,13 @@ To build web clients with Rust, you can choose between these libraries:
 - **hyper**      ([homepage](http://hyper.rs/)                             / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper/hyper/))
 - **ease**       (-                                                        / [repository](https://github.com/SimonPersson/ease)       / [documentation](http://simonpersson.github.io/ease/))
 - **jsonrpc**    (-                                                        / [repository](https://github.com/apoelstra/rust-jsonrpc/) / [documentation](https://www.wpsoftware.net/rustdoc/jsonrpc/))
+
+## Frontend frameworks (WASM)
+
+Since WASM support is available in most browsers we can use Rust to build webb applications :)
+
 - **yew** ( - / [repository](https://github.com/DenisKolodin/yew) / - )
+
 
 ## Supplemental libraries
 
