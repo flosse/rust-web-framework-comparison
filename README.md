@@ -46,10 +46,11 @@ To build web clients with Rust, you can choose between these libraries:
 
 ## Frontend frameworks (WASM)
 
-Since WASM support is available in most browsers we can use Rust to build webb applications :)
+Since [WASM](http://webassembly.org/) support is available in most browsers we can use Rust to build web applications :)
 
-- **yew** ( - / [repository](https://github.com/DenisKolodin/yew) / - )
-
+- **stdweb** ( - / [stdweb](https://github.com/koute/stdweb) / - ) A standard library for the client-side Web
+- **yew** ( - / [repository](https://github.com/DenisKolodin/yew) / - ) - A frontend framework inspired by Elm and React (based on stdweb)
+- **ruukh** ( - / [repository](https://github.com/csharad/ruukh) / - ) - A frontend framework inspired by Vue and React
 
 ## Supplemental libraries
 
@@ -79,6 +80,7 @@ Since WASM support is available in most browsers we can use Rust to build webb a
 
 #### 2018
 
+- [Introducing Ruukh Framework](https://sharadchand.com/2018/10/03/ruukh-framework.html)
 - [Baby’s First Rust+WebAssembly module: Say hi to JSConf EU!](https://hacks.mozilla.org/2018/06/babys-first-rustwebassembly-module-say-hi-to-jsconf-eu/)
 - [Mix Rust Code (WebAssembly) with Vue Component](https://busy.org/@drsensor/mix-rust-code-webassembly-with-vue-component-basic)
 - [Wicked Fast Web Servers in Rust](https://medium.com/@MertzAlertz/wicked-fast-web-servers-in-rust-4947688426bc)
@@ -169,8 +171,6 @@ Since WASM support is available in most browsers we can use Rust to build webb a
 
 ### JS & [asm.js](http://asmjs.org/) & [WASM](http://webassembly.org/)
 
-- [stdweb](https://github.com/koute/stdweb) - A standard library for the client-side Web
-- [webplatform](https://github.com/tcr/rust-webplatform) - a library for use with emscripten to access the DOM.
 - [hellorust.com](https://www.hellorust.com) - a website with news, resources and demos
 
 #### Examples
