@@ -80,6 +80,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 #### 2018
 
+- [Lessons learned on writing web applications completely in Rust](https://medium.com/@saschagrunert/lessons-learned-on-writing-web-applications-completely-in-rust-2080d0990287)
 - [Introducing Ruukh Framework](https://sharadchand.com/2018/10/03/ruukh-framework.html)
 - [Baby’s First Rust+WebAssembly module: Say hi to JSConf EU!](https://hacks.mozilla.org/2018/06/babys-first-rustwebassembly-module-say-hi-to-jsconf-eu/)
 - [Mix Rust Code (WebAssembly) with Vue Component](https://busy.org/@drsensor/mix-rust-code-webassembly-with-vue-component-basic)
