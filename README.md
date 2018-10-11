@@ -20,7 +20,6 @@ There are several interesting frameworks to build web applications with Rust:
 - **boron**       ( -                                                       / [repository](https://github.com/troposphere/boron)        / - )
 - **cargonaouts** ([homepage](https://cargonauts-rs.github.io/cargonauts/)  / [repository](https://github.com/cargonauts-rs/cargonauts) / - )
 - **shio**        (-                                                        / [repository](https://github.com/mehcode/shio-rs)          / - )
-- **fanta**       (-                                                        / [repository](https://github.com/trezm/fanta)              / - )
 - **Thruster**    (-                                                        / [repository](https://github.com/trezm/Thruster)           / - )
 
 If you need a more low level control you can choose between these libraries:
