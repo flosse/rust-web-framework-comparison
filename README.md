@@ -15,7 +15,6 @@ There are several interesting frameworks to build web applications with Rust:
 - **rustless**    (-                                                        / [repository](https://github.com/rustless/rustless)        / - )
 - **conduit**     ( -                                                       / [repository](https://github.com/conduit-rust/conduit)     / - )
 - **rouille**     ( -                                                       / [repository](https://github.com/tomaka/rouille)           / [documentation](http://tomaka.github.io/rouille/rouille/index.html))
-- **pencil**      ( -                                                       / [repository](https://github.com/fengsp/pencil)            / [documentation](http://fengsp.github.io/pencil/))
 - **sappers**     ( -                                                       / [repository](https://github.com/sappworks/sapper)         / - )
 - **boron**       ( -                                                       / [repository](https://github.com/troposphere/boron)        / - )
 - **cargonaouts** ([homepage](https://cargonauts-rs.github.io/cargonauts/)  / [repository](https://github.com/cargonauts-rs/cargonauts) / - )
@@ -132,7 +131,6 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 - [Iron on uWSGI](http://i.shibe.ml/blog/?id=iron_on_uwsgi)
 - [Deploying a Rust App to Google App Engine](http://blog.jecrooks.com/posts/rust-on-appengine.html)
 - [async hyper](http://seanmonstar.com/post/141495445652/async-hyper)
-- [Introducing Pencil: A Microframework Inspired By Flask For Rust](https://fengsp.github.io/blog/2016/3/introducing-pencil/)
 - [Trying Rust for web services](https://blog.wearewizards.io/trying-rust-for-web-services)
 - [Are we web yet?](http://www.arewewebyet.org)
 - [Reimplementing ashurbanipal.web in Rust](http://maniagnosis.crsr.net/2015/07/reimplementing-ashurbanipalweb-in-rust.html)
@@ -190,17 +188,17 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 ### High-Level Frameworks
 
-|        Name        | iron  | gotham           |      rocket      | nickel | rustful | rustless | conduit |  rouille   | ease  | jsonrpc |    pencil    | sappers | boron |     shio         |    actix-web     | Thruster
-| ------------------ | ----- | ---------------- | ---------------- | ------ | ------- | -------- | ------- | ---------- | ----- | ------- | ------------ | ------- | ----- | ---------------- | ---------------- | ---------
-| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT   | CC0-1.0 | BSD-3-Clause | MIT     | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT
-| **Github Stars**   | 4.4k  | 0.7k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.8k         | 0.4k    | 0k    | 0.1k             | 0.3k             | 0k
-| **Contributors**   | 67    | 19               | 28               | 49     | 11      | 11       | 5       | 4          | 2     | 2       | 4            | 1       | 2     | 3                | 7                | 4
-| **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes          | yes     | yes   | yes              | yes              | yes
-| **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no           | no      | no    | no               | yes              | no
-| **Base framework** | hyper | hyper            | hyper            | hyper  | hyper   | iron     | civet   | tiny-http  | hyper | hyper   | hyper        | hyper   | hyper | hyper            | tokio            | tokio
-| **HTTPS support**  | yes   | yes              |                  | no     | yes     | ?        | ?       | ?          | -     | -       | ?            | ?       | no    |                  | yes              |
-| **HTTP/2 support** | ?     | no               |                  | ?      | ?       | ?        | ?       | ?          | ?     | ?       | ?            | ?       | no    |                  | yes              |
-| **Async**          |       | yes              | no               |        |         |          |         |            |       |         |              |         |       | yes              | yes              | yes
+|        Name        | iron  | gotham           |      rocket      | nickel | rustful | rustless | conduit |  rouille   | ease  | jsonrpc | sappers | boron |     shio         |    actix-web     | Thruster
+| ------------------ | ----- | ---------------- | ---------------- | ------ | ------- | -------- | ------- | ---------- | ----- | ------- | ------- | ----- | ---------------- | ---------------- | ---------
+| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT   | CC0-1.0 | MIT     | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT
+| **Github Stars**   | 4.4k  | 0.7k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.4k    | 0k    | 0.1k             | 0.3k             | 0k
+| **Contributors**   | 67    | 19               | 28               | 49     | 11      | 11       | 5       | 4          | 2     | 2       | 1       | 2     | 3                | 7                | 4
+| **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes     | yes   | yes              | yes              | yes
+| **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no      | no    | no               | yes              | no
+| **Base framework** | hyper | hyper            | hyper            | hyper  | hyper   | iron     | civet   | tiny-http  | hyper | hyper   | hyper   | hyper | hyper            | tokio            | tokio
+| **HTTPS support**  | yes   | yes              |                  | no     | yes     | ?        | ?       | ?          | -     | -       | ?       | no    |                  | yes              |
+| **HTTP/2 support** | ?     | no               |                  | ?      | ?       | ?        | ?       | ?          | ?     | ?       | ?       | no    |                  | yes              |
+| **Async**          |       | yes              | no               |        |         |          |         |            |       |         |         |       | yes              | yes              | yes
 
 ### Low-Level Frameworks
 
@@ -218,18 +216,18 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 ### Middleware & Plugins
 
-|           Name            |                    iron                    | gotham |                        nickel                         | conduit | rouille | rustful | rustless | pencil | sappers | actix-web |
-| ------------------------- | ------------------------------------------ | ------ | ----------------------------------------------------- | ------- | ------- | ------- | -------- | ------ | ------- | --------- |
-| **Static File Serving**   | [yes](https://github.com/iron/staticfile)  | no^    | yes                                                   | yes     | n/a     | ?       | ?        | yes    | ?       | [yes](https://actix.github.io/actix-web/guide/qs_12.html)       |
-| **Mounting**              | [yes](https://github.com/iron/mount)       | yes    | yes                                                   | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://actix.github.io/actix-web/guide/qs_3.html#application)         |
-| **Logging**               | [yes](https://github.com/iron/logger)      | yes    | no                                                    | ?       | n/a     | ?       | ?        | yes    | ?       | [yes](https://actix.github.io/actix-web/guide/qs_10.html#logging)       |
-| **JSON-Body-Parsing**     | [yes](https://github.com/iron/body-parser) | yes    | yes                                                   | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/json)         |
-| **Sessions**              | [yes](https://github.com/iron/session)     | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions)         |
-| **Cookies**               | [yes](https://github.com/iron/cookie)      | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions)       |
-| **PostgreSQL middleware** | ?                                          | no^    | [yes](https://github.com/nickel-org/nickel-postgres)  | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)        |
-| **SQLite middleware**     | ?                                          | no^    | [yes](https://github.com/flosse/nickel-sqlite)        | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)         |
-| **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-redis)         |
-| **MySQL middleware**      | ?                                          | no^    | [yes](https://github.com/zither/nickel-mysql)         | ?       | n/a     | ?       | ?        | ?      | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)        |
+|           Name            |                    iron                    | gotham |                        nickel                         | conduit | rouille | rustful | rustless | sappers | actix-web |
+| ------------------------- | ------------------------------------------ | ------ | ----------------------------------------------------- | ------- | ------- | ------- | -------- | ------- | --------- |
+| **Static File Serving**   | [yes](https://github.com/iron/staticfile)  | no^    | yes                                                   | yes     | n/a     | ?       | ?        | ?       | [yes](https://actix.github.io/actix-web/guide/qs_12.html)       |
+| **Mounting**              | [yes](https://github.com/iron/mount)       | yes    | yes                                                   | ?       | n/a     | ?       | ?        | ?       | [yes](https://actix.github.io/actix-web/guide/qs_3.html#application)         |
+| **Logging**               | [yes](https://github.com/iron/logger)      | yes    | no                                                    | ?       | n/a     | ?       | ?        | ?       | [yes](https://actix.github.io/actix-web/guide/qs_10.html#logging)       |
+| **JSON-Body-Parsing**     | [yes](https://github.com/iron/body-parser) | yes    | yes                                                   | ?       | n/a     | ?       | ?        | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/json)         |
+| **Sessions**              | [yes](https://github.com/iron/session)     | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?       | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions)         |
+| **Cookies**               | [yes](https://github.com/iron/cookie)      | yes    | ?                                                     | ?       | n/a     | ?       | ?        | ?       | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions)       |
+| **PostgreSQL middleware** | ?                                          | no^    | [yes](https://github.com/nickel-org/nickel-postgres)  | ?       | n/a     | ?       | ?        | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)        |
+| **SQLite middleware**     | ?                                          | no^    | [yes](https://github.com/flosse/nickel-sqlite)        | ?       | n/a     | ?       | ?        | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)         |
+| **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | ?       | n/a     | ?       | ?        | ?       | [yes](https://github.com/actix/actix-redis)         |
+| **MySQL middleware**      | ?                                          | no^    | [yes](https://github.com/zither/nickel-mysql)         | ?       | n/a     | ?       | ?        | ?       | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)        |
 
 (^ Planned in current roadmap)
 
