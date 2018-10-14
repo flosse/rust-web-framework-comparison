@@ -1,30 +1,23 @@
 extern crate hyper;
 
-use hyper::Get;
-use hyper::server::{Server, Request, Response};
-use hyper::uri::RequestUri::AbsolutePath;
+use hyper::rt::{self, Future};
+use hyper::service::service_fn_ok;
+use hyper::{Body, Method, Request, Response, Server, StatusCode};
 
-fn hello(req: Request, mut res: Response) {
-  match req.uri {
-    AbsolutePath(ref path) => match (&req.method, &path[..]) {
-      (&Get, "/") => {
-        res.send(b"Hello World!").unwrap();
-        return;
-      },
-      _ => {
-        *res.status_mut() = hyper::NotFound;
-        return;
-      }
-    },
-    _ => {
-      return;
-    }
-  };
+fn hello(req: Request<Body>) -> Response<Body>{
+match (req.method(), req.uri().path()) {
+            (&Method::GET, "/") => Response::new(Body::from("Hello World!")),
+            _ => Response::builder()
+                .status(StatusCode::NOT_FOUND)
+                .body(Body::empty())
+                .unwrap(),
+        }
 }
 
 fn main() {
-  Server::http("127.0.0.1:3000")
-    .unwrap()
-    .handle(hello)
-    .unwrap();
+    let server = Server::bind(&([127, 0, 0, 1], 3000).into())
+        .serve(|| service_fn_ok(hello))
+        .map_err(|e| eprintln!("server error: {}", e));
+
+    rt::run(server);
 }
