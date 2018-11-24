@@ -45,7 +45,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 Since [WASM](http://webassembly.org/) support is available in most browsers we can use Rust to build web applications :)
 
-- **stdweb** ( - / [stdweb](https://github.com/koute/stdweb) / - ) A standard library for the client-side Web
+- **stdweb** ( - / [repository](https://github.com/koute/stdweb) / - ) A standard library for the client-side Web
 - **yew** ( - / [repository](https://github.com/DenisKolodin/yew) / - ) - A frontend framework inspired by Elm and React (based on stdweb)
 - **ruukh** ( - / [repository](https://github.com/csharad/ruukh) / - ) - A frontend framework inspired by Vue and React
 
