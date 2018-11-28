@@ -48,6 +48,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 - **stdweb** ( - / [repository](https://github.com/koute/stdweb) / - ) A standard library for the client-side Web
 - **yew** ( - / [repository](https://github.com/DenisKolodin/yew) / - ) - A frontend framework inspired by Elm and React (based on stdweb)
 - **ruukh** ( - / [repository](https://github.com/csharad/ruukh) / - ) - A frontend framework inspired by Vue and React
+- **percy** ( [homepage](https://chinedufn.github.io/percy/) / [repository](https://github.com/chinedufn/percy) / - ) - A modular toolkit for building isomorphic web apps
 
 ## Supplemental libraries
 
