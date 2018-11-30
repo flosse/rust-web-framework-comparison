@@ -191,8 +191,8 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 |        Name        | iron  | gotham           |      rocket      | nickel | rustful | rustless | conduit |  rouille   | ease  | jsonrpc | sappers |     shio         |    actix-web     | Thruster
 | ------------------ | ----- | ---------------- | ---------------- | ------ | ------- | -------- | ------- | ---------- | ----- | ------- | ------- | ---------------- | ---------------- | ---------
 | **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT   | CC0-1.0 | MIT     | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT
-| **Github Stars**   | 4.4k  | 0.7k             | 2.7k             | 1.9k   | 0.8k    | 0.3k     | 0.1k    | 0.1k       | 0.1k  | 0k      | 0.4k    | 0.1k             | 0.3k             | 0k
-| **Contributors**   | 67    | 19               | 28               | 49     | 11      | 11       | 5       | 4          | 2     | 2       | 1       | 3                | 7                | 4
+| **Github Stars**   | 5.1k  | 1k               | 5.7k             | 2.2k   | 0.8k    | 0.5k     | 0.1k    | 0.3k       | 0k    | 0k      | 0k      | 0.2k             | 2.8              | 0.2k
+| **Contributors**   | 84    | 25               | 114              | 53     | 15      | 15       | 8       | 22         | 6     | 7       | 4       | 4                | 78               | 7
 | **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes     | yes              | yes              | yes
 | **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no      | no               | yes              | no
 | **Base framework** | hyper | hyper            | hyper            | hyper  | hyper   | iron     | civet   | tiny-http  | hyper | hyper   | hyper   | hyper            | tokio            | tokio
@@ -205,8 +205,8 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 |        Name        | civet  | hyper   | tiny-http  | solicit | kinglet | hydrogen | tk-http          | h2               |
 | ------------------ | ------ | ------- | ---------- | ------- | ------- | -------- | ---------------- | ---------------- |
 | **License**        | MIT    | MIT     | Apache 2.0 | MIT     | MIT     | MPL 2.0  | MIT / Apache 2.0 | MIT / Apache 2.0 |
-| **Github Stars**   | 0k     | 2.7k    | 0.2k       | 0.2k    | 0.1k    | 0.4k     | 0.1k             | 0.1k             |
-| **Contributors**   | 4      | 112     | 9          | 8       | 1       | 2        | 5                | 8                |
+| **Github Stars**   | 0k     | 4.1k    | 0.3k       | 0.3k    | 0k      | 0.3k     | 0.1k             | 0.5k             |
+| **Contributors**   | 4      | 191     | 16         | 8       | 1       | 2        | 5                | 22               |
 | **Server**         | yes    | yes     | yes        | yes     | yes     | yes      | yes              | yes              |
 | **Client**         | no     | yes     | ?          | yes     | no      | no       | yes              | yes              |
 | **HTTPS support**  |        | yes     | yes        | -       | -       | no       | yes              | no               |
