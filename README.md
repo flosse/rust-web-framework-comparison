@@ -50,6 +50,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 - **ruukh** ( - / [repository](https://github.com/csharad/ruukh) / - ) - A frontend framework inspired by Vue and React
 - **percy** ( [homepage](https://chinedufn.github.io/percy/) / [repository](https://github.com/chinedufn/percy) / - ) - A modular toolkit for building isomorphic web apps
 - **draco** ( - / [repository](https://github.com/utkarshkukreti/draco) / - ) - A frontend framework inpired by Redux and Elm
+- **willow** ( [homepage](http://sindrejohansen.no/willow/) - / [repository](https://github.com/sindreij/willow) / - ) - A frontend framework inspired by Elm
 
 ## Supplemental libraries
 
