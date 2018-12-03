@@ -71,7 +71,8 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 - **maud**       ([homepage](https://lfairy.gitbooks.io/maud/content/)  / [repository](https://github.com/lfairy/maud)              / [documentation](https://lambda.xyz/maud/maud/))
 - **askama**     (-                                                     / [repository](https://github.com/djc/askama)               / - )
 - **stpl**       (-                                                     / [repository](https://github.com/dpc/stpl)                 / - )
-- **ructe**      (-                                                     / [repository](https://github.com/kaj/ructe)                 / [documentation](https://docs.rs/ructe/) )
+- **ructe**      (-                                                     / [repository](https://github.com/kaj/ructe)                / [documentation](https://docs.rs/ructe/) )
+- **typed-html**      (-                                                     / [repository](https://github.com/bodil/typed-html)         / [documentation](https://docs.rs/typed-html) )
 
 ## Resources
 
