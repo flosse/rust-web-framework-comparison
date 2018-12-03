@@ -45,11 +45,12 @@ To build web clients with Rust, you can choose between these libraries:
 
 Since [WASM](http://webassembly.org/) support is available in most browsers we can use Rust to build web applications :)
 
-- **stdweb** ( - / [repository](https://github.com/koute/stdweb) / - ) A standard library for the client-side Web
-- **yew** ( - / [repository](https://github.com/DenisKolodin/yew) / - ) - A frontend framework inspired by Elm and React (based on stdweb)
-- **ruukh** ( - / [repository](https://github.com/csharad/ruukh) / - ) - A frontend framework inspired by Vue and React
+- **stdweb** ( - / [repository](https://github.com/koute/stdweb) / [documentation](https://docs.rs/stdweb/) ) A standard library for the client-side Web
+- **yew** ( - / [repository](https://github.com/DenisKolodin/yew) / [documentation](https://docs.rs/yew/) ) - A frontend framework inspired by Elm and React (based on stdweb)
+- **ruukh** ( - / [repository](https://github.com/csharad/ruukh) / [documentation](https://docs.rs/ruukh/) ) - A frontend framework inspired by Vue and React
 - **percy** ( [homepage](https://chinedufn.github.io/percy/) / [repository](https://github.com/chinedufn/percy) / - ) - A modular toolkit for building isomorphic web apps
-- **draco** ( - / [repository](https://github.com/utkarshkukreti/draco) / - ) - A frontend framework inpired by Redux and Elm
+- **draco** ( - / [repository](https://github.com/utkarshkukreti/draco) / [documentation](https://docs.rs/draco/) ) - A frontend framework inpired by Redux and Elm
+- **willow** ( [homepage](http://sindrejohansen.no/willow/) - / [repository](https://github.com/sindreij/willow) / - ) - A frontend framework inspired by Elm
 
 ## Supplemental libraries
 
