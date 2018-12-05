@@ -64,7 +64,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 ### Templating
 
-- **tera**       (-                                                     / [repository](https://github.com/Keats/tera)               / - )
+- **tera**       ([homepage](https://tera.netlify.com/)                 / [repository](https://github.com/Keats/tera)               / [documentation](https://docs.rs/tera/))
 - **mustache**   (-                                                     / [repository](https://github.com/nickel-org/rust-mustache) / [documentation](http://nickel-org.github.io/rust-mustache))
 - **liquid**     (-                                                     / [repository](https://github.com/cobalt-org/liquid-rust)   / - )
 - **handlebars** (-                                                     / [repository](https://github.com/sunng87/handlebars-rust)  / - )
