@@ -239,12 +239,14 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 ### Frontend Frameworks
 
-|        Name        | stdweb     | yew        | ruukh      | percy      | draco      | willow     |
-| ------------------ | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |
-| **License**        | Apache/MIT | Apache/MIT | MIT        | Apache/MIT | Apache/MIT | Apache/MIT |
-| **Github Stars**   | 2.2k       | 6.0k       | 0.1k       | 0.9k       | 0.1k       | 0.1k       |
-| **Contributors**   | 50         | 52         | 3          | 8          | 3          | 1          |
-| **Stable Rust**    | no         | no         | no         | no         | no         | no         |
+|        Name        | stdweb     | yew        | ruukh                  | percy                       | draco                         | willow                      |
+| ------------------ | ---------- | ---------- | ---------------------- | --------------------------- | ----------------------------- | --------------------------- |
+| **License**        | Apache/MIT | Apache/MIT | MIT                    | Apache/MIT                  | Apache/MIT                    | Apache/MIT                  |
+| **Github Stars**   | 2.2k       | 6.0k       | 0.1k                   | 0.9k                        | 0.1k                          | 0.1k                        |
+| **Contributors**   | 50         | 52         | 3                      | 8                           | 3                             | 1                           |
+| **Stable Rust**    | no         | no         | no                     | no                          | no                            | no                          |
+| **Base framework** | -          | stdweb     | wasm-bindgen/web-sys   | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys/web-sys   | wasm-bindgen/js-sys/web-sys |
+| **Virtual DOM**    | ?          | yes        | yes                    | yes                         | yes                           | ?                           |
 
 ### Middleware & Plugins
 
