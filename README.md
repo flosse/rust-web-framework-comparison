@@ -2,6 +2,25 @@
 
 A comparison of some web frameworks written in [Rust](https://www.rust-lang.org).
 
+## Table of Contents
+
+- [Server frameworks](#server-frameworks)
+- [Client frameworks](#client-frameworks)
+- [Frontend frameworks (WASM)](#frontend-frameworks-wasm)
+- [Supplemental libraries](#supplemental-libraries)
+  - [Websocket](#websocket)
+  - [Templating](#templating)
+- [Resources](#resources)
+  - [Blog posts](#blog-posts)
+  - [Demos](#demos)
+  - [Real-world web projects using Rust](#real-world-web-projects-using-rust)
+  - [JS & asm.js & WASM](#js--asmjs--wasm)
+- [Comparison](#comparison)
+  - [High-Level Frameworks](#high-level-frameworks)
+  - [Low-Level Frameworks](#low-level-frameworks)
+  - [Middleware & Plugins](#middleware--plugins)
+  - [Websocket Libraries](#websocket-libraries)
+
 ## Server frameworks
 
 There are several interesting frameworks to build web applications with Rust:
