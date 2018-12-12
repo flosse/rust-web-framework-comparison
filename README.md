@@ -5,7 +5,9 @@ A comparison of some web frameworks written in [Rust](https://www.rust-lang.org)
 ## Table of Contents
 
 - [Server frameworks](#server-frameworks)
+  - [Outdated server frameworks](#outdated-server-frameworks)
 - [Client frameworks](#client-frameworks)
+  - [Outdated client frameworks](#outdated-client-frameworks)
 - [Frontend frameworks (WASM)](#frontend-frameworks-wasm)
 - [Supplemental libraries](#supplemental-libraries)
   - [Websocket](#websocket)
@@ -26,52 +28,58 @@ A comparison of some web frameworks written in [Rust](https://www.rust-lang.org)
 
 There are several interesting frameworks to build web applications with Rust:
 
-- **actix-web**   ([homepage](https://actix.rs/)                            / [repository](https://github.com/actix/actix-web)          / [api docs](https://actix.github.io/actix-web/actix_web/) / [user guide](https://actix.rs/book/actix-web/))
-- **gotham**      ([homepage](http://gotham.rs/)                            / [repository](https://github.com/gotham-rs/gotham/)        / [documentation](https://docs.rs/gotham/) / [examples](https://github.com/gotham-rs/gotham/tree/master/examples))
-- **iron**        ([homepage](http://ironframework.io/)                     / [repository](https://github.com/iron/iron/)               / [documentation](http://ironframework.io/doc/iron/))
-- **rocket**      ([homepage](https://rocket.rs/)                           / [repository](https://github.com/SergioBenitez/rocket)     / [documentation](https://rocket.rs/guide/))
-- **nickel**      ([homepage](http://nickel-org.github.io/)                            / [repository](https://github.com/nickel-org/nickel.rs/)    / [documentation](http://nickel-org.github.io/nickel.rs))
-- **rustful**     ( -                                                       / [repository](https://github.com/Ogeon/rustful)            / [documentation](http://ogeon.github.io/docs/rustful/master/rustful/))
-- **rustless**    (-                                                        / [repository](https://github.com/rustless/rustless)        / - )
-- **conduit**     ( -                                                       / [repository](https://github.com/conduit-rust/conduit)     / - )
-- **rouille**     ( -                                                       / [repository](https://github.com/tomaka/rouille)           / [documentation](http://tomaka.github.io/rouille/rouille/index.html))
-- **sappers**     ( -                                                       / [repository](https://github.com/sappworks/sapper)         / - )
-- **cargonaouts** ([homepage](https://cargonauts-rs.github.io/cargonauts/)  / [repository](https://github.com/cargonauts-rs/cargonauts) / - )
-- **shio**        (-                                                        / [repository](https://github.com/mehcode/shio-rs)          / - )
-- **Thruster**    (-                                                        / [repository](https://github.com/trezm/Thruster)           / - )
+- **actix-web**   ([homepage](https://actix.rs/)            / [repository](https://github.com/actix/actix-web)       / [api docs](https://actix.github.io/actix-web/actix_web/) / [user guide](https://actix.rs/book/actix-web/))
+- **gotham**      ([homepage](http://gotham.rs/)            / [repository](https://github.com/gotham-rs/gotham/)     / [documentation](https://docs.rs/gotham/) / [examples](https://github.com/gotham-rs/gotham/tree/master/examples))
+- **iron**        ([homepage](http://ironframework.io/)     / [repository](https://github.com/iron/iron/)            / [documentation](http://ironframework.io/doc/iron/))
+- **rocket**      ([homepage](https://rocket.rs/)           / [repository](https://github.com/SergioBenitez/rocket)  / [documentation](https://rocket.rs/guide/))
+- **nickel**      ([homepage](http://nickel-org.github.io/) / [repository](https://github.com/nickel-org/nickel.rs/) / [documentation](http://nickel-org.github.io/nickel.rs))
+- **rouille**     ( -                                       / [repository](https://github.com/tomaka/rouille)        / [documentation](http://tomaka.github.io/rouille/rouille/index.html))
+- **Thruster**    ( -                                       / [repository](https://github.com/trezm/Thruster)        / - )
 
 If you need a more low level control you can choose between these libraries:
 
-- **hyper**     ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper))
-- **tiny-http** ( -                           / [repository](https://github.com/frewsxcv/tiny-http))     / [documentation](http://frewsxcv.github.io/tiny-http/tiny_http/index.html))
-- **solicit**   ( -                           / [repository](https://github.com/mlalic/solicit)          / [documentation](https://mlalic.github.io/solicit/solicit/index.html))
-- **kinglet**   ( -                           / [repository](https://github.com/pyfisch/kinglet)         / - )
-- **hydrogen**  ( -                           / [repository](https://github.com/nathansizemore/hydrogen) / [documentation](https://nathansizemore.github.io/hydrogen/hydrogen/index.html))
-- **civet**     ( -                           / [repository](https://github.com/wycats/rust-civet)       / - )
-- **tk-http**   ( -                           / [repository](https://github.com/swindon-rs/tk-http)      / - )
-- **h2**        ( -                           / [repository](https://github.com/carllerche/h2)           / - )
+- **hyper**     ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)       / [documentation](http://hyper.rs/hyper))
+- **tiny-http** ( -                           / [repository](https://github.com/frewsxcv/tiny-http))  / [documentation](http://frewsxcv.github.io/tiny-http/tiny_http/index.html))
+- **tk-http**   ( -                           / [repository](https://github.com/swindon-rs/tk-http)   / - )
+- **h2**        ( -                           / [repository](https://github.com/carllerche/h2)        / - )
+
+### Outdated server frameworks
+
+- [civet](https://github.com/wycats/rust-civet)
+- [conduit](https://github.com/conduit-rust/conduit)
+- [cargonaouts](https://github.com/cargonauts-rs/cargonauts)
+- [hydrogen](https://github.com/nathansizemore/hydrogen)
+- [kinglet](https://github.com/pyfisch/kinglet)
+- [rustless](https://github.com/rustless/rustless)
+- [rustful](https://github.com/Ogeon/rustful)
+- [shio](https://github.com/mehcode/shio-rs)
+- [sappers](https://github.com/sappworks/sapper)
+- [solicit](https://github.com/mlalic/solicit)
 
 ## Client frameworks
 
 To build web clients with Rust, you can choose between these libraries:
 
-- **actix-web**  ([homepage](https://actix.rs/)                            / [repository](https://github.com/actix/actix-web)          / [api docs](https://actix.github.io/actix-web/actix_web/client/index.html))
-- **reqwest**    (-                                                        / [repository](https://github.com/seanmonstar/reqwest)     / [documentation](https://docs.rs/reqwest))
-- **hyper**      ([homepage](http://hyper.rs/)                             / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper/hyper/))
-- **ease**       (-                                                        / [repository](https://github.com/SimonPersson/ease)       / [documentation](http://simonpersson.github.io/ease/))
-- **jsonrpc**    (-                                                        / [repository](https://github.com/apoelstra/rust-jsonrpc/) / [documentation](https://www.wpsoftware.net/rustdoc/jsonrpc/))
+- **actix-web**  ([homepage](https://actix.rs/) / [repository](https://github.com/actix/actix-web)         / [api docs](https://actix.github.io/actix-web/actix_web/client/index.html))
+- **reqwest**    (-                             / [repository](https://github.com/seanmonstar/reqwest)     / [documentation](https://docs.rs/reqwest))
+- **hyper**      ([homepage](http://hyper.rs/)  / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper/hyper/))
+- **jsonrpc**    (-                             / [repository](https://github.com/apoelstra/rust-jsonrpc/) / [documentation](https://www.wpsoftware.net/rustdoc/jsonrpc/))
+
+### Outdated client frameworks
+
+- [ease](https://github.com/SimonPersson/ease)
 
 ## Frontend frameworks (WASM)
 
 Since [WASM](http://webassembly.org/) support is available in most browsers we can use Rust to build web applications :)
 
 - **stdweb** ( - / [repository](https://github.com/koute/stdweb) / [documentation](https://docs.rs/stdweb/) ) A standard library for the client-side Web
-- **yew** ( - / [repository](https://github.com/DenisKolodin/yew) / [documentation](https://docs.rs/yew/) ) - A frontend framework inspired by Elm and React (based on stdweb)
-- **ruukh** ( - / [repository](https://github.com/csharad/ruukh) / [documentation](https://docs.rs/ruukh/) ) - A frontend framework inspired by Vue and React
-- **percy** ( [homepage](https://chinedufn.github.io/percy/) / [repository](https://github.com/chinedufn/percy) / - ) - A modular toolkit for building isomorphic web apps
-- **draco** ( - / [repository](https://github.com/utkarshkukreti/draco) / [documentation](https://docs.rs/draco/) ) - A frontend framework inpired by Redux and Elm
+- **yew**    ( - / [repository](https://github.com/DenisKolodin/yew) / [documentation](https://docs.rs/yew/) ) - A frontend framework inspired by Elm and React (based on stdweb)
+- **ruukh**  ( - / [repository](https://github.com/csharad/ruukh) / [documentation](https://docs.rs/ruukh/) ) - A frontend framework inspired by Vue and React
+- **percy**  ( [homepage](https://chinedufn.github.io/percy/) / [repository](https://github.com/chinedufn/percy) / - ) - A modular toolkit for building isomorphic web apps
+- **draco**  ( - / [repository](https://github.com/utkarshkukreti/draco) / [documentation](https://docs.rs/draco/) ) - A frontend framework inpired by Redux and Elm
 - **willow** ( [homepage](http://sindrejohansen.no/willow/) - / [repository](https://github.com/sindreij/willow) / - ) - A frontend framework inspired by Elm
-- **seed** ( - / [repository](https://github.com/David-OConnor/seed) / - ) - A Rust framework for creating web apps
+- **seed**   ( - / [repository](https://github.com/David-OConnor/seed) / - ) - A Rust framework for creating web apps
 
 ## Supplemental libraries
 
@@ -79,7 +87,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 - **websocket**   ([homepage](http://cyderize.github.io/rust-websocket/)   / [repository](https://github.com/cyderize/rust-websocket)  / [documentation](http://cyderize.github.io/rust-websocket/doc/websocket/))
 - **ws-rs**       ([homepage](https://ws-rs.org)                           / [repository](https://github.com/housleyjk/ws-rs)          / [documentation](https://ws-rs.org/docs))
-- **tungstenite** (-                                                       / [repository](https://github.com/snapview/tungstenite-rs)  / [documentation](https://docs.rs/crate/tungstenite/))
+- **tungstenite** ( -                                                      / [repository](https://github.com/snapview/tungstenite-rs)  / [documentation](https://docs.rs/crate/tungstenite/))
 - **tk-http**     ( -                                                      / [repository](https://github.com/swindon-rs/tk-http)       / - )
 - **actix-web**   ([homepage](https://actix.rs/)                           / [repository](https://github.com/actix/actix-web)          / [documentation](https://actix.github.io/actix-web/actix_web/))
 
@@ -94,7 +102,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 - **askama**     (-                                                     / [repository](https://github.com/djc/askama)               / - )
 - **stpl**       (-                                                     / [repository](https://github.com/dpc/stpl)                 / - )
 - **ructe**      (-                                                     / [repository](https://github.com/kaj/ructe)                / [documentation](https://docs.rs/ructe/) )
-- **typed-html**      (-                                                     / [repository](https://github.com/bodil/typed-html)         / [documentation](https://docs.rs/typed-html) )
+- **typed-html** (-                                                     / [repository](https://github.com/bodil/typed-html)         / [documentation](https://docs.rs/typed-html) )
 
 ## Resources
 
@@ -212,30 +220,30 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 ### High-Level Frameworks
 
-|        Name        | iron  | gotham           |      rocket      | nickel | rustful | rustless | conduit |  rouille   | ease  | jsonrpc | sappers |     shio         |    actix-web     | Thruster
-| ------------------ | ----- | ---------------- | ---------------- | ------ | ------- | -------- | ------- | ---------- | ----- | ------- | ------- | ---------------- | ---------------- | ---------
-| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | MIT     | MIT      | MIT     | Apache 2.0 | MIT   | CC0-1.0 | MIT     | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT
-| **Github Stars**   | 5.1k  | 1k               | 5.7k             | 2.2k   | 0.8k    | 0.5k     | 0.1k    | 0.3k       | 0k    | 0k      | 0k      | 0.2k             | 2.8              | 0.2k
-| **Contributors**   | 84    | 25               | 114              | 53     | 15      | 15       | 8       | 22         | 6     | 7       | 4       | 4                | 78               | 7
-| **Server**         | yes   | yes              | yes              | yes    | yes     | yes      | yes     | yes        | no    | no      | yes     | yes              | yes              | yes
-| **Client**         | no    | no               | no               | no     | no      | no       | no      | no         | yes   | yes     | no      | no               | yes              | no
-| **Base framework** | hyper | hyper            | hyper            | hyper  | hyper   | iron     | civet   | tiny-http  | hyper | hyper   | hyper   | hyper            | tokio            | tokio
-| **HTTPS support**  | yes   | yes              |                  | no     | yes     | ?        | ?       | ?          | -     | -       | ?       |                  | yes              |
-| **HTTP/2 support** | ?     | no               |                  | ?      | ?       | ?        | ?       | ?          | ?     | ?       | ?       |                  | yes              |
-| **Async**          |       | yes              | no               |        |         |          |         |            |       |         |         | yes              | yes              | yes
+|        Name        | iron  | gotham           | rocket           | nickel | rouille    | ease  | jsonrpc |    actix-web     | Thruster
+| ------------------ | ----- | ---------------- | ---------------- | ------ | ---------- | ----- | ------- | ---------------- | ---------
+| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | Apache 2.0 | MIT   | CC0-1.0 | MIT / Apache 2.0 | MIT
+| **Github Stars**   | 5.1k  | 1k               | 5.7k             | 2.2k   | 0.3k       | 0k    | 0k      | 2.8              | 0.2k
+| **Contributors**   | 84    | 25               | 114              | 53     | 22         | 6     | 7       | 78               | 7
+| **Server**         | yes   | yes              | yes              | yes    | yes        | no    | no      | yes              | yes
+| **Client**         | no    | no               | no               | no     | no         | yes   | yes     | yes              | no
+| **Base framework** | hyper | hyper            | hyper            | hyper  | tiny-http  | hyper | hyper   | tokio            | tokio
+| **HTTPS support**  | yes   | yes              |                  | no     | ?          | -     | -       | yes              |
+| **HTTP/2 support** | ?     | no               |                  | ?      | ?          | ?     | ?       | yes              |
+| **Async**          |       | yes              | no               |        |            |       |         | yes              | yes
 
 ### Low-Level Frameworks
 
-|        Name        | civet  | hyper   | tiny-http  | solicit | kinglet | hydrogen | tk-http          | h2               |
-| ------------------ | ------ | ------- | ---------- | ------- | ------- | -------- | ---------------- | ---------------- |
-| **License**        | MIT    | MIT     | Apache 2.0 | MIT     | MIT     | MPL 2.0  | MIT / Apache 2.0 | MIT / Apache 2.0 |
-| **Github Stars**   | 0k     | 4.1k    | 0.3k       | 0.3k    | 0k      | 0.3k     | 0.1k             | 0.5k             |
-| **Contributors**   | 4      | 191     | 16         | 8       | 1       | 2        | 5                | 22               |
-| **Server**         | yes    | yes     | yes        | yes     | yes     | yes      | yes              | yes              |
-| **Client**         | no     | yes     | ?          | yes     | no      | no       | yes              | yes              |
-| **HTTPS support**  |        | yes     | yes        | -       | -       | no       | yes              | no               |
-| **HTTP/2 support** |        | solicit | ?          | yes     | -       | no       | no               | yes              |
-| **Async**          |        | yes     |            |         |         |          | yes              | yes              |
+|        Name        | hyper   | tiny-http  | tk-http          | h2               |
+| ------------------ | ------- | ---------- | ---------------- | ---------------- |
+| **License**        | MIT     | Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 |
+| **Github Stars**   | 4.1k    | 0.3k       | 0.1k             | 0.5k             |
+| **Contributors**   | 191     | 16         | 5                | 22               |
+| **Server**         | yes     | yes        | yes              | yes              |
+| **Client**         | yes     | ?          | yes              | yes              |
+| **HTTPS support**  | yes     | yes        | yes              | no               |
+| **HTTP/2 support** | solicit | ?          | no               | yes              |
+| **Async**          | yes     |            | yes              | yes              |
 
 
 ### Frontend Frameworks
