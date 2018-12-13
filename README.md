@@ -80,6 +80,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 - **draco**  ( - / [repository](https://github.com/utkarshkukreti/draco) / [documentation](https://docs.rs/draco/) ) - A frontend framework inpired by Redux and Elm
 - **willow** ( [homepage](http://sindrejohansen.no/willow/) - / [repository](https://github.com/sindreij/willow) / - ) - A frontend framework inspired by Elm
 - **seed**   ( - / [repository](https://github.com/David-OConnor/seed) / - ) - A Rust framework for creating web apps
+- **smithy** ( - / [repository](https://github.com/rbalicki2/smithy) / - ) - A front-end framework
 
 ## Supplemental libraries
 
@@ -248,14 +249,14 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 ### Frontend Frameworks
 
-|        Name        | stdweb     | yew        | ruukh                  | percy                       | draco                         | willow                      | seed                 |
-| ------------------ | ---------- | ---------- | ---------------------- | --------------------------- | ----------------------------- | --------------------------- | -------------------- |
-| **License**        | Apache/MIT | Apache/MIT | MIT                    | Apache/MIT                  | Apache/MIT                    | Apache/MIT                  | MIT                  |
-| **Github Stars**   | 2.2k       | 6.0k       | 0.1k                   | 0.9k                        | 0.1k                          | 0.1k                        | 0k                   |
-| **Contributors**   | 50         | 52         | 3                      | 8                           | 3                             | 1                           | 1                    |
-| **Stable Rust**    | no         | no         | no                     | no                          | no                            | no                          | no                   |
-| **Base framework** | -          | stdweb     | wasm-bindgen/web-sys   | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys/web-sys   | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys  |
-| **Virtual DOM**    | ?          | yes        | yes                    | yes                         | yes                           | ?                           | yes                  |
+|        Name        | stdweb     | yew        | ruukh                  | percy                       | draco                         | willow                      | seed                 | smithy                      |
+| ------------------ | ---------- | ---------- | ---------------------- | --------------------------- | ----------------------------- | --------------------------- | -------------------- | --------------------------- |
+| **License**        | Apache/MIT | Apache/MIT | MIT                    | Apache/MIT                  | Apache/MIT                    | Apache/MIT                  | MIT                  | ?                           |
+| **Github Stars**   | 2.2k       | 6.0k       | 0.1k                   | 0.9k                        | 0.1k                          | 0.1k                        | 0k                   | 0k                          |
+| **Contributors**   | 50         | 52         | 3                      | 8                           | 3                             | 1                           | 1                    | 1                           |
+| **Stable Rust**    | no         | no         | no                     | no                          | no                            | no                          | no                   | no                          |
+| **Base framework** | -          | stdweb     | wasm-bindgen/web-sys   | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys/web-sys   | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys  | wasm-bindgen/js-sys/web-sys |
+| **Virtual DOM**    | ?          | yes        | yes                    | yes                         | yes                           | ?                           | yes                  | ?                           |
 
 
 ### Middleware & Plugins
