@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>WASM counter example with draco</title>
+</head>
+<body>
+  <section id="main"></section>
+  <script src='./pkg/draco.js'></script>
+  <script>
+      // the `wasm_bindgen` global is set to the exports of the Rust module
+      const { start } = wasm_bindgen;
+      // we'll defer our execution until the wasm is ready to go
+      function run() { start(); }
+      // here we tell bindgen the path to the wasm file so it can run
+      // initialization and return to us a promise when it's done
+      wasm_bindgen('./pkg/draco_bg.wasm').then(run).catch(console.error);
+  </script>
+</body>
+</html>
