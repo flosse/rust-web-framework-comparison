@@ -1,0 +1,12 @@
+[package]
+name = "willow"
+version = "0.1.0"
+authors = ["Markus Kohlhase <markus.kohlhase@slowtec.de>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+willow = { version = "*", git = "https://github.com/sindreij/willow" }
+wasm-bindgen = { version="*", features=["nightly"] }
