@@ -1,10 +1,9 @@
 #[macro_use]
 extern crate seed;
 
-use seed::{dom_types::Style, prelude::*};
-use wasm_bindgen::prelude::*;
+use seed::{dom_types::Style, prelude::*, App};
 
-#[derive(Clone, Default)]
+#[derive(Clone, Copy, Default)]
 struct Model {
     count: i32,
 }
@@ -15,9 +14,9 @@ enum Msg {
     Decrement,
 }
 
-fn update(msg: Msg, model: Model) -> Model {
+fn update(msg: Msg, model: Model) -> Update<Model> {
     use self::Msg::*;
-    match msg {
+    Render(match msg {
         Increment => Model {
             count: model.count + 1,
             ..model
@@ -26,7 +25,7 @@ fn update(msg: Msg, model: Model) -> Model {
             count: model.count - 1,
             ..model
         },
-    }
+    })
 }
 
 fn plural(x: i32) -> &'static str {
@@ -37,7 +36,7 @@ fn plural(x: i32) -> &'static str {
     }
 }
 
-fn view(model: Model) -> El<Msg> {
+fn view(_state: App<Msg, Model>, model: &Model) -> El<Msg> {
     let text = format!("{} click{} so far", model.count, plural(model.count));
     let outer_style: Style = style! {
             "display" => "flex";
@@ -68,5 +67,5 @@ fn view(model: Model) -> El<Msg> {
 
 #[wasm_bindgen]
 pub fn render() {
-    seed::run(Model::default(), update, view, "main");
+    App::build(Model::default(), update, view).finish().run();
 }
