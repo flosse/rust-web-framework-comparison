@@ -78,13 +78,13 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 - **stdweb** ( - / [repository](https://github.com/koute/stdweb) / [documentation](https://docs.rs/stdweb/) ) A standard library for the client-side Web
 - **yew**    ( - / [repository](https://github.com/DenisKolodin/yew) / [documentation](https://docs.rs/yew/) ) - A frontend framework inspired by Elm and React (based on stdweb)
-- **ruukh**  ( - / [repository](https://github.com/csharad/ruukh) / [documentation](https://docs.rs/ruukh/) ) - A frontend framework inspired by Vue and React
 - **percy**  ( [homepage](https://chinedufn.github.io/percy/) / [repository](https://github.com/chinedufn/percy) / - ) - A modular toolkit for building isomorphic web apps
+- **seed**   ( [homepage](http://seed-rs.org/) / [repository](https://github.com/David-OConnor/seed) / - ) - A Rust framework for creating web apps
 - **draco**  ( - / [repository](https://github.com/utkarshkukreti/draco) / [documentation](https://docs.rs/draco/) ) - A frontend framework inpired by Redux and Elm
-- **willow** ( [homepage](http://sindrejohansen.no/willow/) - / [repository](https://github.com/sindreij/willow) / - ) - A frontend framework inspired by Elm
-- **seed**   ( - / [repository](https://github.com/David-OConnor/seed) / - ) - A Rust framework for creating web apps
 - **smithy** ( - / [repository](https://github.com/rbalicki2/smithy) / - ) - A front-end framework
 - **squark** ( - / [repository](https://github.com/rail44/squark) / [documentation](https://docs.rs/squark) ) - Rust frontend framework, for web browser and more.
+- **ruukh**  ( - / [repository](https://github.com/csharad/ruukh) / [documentation](https://docs.rs/ruukh/) ) - A frontend framework inspired by Vue and React
+- **willow** ( [homepage](http://sindrejohansen.no/willow/) - / [repository](https://github.com/sindreij/willow) / - ) - A frontend framework inspired by Elm
 
 ## Supplemental libraries
 
@@ -141,14 +141,14 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 ### Frontend Frameworks
 
-|        Name        | stdweb     | yew        | ruukh                  | percy                       | draco                         | willow                      | seed                 | smithy                      | squark                      |
-| ------------------ | ---------- | ---------- | ---------------------- | --------------------------- | ----------------------------- | --------------------------- | -------------------- | --------------------------- | --------------------------- |
-| **License**        | Apache/MIT | Apache/MIT | MIT                    | Apache/MIT                  | Apache/MIT                    | Apache/MIT                  | MIT                  | ?                           | WTFPL                       |
-| **Github Stars**   | 2.3k       | 6.4k       | 0.1k                   | 0.9k                        | 0.1k                          | 0.1k                        | 0.2k                 | 0k                          | 0.1k                        |
-| **Contributors**   | 50         | 54         | 3                      | 9                           | 4                             | 2                           | 7                    | 1                           | 2                           |
-| **Stable Rust**    | no         | no         | no                     | no                          | **yes**                       | no                          | **yes**              | no                          | no                          |
-| **Base framework** | -          | stdweb     | wasm-bindgen/web-sys   | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys/web-sys   | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys  | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys/web-sys |
-| **Virtual DOM**    | ?          | yes        | yes                    | yes                         | yes                           | ?                           | yes                  | ?                           | yes                         |
+|        Name        | stdweb     | yew        | percy        | seed         | draco        | smithy       | squark       |  ruukh          | willow       |
+| ------------------ | ---------- | ---------- | ------------ | ------------ | ------------ | ------------ | ------------ |  -------------- | ------------ |
+| **License**        | Apache/MIT | Apache/MIT | Apache/MIT   | MIT          | Apache/MIT   | ?            | WTFPL        |  MIT            | Apache/MIT   |
+| **Github Stars**   | 2.3k       | 6.5k       | 0.9k         | 0.2k         | 0.1k         | 0k           | 0.1k         |  0.1k           | 0.1k         |
+| **Contributors**   | 50         | 55         | 9            | 7            | 4            | 1            | 2            |  3              | 2            |
+| **Stable Rust**    | **yes**    | **yes**    | no           | **yes**      | **yes**      | no           | no           |  no             | no           |
+| **Base framework** | -          | stdweb     | wasm-bindgen | wasm-bindgen | wasm-bindgen | wasm-bindgen | wasm-bindgen |  wasm-bindgen   | wasm-bindgen |
+| **Virtual DOM**    | ?          | yes        | yes          | yes          | yes          | ?            | yes          |  yes            | ?            |
 
 
 ### Middleware & Plugins
