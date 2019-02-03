@@ -12,17 +12,17 @@ A comparison of some web frameworks written in [Rust](https://www.rust-lang.org)
 - [Supplemental libraries](#supplemental-libraries)
   - [Websocket](#websocket)
   - [Templating](#templating)
-- [Resources](#resources)
-  - [Blog posts](#blog-posts)
-  - [Demos](#demos)
-  - [Real-world web projects using Rust](#real-world-web-projects-using-rust)
-  - [JS & asm.js & WASM](#js--asmjs--wasm)
 - [Comparison](#comparison)
   - [High-Level Frameworks](#high-level-frameworks)
   - [Low-Level Frameworks](#low-level-frameworks)
   - [Frontend Frameworks](#frontend-frameworks)
   - [Middleware & Plugins](#middleware--plugins)
   - [Websocket Libraries](#websocket-libraries)
+- [Resources](#resources)
+  - [Blog posts](#blog-posts)
+  - [Demos](#demos)
+  - [Real-world web projects using Rust](#real-world-web-projects-using-rust)
+  - [JS & asm.js & WASM](#js--asmjs--wasm)
 
 ## Server frameworks
 
@@ -108,6 +108,92 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 - **stpl**       (-                                                     / [repository](https://github.com/dpc/stpl)                 / - )
 - **ructe**      (-                                                     / [repository](https://github.com/kaj/ructe)                / [documentation](https://docs.rs/ructe/) )
 - **typed-html** (-                                                     / [repository](https://github.com/bodil/typed-html)         / [documentation](https://docs.rs/typed-html) )
+
+## Comparison
+
+### High-Level Frameworks
+
+|        Name        | iron  | gotham           | rocket           | nickel | rouille    | ease  | jsonrpc |    actix-web     | Thruster
+| ------------------ | ----- | ---------------- | ---------------- | ------ | ---------- | ----- | ------- | ---------------- | ---------
+| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | Apache 2.0 | MIT   | CC0-1.0 | MIT / Apache 2.0 | MIT
+| **Github Stars**   | 5.1k  | 1k               | 5.7k             | 2.2k   | 0.3k       | 0k    | 0k      | 2.8              | 0.2k
+| **Contributors**   | 84    | 25               | 114              | 53     | 22         | 6     | 7       | 78               | 7
+| **Server**         | yes   | yes              | yes              | yes    | yes        | no    | no      | yes              | yes
+| **Client**         | no    | no               | no               | no     | no         | yes   | yes     | yes              | no
+| **Base framework** | hyper | hyper            | hyper            | hyper  | tiny-http  | hyper | hyper   | tokio            | tokio
+| **HTTPS support**  | yes   | yes              |                  | no     | ?          | -     | -       | yes              |
+| **HTTP/2 support** | ?     | no               |                  | ?      | ?          | ?     | ?       | yes              |
+| **Async**          |       | yes              | no               |        |            |       |         | yes              | yes
+
+### Low-Level Frameworks
+
+|        Name        | hyper   | tiny-http  | tk-http          | h2               |
+| ------------------ | ------- | ---------- | ---------------- | ---------------- |
+| **License**        | MIT     | Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 |
+| **Github Stars**   | 4.1k    | 0.3k       | 0.1k             | 0.5k             |
+| **Contributors**   | 191     | 16         | 5                | 22               |
+| **Server**         | yes     | yes        | yes              | yes              |
+| **Client**         | yes     | ?          | yes              | yes              |
+| **HTTPS support**  | yes     | yes        | yes              | no               |
+| **HTTP/2 support** | solicit | ?          | no               | yes              |
+| **Async**          | yes     |            | yes              | yes              |
+
+
+### Frontend Frameworks
+
+|        Name        | stdweb     | yew        | ruukh                  | percy                       | draco                         | willow                      | seed                 | smithy                      | squark                      |
+| ------------------ | ---------- | ---------- | ---------------------- | --------------------------- | ----------------------------- | --------------------------- | -------------------- | --------------------------- | --------------------------- |
+| **License**        | Apache/MIT | Apache/MIT | MIT                    | Apache/MIT                  | Apache/MIT                    | Apache/MIT                  | MIT                  | ?                           | WTFPL                       |
+| **Github Stars**   | 2.3k       | 6.4k       | 0.1k                   | 0.9k                        | 0.1k                          | 0.1k                        | 0.2k                 | 0k                          | 0.1k                        |
+| **Contributors**   | 50         | 54         | 3                      | 9                           | 4                             | 2                           | 7                    | 1                           | 2                           |
+| **Stable Rust**    | no         | no         | no                     | no                          | **yes**                       | no                          | **yes**              | no                          | no                          |
+| **Base framework** | -          | stdweb     | wasm-bindgen/web-sys   | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys/web-sys   | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys  | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys/web-sys |
+| **Virtual DOM**    | ?          | yes        | yes                    | yes                         | yes                           | ?                           | yes                  | ?                           | yes                         |
+
+
+### Middleware & Plugins
+
+|           Name            |                    iron                    | gotham |                        nickel                         | rouille | actix-web                                                               |
+| ------------------------- | ------------------------------------------ | ------ | ----------------------------------------------------- | ------- | ----------------------------------------------------------------------- |
+| **Static File Serving**   | [yes](https://github.com/iron/staticfile)  | no^    | yes                                                   | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_12.html)               |
+| **Mounting**              | [yes](https://github.com/iron/mount)       | yes    | yes                                                   | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_3.html#application)    |
+| **Logging**               | [yes](https://github.com/iron/logger)      | yes    | no                                                    | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_10.html#logging)       |
+| **JSON-Body-Parsing**     | [yes](https://github.com/iron/body-parser) | yes    | yes                                                   | n/a     | [yes](https://github.com/actix/actix-web/tree/master/examples/json)     |
+| **Sessions**              | [yes](https://github.com/iron/session)     | yes    | ?                                                     | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions) |
+| **Cookies**               | [yes](https://github.com/iron/cookie)      | yes    | ?                                                     | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions) |
+| **PostgreSQL middleware** | ?                                          | no^    | [yes](https://github.com/nickel-org/nickel-postgres)  | n/a     | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)   |
+| **SQLite middleware**     | ?                                          | no^    | [yes](https://github.com/flosse/nickel-sqlite)        | n/a     | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)   |
+| **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | n/a     | [yes](https://github.com/actix/actix-redis)                             |
+| **MySQL middleware**      | ?                                          | no^    | [yes](https://github.com/zither/nickel-mysql)         | n/a     | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)   |
+
+(^ Planned in current roadmap)
+
+### Websocket Libraries
+
+|        Name        | websocket | ws-rs | twist            | tungstenite      | tk-http          | actix-web
+| ------------------ | --------- | ----- | ---------------- | ---------------- | ---------------- | ---------------- |
+| **License**        | MIT       | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 |
+| **Github Stars**   | 0.4k      | 0.5k  | 0k               | 0.1k             | 0.1k             | 0.3k             |
+| **Contributors**   | 31        | 25    | 2                | 8                | 5                | 7                |
+| **Server**         | yes       | yes   | yes              | yes              | yes              | yes              |
+| **Client**         | yes       | yes   | yes              | yes              | yes              | yes              |
+| **Base framework** | - / tokio | mio   | tokio            | - / tokio        | tokio            | tokio            |
+| **Async**          | no / yes  | yes   | yes              | no / yes         | yes              | yes              |
+
+
+## Examples
+
+To compile or run the examples use [Cargo](https://github.com/rust-lang/cargo).
+First clone this repo
+
+    git clone https://github.com/flosse/rust-web-framework-comparison
+    cd rust-web-framework-comparison/
+
+and change to the desired frameworkd directory (e.g. `cd iron/`) and type
+
+    cargo run --example hello_world
+
+Then visit `http://localhost:3000` to see the result.
 
 ## Resources
 
@@ -219,90 +305,3 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 - [TechEmpower Web Framework Benchmarks](https://www.techempower.com/benchmarks/#section=data-r15&hw=ph&test=plaintext)
 - [benchmarks](https://github.com/fafhrd91/benchmarks) - Rust web frameworks benchmarks
 - [which_is_the_fastest](https://github.com/tbrand/which_is_the_fastest) - Measuring response times (routing times) for each framework (middleware). Each framework has to have two features; routing and parsing path parameters.
-
-
-## Comparison
-
-### High-Level Frameworks
-
-|        Name        | iron  | gotham           | rocket           | nickel | rouille    | ease  | jsonrpc |    actix-web     | Thruster
-| ------------------ | ----- | ---------------- | ---------------- | ------ | ---------- | ----- | ------- | ---------------- | ---------
-| **License**        | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT    | Apache 2.0 | MIT   | CC0-1.0 | MIT / Apache 2.0 | MIT
-| **Github Stars**   | 5.1k  | 1k               | 5.7k             | 2.2k   | 0.3k       | 0k    | 0k      | 2.8              | 0.2k
-| **Contributors**   | 84    | 25               | 114              | 53     | 22         | 6     | 7       | 78               | 7
-| **Server**         | yes   | yes              | yes              | yes    | yes        | no    | no      | yes              | yes
-| **Client**         | no    | no               | no               | no     | no         | yes   | yes     | yes              | no
-| **Base framework** | hyper | hyper            | hyper            | hyper  | tiny-http  | hyper | hyper   | tokio            | tokio
-| **HTTPS support**  | yes   | yes              |                  | no     | ?          | -     | -       | yes              |
-| **HTTP/2 support** | ?     | no               |                  | ?      | ?          | ?     | ?       | yes              |
-| **Async**          |       | yes              | no               |        |            |       |         | yes              | yes
-
-### Low-Level Frameworks
-
-|        Name        | hyper   | tiny-http  | tk-http          | h2               |
-| ------------------ | ------- | ---------- | ---------------- | ---------------- |
-| **License**        | MIT     | Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 |
-| **Github Stars**   | 4.1k    | 0.3k       | 0.1k             | 0.5k             |
-| **Contributors**   | 191     | 16         | 5                | 22               |
-| **Server**         | yes     | yes        | yes              | yes              |
-| **Client**         | yes     | ?          | yes              | yes              |
-| **HTTPS support**  | yes     | yes        | yes              | no               |
-| **HTTP/2 support** | solicit | ?          | no               | yes              |
-| **Async**          | yes     |            | yes              | yes              |
-
-
-### Frontend Frameworks
-
-|        Name        | stdweb     | yew        | ruukh                  | percy                       | draco                         | willow                      | seed                 | smithy                      | squark                      |
-| ------------------ | ---------- | ---------- | ---------------------- | --------------------------- | ----------------------------- | --------------------------- | -------------------- | --------------------------- | --------------------------- |
-| **License**        | Apache/MIT | Apache/MIT | MIT                    | Apache/MIT                  | Apache/MIT                    | Apache/MIT                  | MIT                  | ?                           | WTFPL                       |
-| **Github Stars**   | 2.3k       | 6.4k       | 0.1k                   | 0.9k                        | 0.1k                          | 0.1k                        | 0.2k                 | 0k                          | 0.1k                        |
-| **Contributors**   | 50         | 54         | 3                      | 9                           | 4                             | 2                           | 7                    | 1                           | 2                           |
-| **Stable Rust**    | no         | no         | no                     | no                          | **yes**                       | no                          | **yes**              | no                          | no                          |
-| **Base framework** | -          | stdweb     | wasm-bindgen/web-sys   | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys/web-sys   | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys  | wasm-bindgen/js-sys/web-sys | wasm-bindgen/js-sys/web-sys |
-| **Virtual DOM**    | ?          | yes        | yes                    | yes                         | yes                           | ?                           | yes                  | ?                           | yes                         |
-
-
-### Middleware & Plugins
-
-|           Name            |                    iron                    | gotham |                        nickel                         | rouille | actix-web                                                               |
-| ------------------------- | ------------------------------------------ | ------ | ----------------------------------------------------- | ------- | ----------------------------------------------------------------------- |
-| **Static File Serving**   | [yes](https://github.com/iron/staticfile)  | no^    | yes                                                   | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_12.html)               |
-| **Mounting**              | [yes](https://github.com/iron/mount)       | yes    | yes                                                   | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_3.html#application)    |
-| **Logging**               | [yes](https://github.com/iron/logger)      | yes    | no                                                    | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_10.html#logging)       |
-| **JSON-Body-Parsing**     | [yes](https://github.com/iron/body-parser) | yes    | yes                                                   | n/a     | [yes](https://github.com/actix/actix-web/tree/master/examples/json)     |
-| **Sessions**              | [yes](https://github.com/iron/session)     | yes    | ?                                                     | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions) |
-| **Cookies**               | [yes](https://github.com/iron/cookie)      | yes    | ?                                                     | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions) |
-| **PostgreSQL middleware** | ?                                          | no^    | [yes](https://github.com/nickel-org/nickel-postgres)  | n/a     | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)   |
-| **SQLite middleware**     | ?                                          | no^    | [yes](https://github.com/flosse/nickel-sqlite)        | n/a     | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)   |
-| **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | n/a     | [yes](https://github.com/actix/actix-redis)                             |
-| **MySQL middleware**      | ?                                          | no^    | [yes](https://github.com/zither/nickel-mysql)         | n/a     | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)   |
-
-(^ Planned in current roadmap)
-
-### Websocket Libraries
-
-|        Name        | websocket | ws-rs | twist            | tungstenite      | tk-http          | actix-web
-| ------------------ | --------- | ----- | ---------------- | ---------------- | ---------------- | ---------------- |
-| **License**        | MIT       | MIT   | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 | MIT / Apache 2.0 |
-| **Github Stars**   | 0.4k      | 0.5k  | 0k               | 0.1k             | 0.1k             | 0.3k             |
-| **Contributors**   | 31        | 25    | 2                | 8                | 5                | 7                |
-| **Server**         | yes       | yes   | yes              | yes              | yes              | yes              |
-| **Client**         | yes       | yes   | yes              | yes              | yes              | yes              |
-| **Base framework** | - / tokio | mio   | tokio            | - / tokio        | tokio            | tokio            |
-| **Async**          | no / yes  | yes   | yes              | no / yes         | yes              | yes              |
-
-
-## Examples
-
-To compile or run the examples use [Cargo](https://github.com/rust-lang/cargo).
-First clone this repo
-
-    git clone https://github.com/flosse/rust-web-framework-comparison
-    cd rust-web-framework-comparison/
-
-and change to the desired frameworkd directory (e.g. `cd iron/`) and type
-
-    cargo run --example hello_world
-
-Then visit `http://localhost:3000` to see the result.
