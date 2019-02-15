@@ -154,16 +154,16 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 |           Name            |                    iron                    | gotham |                        nickel                         | rouille | actix-web                                                               |
 | ------------------------- | ------------------------------------------ | ------ | ----------------------------------------------------- | ------- | ----------------------------------------------------------------------- |
-| **Static File Serving**   | [yes](https://github.com/iron/staticfile)  | no^    | yes                                                   | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_12.html)               |
-| **Mounting**              | [yes](https://github.com/iron/mount)       | yes    | yes                                                   | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_3.html#application)    |
-| **Logging**               | [yes](https://github.com/iron/logger)      | yes    | no                                                    | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_10.html#logging)       |
-| **JSON-Body-Parsing**     | [yes](https://github.com/iron/body-parser) | yes    | yes                                                   | n/a     | [yes](https://github.com/actix/actix-web/tree/master/examples/json)     |
-| **Sessions**              | [yes](https://github.com/iron/session)     | yes    | ?                                                     | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions) |
-| **Cookies**               | [yes](https://github.com/iron/cookie)      | yes    | ?                                                     | n/a     | [yes](https://actix.github.io/actix-web/guide/qs_10.html#user-sessions) |
-| **PostgreSQL middleware** | ?                                          | no^    | [yes](https://github.com/nickel-org/nickel-postgres)  | n/a     | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)   |
-| **SQLite middleware**     | ?                                          | no^    | [yes](https://github.com/flosse/nickel-sqlite)        | n/a     | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)   |
+| **Static File Serving**   | [yes](https://github.com/iron/staticfile)  | no^    | yes                                                   | n/a     | [yes](https://actix.rs/docs/static-files/)               |
+| **Mounting**              | [yes](https://github.com/iron/mount)       | yes    | yes                                                   | n/a     | [yes](https://actix.rs/docs/application/#using-an-application-prefix-to-compose-applications)    |
+| **Logging**               | [yes](https://github.com/iron/logger)      | yes    | no                                                    | n/a     | [yes](https://actix.rs/docs/middleware/#logging)       |
+| **JSON-Body-Parsing**     | [yes](https://github.com/iron/body-parser) | yes    | yes                                                   | n/a     | [yes](https://github.com/actix/examples/tree/master/json)     |
+| **Sessions**              | [yes](https://github.com/iron/session)     | yes    | ?                                                     | n/a     | [yes](https://actix.rs/docs/middleware/#user-sessions) |
+| **Cookies**               | [yes](https://github.com/iron/cookie)      | yes    | ?                                                     | n/a     | [yes](https://actix.rs/docs/middleware/#user-sessions) |
+| **PostgreSQL middleware** | ?                                          | no^    | [yes](https://github.com/nickel-org/nickel-postgres)  | n/a     | [yes](https://github.com/actix/examples/tree/master/diesel)   |
+| **SQLite middleware**     | ?                                          | no^    | [yes](https://github.com/flosse/nickel-sqlite)        | n/a     | [yes](https://github.com/actix/examples/tree/master/diesel)   |
 | **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | n/a     | [yes](https://github.com/actix/actix-redis)                             |
-| **MySQL middleware**      | ?                                          | no^    | [yes](https://github.com/zither/nickel-mysql)         | n/a     | [yes](https://github.com/actix/actix-web/tree/master/examples/diesel)   |
+| **MySQL middleware**      | ?                                          | no^    | [yes](https://github.com/zither/nickel-mysql)         | n/a     | [yes](https://github.com/actix/examples/tree/master/diesel)   |
 
 (^ Planned in current roadmap)
 
