@@ -273,9 +273,9 @@ Then visit `http://localhost:3000` to see the result.
 - [nickel-todo-backend](https://github.com/Ryman/nickel-todo-backend/) - Nickel and Postgres (r2d2)
 - [rust-playground](https://github.com/integer32llc/rust-playground) - Iron
 - [rust-web-example](https://github.com/DavidBM/rust-webserver-example-with-iron-diesel-r2d2-serde) - Iron + Diesel (r2d2) + Serde
-- [websocket chat](https://github.com/actix/actix-web/tree/master/examples/websocket-chat) - Actix: Browser Websocket + tcp chat
-- [diesel](https://github.com/actix/actix-web/tree/master/examples/diesel) - Actix + Diesel
-- [json](https://github.com/actix/actix-web/tree/master/examples/json) - Actix + serde\_json or json\_rust
+- [websocket chat](https://github.com/actix/examples/tree/master/websocket-chat) - Actix: Browser Websocket + tcp chat
+- [diesel](https://github.com/actix/examples/tree/master/diesel) - Actix + Diesel
+- [json](https://github.com/actix/examples/tree/master/json) - Actix + serde\_json or json\_rust
 
 ### Real-world web projects using Rust
 
