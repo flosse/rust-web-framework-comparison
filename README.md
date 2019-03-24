@@ -84,6 +84,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 - **squark** ( - / [repository](https://github.com/rail44/squark) / [documentation](https://docs.rs/squark) ) - Rust frontend framework, for web browser and more.
 - **ruukh**  ( - / [repository](https://github.com/csharad/ruukh) / [documentation](https://docs.rs/ruukh/) ) - A frontend framework inspired by Vue and React
 - **willow** ( [homepage](http://sindrejohansen.no/willow/) - / [repository](https://github.com/sindreij/willow) / - ) - A frontend framework inspired by Elm
+- **dodrio** ( - / [repository](https://github.com/fitzgen/dodrio) / - ) - A fast, bump-allocated virtual DOM library.
 
 ## Supplemental libraries
 
@@ -140,14 +141,14 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 ### Frontend Frameworks
 
-|        Name        | stdweb     | yew        | percy        | seed         | draco        | smithy       | squark       |  ruukh          | willow       |
-| ------------------ | ---------- | ---------- | ------------ | ------------ | ------------ | ------------ | ------------ |  -------------- | ------------ |
-| **License**        | Apache/MIT | Apache/MIT | Apache/MIT   | MIT          | Apache/MIT   | ?            | WTFPL        |  MIT            | Apache/MIT   |
-| **Github Stars**   | 2.3k       | 6.5k       | 0.9k         | 0.2k         | 0.1k         | 0k           | 0.1k         |  0.1k           | 0.1k         |
-| **Contributors**   | 50         | 55         | 9            | 7            | 4            | 1            | 2            |  3              | 2            |
-| **Stable Rust**    | **yes**    | **yes**    | no           | **yes**      | **yes**      | no           | no           |  no             | no           |
-| **Base framework** | -          | stdweb     | wasm-bindgen | wasm-bindgen | wasm-bindgen | wasm-bindgen | wasm-bindgen |  wasm-bindgen   | wasm-bindgen |
-| **Virtual DOM**    | ?          | yes        | yes          | yes          | yes          | ?            | yes          |  yes            | ?            |
+|        Name        | stdweb     | yew        | percy        | seed         | draco        | smithy       | squark       |  ruukh          | willow       | dodrio       |
+| ------------------ | ---------- | ---------- | ------------ | ------------ | ------------ | ------------ | ------------ |  -------------- | ------------ | ------------ |
+| **License**        | Apache/MIT | Apache/MIT | Apache/MIT   | MIT          | Apache/MIT   | ?            | WTFPL        |  MIT            | Apache/MIT   | MPL-2.0      |
+| **Github Stars**   | 2.3k       | 6.5k       | 0.9k         | 0.2k         | 0.1k         | 0k           | 0.1k         |  0.1k           | 0.1k         | 0.6k         |
+| **Contributors**   | 50         | 55         | 9            | 7            | 4            | 1            | 2            |  3              | 2            | 7            |
+| **Stable Rust**    | **yes**    | **yes**    | no           | **yes**      | **yes**      | no           | no           |  no             | no           | ?            |
+| **Base framework** | -          | stdweb     | wasm-bindgen | wasm-bindgen | wasm-bindgen | wasm-bindgen | wasm-bindgen |  wasm-bindgen   | wasm-bindgen | wasm-bindgen |
+| **Virtual DOM**    | ?          | yes        | yes          | yes          | yes          | ?            | yes          |  yes            | ?            | yes          |
 
 
 ### Middleware & Plugins
