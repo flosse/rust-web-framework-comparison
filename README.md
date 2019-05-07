@@ -85,7 +85,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 - **squark** ( - / [repository](https://github.com/rail44/squark) / [documentation](https://docs.rs/squark) ) - Rust frontend framework, for web browser and more.
 - **ruukh**  ( - / [repository](https://github.com/csharad/ruukh) / [documentation](https://docs.rs/ruukh/) ) - A frontend framework inspired by Vue and React
 - **willow** ( [homepage](http://sindrejohansen.no/willow/) - / [repository](https://github.com/sindreij/willow) / - ) - A frontend framework inspired by Elm
-- **dodrio** ( - / [repository](https://github.com/fitzgen/dodrio) / - ) - A fast, bump-allocated virtual DOM library.
+- **dodrio** ( - / [repository](https://github.com/fitzgen/dodrio) / [documentation](https://docs.rs/dodrio/) ) - A fast, bump-allocated virtual DOM library.
 - **sauron** ( - / [repository](https://github.com/ivanceras/sauron) / [documentation](https://docs.rs/sauron/ ) - Sauron is an html web framework for building web-apps. It is heavily inspired by elm.
 
 ## Supplemental libraries
