@@ -35,6 +35,7 @@ There are several interesting frameworks to build web applications with Rust:
 - **rocket**    ([homepage](https://rocket.rs/)           / [repository](https://github.com/SergioBenitez/rocket)  / [documentation](https://rocket.rs/guide/))
 - **rouille**   ( -                                       / [repository](https://github.com/tomaka/rouille)        / [documentation](http://tomaka.github.io/rouille/rouille/index.html))
 - **Thruster**  ( -                                       / [repository](https://github.com/trezm/Thruster)        / [documentation](https://docs.rs/thruster) / [examples](https://github.com/trezm/Thruster/tree/master/examples))
+- **Tide**      ( -                                       / [repository](https://github.com/rustasync/tide)        / [documentation](https://docs.rs/tide) / [examples](https://github.com/rustasync/tide/tree/master/examples))
 - **tower-web** ( -                                       / [repository](https://github.com/carllerche/tower-web)  / [documentation](https://docs.rs/tower-web/) / [examples](https://github.com/carllerche/tower-web/tree/master/examples))
 - **warp**      ( -                                       / [repository](https://github.com/seanmonstar/warp)      / [documentation](https://docs.rs/warp/) / [examples](https://github.com/seanmonstar/warp/tree/master/examples))
 
