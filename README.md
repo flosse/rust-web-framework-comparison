@@ -80,7 +80,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 - **percy**  ( [homepage](https://chinedufn.github.io/percy/) / [repository](https://github.com/chinedufn/percy) / - ) - A modular toolkit for building isomorphic web apps
 - **seed**   ( [homepage](http://seed-rs.org/) / [repository](https://github.com/David-OConnor/seed) / - ) - A Rust framework for creating web apps
 - **draco**  ( - / [repository](https://github.com/utkarshkukreti/draco) / [documentation](https://docs.rs/draco/) ) - A frontend framework inpired by Redux and Elm
-- **smithy** ( - / [repository](https://github.com/rbalicki2/smithy) / - ) - A front-end framework
+- **smithy** ( - / [repository](https://github.com/rbalicki2/smithy) / - [documentation](https://docs.smithy.rs/smithy/) ) - A front-end framework
 - **squark** ( - / [repository](https://github.com/rail44/squark) / [documentation](https://docs.rs/squark) ) - Rust frontend framework, for web browser and more.
 - **ruukh**  ( - / [repository](https://github.com/csharad/ruukh) / [documentation](https://docs.rs/ruukh/) ) - A frontend framework inspired by Vue and React
 - **willow** ( [homepage](http://sindrejohansen.no/willow/) - / [repository](https://github.com/sindreij/willow) / - ) - A frontend framework inspired by Elm
