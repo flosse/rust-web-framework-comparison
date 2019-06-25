@@ -87,6 +87,8 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 - **willow** ( [homepage](http://sindrejohansen.no/willow/) - / [repository](https://github.com/sindreij/willow) / - ) - A frontend framework inspired by Elm
 - **dodrio** ( - / [repository](https://github.com/fitzgen/dodrio) / [documentation](https://docs.rs/dodrio/) ) - A fast, bump-allocated virtual DOM library.
 - **sauron** ( - / [repository](https://github.com/ivanceras/sauron) / [documentation](https://docs.rs/sauron/ ) - Sauron is an html web framework for building web-apps. It is heavily inspired by elm.
+- **dominator** ( - / [repository](https://github.com/Pauan/rust-dominator) / [documentation](https://docs.rs/dominator/) - Zero cost declarative DOM library using FRP signals for Rust!.
+- **mika** ( - / [repository](https://gitlab.com/limira-rs/mika) / - ) - A signal-based framework for building front-end app, it tries to help, but may cause annoyances.
 
 ## Supplemental libraries
 
