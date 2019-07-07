@@ -94,7 +94,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 ### Websocket
 
-- **websocket**   ([homepage](https://websockets-rs.github.io/)   / [repository](https://github.com/cyderize/rust-websocket)  / [documentation](https://websockets-rs.github.io/rust-websocket/doc/websocket/))
+- **websocket**   ([homepage](https://websockets-rs.github.io/rust-websocket/)   / [repository](https://github.com/cyderize/rust-websocket)  / [documentation](https://websockets-rs.github.io/rust-websocket/doc/websocket/))
 - **ws-rs**       ([homepage](https://ws-rs.org)                           / [repository](https://github.com/housleyjk/ws-rs)          / [documentation](https://ws-rs.org/docs))
 - **tungstenite** ( -                                                      / [repository](https://github.com/snapview/tungstenite-rs)  / [documentation](https://docs.rs/crate/tungstenite/))
 - **tk-http**     ( -                                                      / [repository](https://github.com/swindon-rs/tk-http)       / - )
