@@ -110,10 +110,10 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 - **handlebars** (-                                                     / [repository](https://github.com/sunng87/handlebars-rust)  / [documentation](https://docs.rs/crate/handlebars/))
 - **horrorshow** (-                                                     / [repository](https://github.com/Stebalien/horrorshow-rs)  / [documentation](https://stebalien.github.io/horrorshow-rs/horrorshow/))
 - **maud**       ([homepage](https://lfairy.gitbooks.io/maud/content/)  / [repository](https://github.com/lfairy/maud)              / [documentation](https://lambda.xyz/maud/maud/))
-- **askama**     (-                                                     / [repository](https://github.com/djc/askama)               / - )
+- **askama**     (-                                                     / [repository](https://github.com/djc/askama)               / [documentation](https://docs.rs/askama/) )
 - **stpl**       (-                                                     / [repository](https://github.com/dpc/stpl)                 / - )
 - **ructe**      (-                                                     / [repository](https://github.com/kaj/ructe)                / [documentation](https://docs.rs/ructe/) )
-- **typed-html** (-                                                     / [repository](https://github.com/bodil/typed-html)         / [documentation](https://docs.rs/typed-html) )
+- **typed-html** (-                                                     / [repository](https://github.com/bodil/typed-html)         / [documentation](https://docs.rs/typed-html/) )
 
 ## Comparison
 
