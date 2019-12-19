@@ -305,6 +305,7 @@ Then visit `http://localhost:3000` to see the result.
 - [openfairdb](https://github.com/flosse/openfairdb) - Rocket and Neo4j (r2d2)
 - [ruma](https://github.com/ruma/ruma) - Iron and Posgres (diesel + r2d2)
 - [html2pdf](https://github.com/rap2hpoutre/htmltopdf) - Iron
+- [Hagrid](https://gitlab.com/hagrid-keyserver/hagrid) (keys.openpgp.org) - Rocket
 
 ### JS & [asm.js](http://asmjs.org/) & [WASM](http://webassembly.org/)
 
