@@ -296,6 +296,7 @@ Then visit `http://localhost:3000` to see the result.
 ### Real-world web projects using Rust
 
 - [paste.rs](https://paste.rs/) - Rocket
+- [realworld-rust-rocket](https://github.com/TatriX/realworld-rust-rocket) - Rocket + Diesel, medium.com clone example
 - [Portier](https://portier.github.io/) - Iron and Redis
 - [yaus](https://github.com/gsquire/yaus) - Iron and SQLite
 - [racerd](https://github.com/jwilm/racerd) - Iron
