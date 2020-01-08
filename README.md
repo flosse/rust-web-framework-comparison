@@ -320,5 +320,4 @@ Then visit `http://localhost:3000` to see the result.
 #### Benchmark
 
 - [TechEmpower Web Framework Benchmarks](https://www.techempower.com/benchmarks/#section=data-r15&hw=ph&test=plaintext)
-- [benchmarks](https://github.com/fafhrd91/benchmarks) - Rust web frameworks benchmarks
 - [which_is_the_fastest](https://github.com/tbrand/which_is_the_fastest) - Measuring response times (routing times) for each framework (middleware). Each framework has to have two features; routing and parsing path parameters.
