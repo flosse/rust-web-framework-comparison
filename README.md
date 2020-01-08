@@ -320,4 +320,4 @@ Then visit `http://localhost:3000` to see the result.
 #### Benchmark
 
 - [TechEmpower Web Framework Benchmarks](https://www.techempower.com/benchmarks/#section=data-r15&hw=ph&test=plaintext)
-- [which_is_the_fastest](https://github.com/tbrand/which_is_the_fastest) - Measuring response times (routing times) for each framework (middleware). Each framework has to have two features; routing and parsing path parameters.
+- [web-frameworks](https://github.com/the-benchmarker/web-frameworks) - Measuring response times (routing times) for each framework (middleware). Each framework has to have two features; routing and parsing path parameters.
