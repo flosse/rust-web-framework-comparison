@@ -13,7 +13,7 @@ A comparison of some web frameworks written in [Rust](https://www.rust-lang.org)
   - [Websocket](#websocket)
   - [Templating](#templating)
 - [Comparison](#comparison)
-  - [High-Level Frameworks](#high-level-frameworks)
+  - [High-Level Server Frameworks](#high-level-server-frameworks)
   - [Low-Level Frameworks](#low-level-frameworks)
   - [Frontend Frameworks](#frontend-frameworks)
   - [Middleware & Plugins](#middleware--plugins)
@@ -192,21 +192,6 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 | **Client**         | yes                                                                                                               | yes                                                                                              | yes                                                                                               | yes                                                                                                            | yes                                                                                                  |
 | **Base framework** | - / tokio                                                                                                         | mio                                                                                              | tokio                                                                                             | - / tokio                                                                                                      | tokio                                                                                                |
 | **Async**          | no / yes                                                                                                          | yes                                                                                              | yes                                                                                               | no / yes                                                                                                       | yes                                                                                                  |
-
-
-## Examples
-
-To compile or run the examples use [Cargo](https://github.com/rust-lang/cargo).
-First clone this repo
-
-    git clone https://github.com/flosse/rust-web-framework-comparison
-    cd rust-web-framework-comparison/
-
-and change to the desired frameworkd directory (e.g. `cd iron/`) and type
-
-    cargo run --example hello_world
-
-Then visit `http://localhost:3000` to see the result.
 
 ## Resources
 
