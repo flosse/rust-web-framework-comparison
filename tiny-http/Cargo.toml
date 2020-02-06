@@ -1,6 +1,0 @@
-[package]
-name = "tiny-http-examples"
-version = "0.1.0"
-
-[dependencies]
-tiny_http = "*"
