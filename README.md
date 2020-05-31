@@ -31,7 +31,7 @@ There are several interesting frameworks to build web applications with Rust:
 - **actix-web** ([homepage](https://actix.rs/)            / [repository](https://github.com/actix/actix-web)       / [documentation](https://actix.github.io/actix-web/actix_web/) / [user guide](https://actix.rs/docs/))
 - **gotham**    ([homepage](http://gotham.rs/)            / [repository](https://github.com/gotham-rs/gotham/)     / [documentation](https://docs.rs/gotham/) / [examples](https://github.com/gotham-rs/gotham/tree/master/examples))
 - **iron**      ([homepage](http://ironframework.io/)     / [repository](https://github.com/iron/iron/)            / [documentation](http://ironframework.io/doc/iron/))
-- **nickel**    ([homepage](http://nickel-org.github.io/) / [repository](https://github.com/nickel-org/nickel.rs/) / [documentation](http://nickel-org.github.io/nickel.rs))
+- **nickel**    ([homepage](http://nickel-org.github.io/) / [repository](https://github.com/nickel-org/nickel.rs/) / [documentation](https://docs.rs/nickel))
 - **rocket**    ([homepage](https://rocket.rs/)           / [repository](https://github.com/SergioBenitez/rocket)  / [documentation](https://rocket.rs/guide/))
 - **rouille**   ( -                                       / [repository](https://github.com/tomaka/rouille)        / [documentation](http://tomaka.github.io/rouille/rouille/index.html))
 - **Thruster**  ( -                                       / [repository](https://github.com/trezm/Thruster)        / [documentation](https://docs.rs/thruster) / [examples](https://github.com/trezm/Thruster/tree/master/examples))
