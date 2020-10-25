@@ -280,6 +280,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 ### Real-world web projects using Rust
 
+- [Lemmy](https://github.com/LemmyNet/lemmy) - Actix + Diesel
 - [paste.rs](https://paste.rs/) - Rocket
 - [realworld-rust-rocket](https://github.com/TatriX/realworld-rust-rocket) - Rocket + Diesel, medium.com clone example
 - [Portier](https://portier.github.io/) - Iron and Redis
