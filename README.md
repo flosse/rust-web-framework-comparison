@@ -93,6 +93,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 ### Outdated frontend frameworks
 
 - [ruukh](https://github.com/csharad/ruukh)
+- [dumle](https://github.com/axelf4/dumle)
 
 ## Supplemental libraries
 
