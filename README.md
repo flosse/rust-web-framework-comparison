@@ -267,7 +267,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 - [exoskeleton](https://github.com/redo-studios/exoskeleton) - Iron
 - [Example webapp using React + Webpack](https://github.com/cmsd2/rust-iron-react-webpack) - Iron
-- [rustwebapp](https://github.com/superlogical/rustwebapp) - Iron and Postgres (r2d2)
+- [rustwebapp](https://github.com/kordless/rustwebapp) - Iron and Postgres (r2d2)
 - [webrust](https://github.com/Keats/webrust) - Iron and Postgres (r2d2)
 - [httptest](https://github.com/brson/httptest) - Iron
 - [nickel-todo-backend](https://github.com/Ryman/nickel-todo-backend/) - Nickel and Postgres (r2d2)
