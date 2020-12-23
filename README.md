@@ -175,7 +175,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 | **Cookies**               | [yes](https://github.com/iron/cookie)      | yes    | ?                                                     | n/a     | [yes](https://actix.rs/docs/middleware/#user-sessions)																				| [yes](https://github.com/thruster-rs/Thruster/blob/master/thruster/src/middleware/cookies.rs)
 | **PostgreSQL middleware** | ?                                          | no^    | [yes](https://github.com/nickel-org/nickel-postgres)  | n/a     | [yes](https://github.com/actix/examples/tree/master/diesel)																		|
 | **SQLite middleware**     | ?                                          | no^    | [yes](https://github.com/flosse/nickel-sqlite)        | n/a     | [yes](https://github.com/actix/examples/tree/master/diesel)																		|
-| **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | n/a     | [yes](https://github.com/actix/actix-redis)																										|
+| **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | n/a     | [yes](https://github.com/actix/actix-extras/tree/master/actix-redis)													|
 | **MySQL middleware**      | ?                                          | no^    | [yes](https://github.com/zither/nickel-mysql)         | n/a     | [yes](https://github.com/actix/examples/tree/master/diesel)																		|
 
 (^ Planned in current roadmap)
