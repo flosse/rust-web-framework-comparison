@@ -16,7 +16,6 @@ A comparison of some web frameworks written in [Rust](https://www.rust-lang.org)
   - [High-Level Server Frameworks](#high-level-server-frameworks)
   - [Low-Level Frameworks](#low-level-frameworks)
   - [Frontend Frameworks](#frontend-frameworks)
-  - [Middleware & Plugins](#middleware--plugins)
   - [Websocket Libraries](#websocket-libraries)
 - [Resources](#resources)
   - [Blog posts](#blog-posts)
@@ -162,23 +161,6 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 | **Activity**     | ![Yew activity](https://img.shields.io/github/commit-activity/y/yewstack/yew.svg?label=%20) | ![Percy activity](https://img.shields.io/github/commit-activity/y/chinedufn/percy.svg?label=%20) | ![Dodrio activity](https://img.shields.io/github/commit-activity/y/fitzgen/dodrio.svg?label=%20) | ![Seed activity](https://img.shields.io/github/commit-activity/y/David-OConnor/seed.svg?label=%20) | ![sauron activity](https://img.shields.io/github/commit-activity/y/ivanceras/sauron.svg?label=%20) | ![Draco activity](https://img.shields.io/github/commit-activity/y/utkarshkukreti/draco.svg?label=%20) | ![Squark activity](https://img.shields.io/github/commit-activity/y/rail44/squark.svg?label=%20) | ![Dominator activity](https://img.shields.io/github/commit-activity/y/Pauan/rust-dominator.svg?label=%20) | ![Mogwai activity](https://img.shields.io/github/commit-activity/y/schell/mogwai.svg?label=%20) |
 | **Stable Rust**  | **yes**                                                      | no                                                           | ?                                                            | **yes**                                                      | ?                                                            | **yes**                                                      | no                                                           | no                                                           | no                                                           |
 | **Virtual DOM**  | yes                                                          | yes                                                          | yes                                                          | yes                                                          | ?                                                            | yes                                                          | yes                                                          | **no**                                                       | **no**                                                       |
-
-### Middleware & Plugins
-
-|           Name            |                    iron                    | gotham |                        nickel                         | rouille | actix-web                                                                                     | Thruster
-| ------------------------- | ------------------------------------------ | ------ | ----------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------- |-----
-| **Static File Serving**   | [yes](https://github.com/iron/staticfile)  | no^    | yes                                                   | n/a     | [yes](https://actix.rs/docs/static-files/)                                                    | [yes](https://github.com/thruster-rs/Thruster/tree/master/thruster/examples/static_file)
-| **Mounting**              | [yes](https://github.com/iron/mount)       | yes    | yes                                                   | n/a     | [yes](https://actix.rs/docs/application/#using-an-application-prefix-to-compose-applications) | no
-| **Logging**               | [yes](https://github.com/iron/logger)      | yes    | no                                                    | n/a     | [yes](https://actix.rs/docs/middleware/#logging)																							| [yes](https://github.com/thruster-rs/Thruster/blob/master/thruster/examples/profiling.rs)
-| **JSON-Body-Parsing**     | [yes](https://github.com/iron/body-parser) | yes    | yes                                                   | n/a     | [yes](https://github.com/actix/examples/tree/master/json)																			| yes (via Serde)
-| **Sessions**              | [yes](https://github.com/iron/session)     | yes    | ?                                                     | n/a     | [yes](https://actix.rs/docs/middleware/#user-sessions)																				| [yes](https://github.com/thruster-rs/Thruster/tree/master/thruster/examples/jwt_example)
-| **Cookies**               | [yes](https://github.com/iron/cookie)      | yes    | ?                                                     | n/a     | [yes](https://actix.rs/docs/middleware/#user-sessions)																				| [yes](https://github.com/thruster-rs/Thruster/blob/master/thruster/src/middleware/cookies.rs)
-| **PostgreSQL middleware** | ?                                          | no^    | [yes](https://github.com/nickel-org/nickel-postgres)  | n/a     | [yes](https://github.com/actix/examples/tree/master/diesel)																		|
-| **SQLite middleware**     | ?                                          | no^    | [yes](https://github.com/flosse/nickel-sqlite)        | n/a     | [yes](https://github.com/actix/examples/tree/master/diesel)																		|
-| **Redis middleware**      | ?                                          | no^    | [yes](https://github.com/matthewbentley/nickel-redis) | n/a     | [yes](https://github.com/actix/actix-redis)																										|
-| **MySQL middleware**      | ?                                          | no^    | [yes](https://github.com/zither/nickel-mysql)         | n/a     | [yes](https://github.com/actix/examples/tree/master/diesel)																		|
-
-(^ Planned in current roadmap)
 
 ### Websocket Libraries
 
