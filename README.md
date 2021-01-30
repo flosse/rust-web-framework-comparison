@@ -5,21 +5,15 @@ A comparison of some web frameworks written in [Rust](https://www.rust-lang.org)
 ## Table of Contents
 
 - [Frontend frameworks (WASM)](#frontend-frameworks-wasm)
-  
 - [Server frameworks](#server-frameworks)
-  
+  - [High level](#high-level-server-frameworks)
+  - [Low level](#low-level-frameworks)
   - [Outdated server frameworks](#outdated-server-frameworks)
-  
 - [Client frameworks](#client-frameworks)
-  
   - [Outdated client frameworks](#outdated-client-frameworks)
-  
 - [Supplemental libraries](#supplemental-libraries)
-
   - [Templating](#templating)
-
   - [Websocket Libraries](#websocket-libraries)
-
 - [Resources](#resources)
   - [Blog posts](#blog-posts)
   - [Demos](#demos)
