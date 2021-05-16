@@ -80,18 +80,23 @@ This overview only contains framworks that support async execution.
 
 ### Low-Level Frameworks
 
-| Name               | [hyper](http://hyper.rs/)                                    | [h2](https://github.com/carllerche/h2)                       | [tiny-http](https://github.com/frewsxcv/tiny-http)           |
-| ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **License**        | ![Hyper license](https://img.shields.io/crates/l/hyper.svg?label=%20) | ![H2 license](https://img.shields.io/crates/l/h2.svg?label=%20) | ![Tiny-http license](https://img.shields.io/crates/l/tiny-http.svg?label=%20) |
-| **Version**        | ![Hyper version](https://img.shields.io/crates/v/hyper.svg?label=%20) | ![H2 version](https://img.shields.io/crates/v/h2.svg?label=%20) | ![Tiny-http version](https://img.shields.io/crates/v/tiny-http.svg?label=%20) |
-| **Github Stars**   | ![Hyper stars](https://img.shields.io/github/stars/hyperium/hyper.svg?label=%20) | ![H2 stars](https://img.shields.io/github/stars/carllerche/h2.svg?label=%20) | ![Tiny-http stars](https://img.shields.io/github/stars/tiny-http/tiny-http.svg?label=%20) |
-| **Contributors**   | ![Hyper contributors](https://img.shields.io/github/contributors/hyperium/hyper.svg?label=%20) | ![H2 contributors](https://img.shields.io/github/contributors/carllerche/h2.svg?label=%20) | ![Tiny-http contributors](https://img.shields.io/github/contributors/tiny-http/tiny-http.svg?label=%20) |
-| **Activity**       | ![Hyper activity](https://img.shields.io/github/commit-activity/y/hyperium/hyper.svg?label=%20) | ![H2 activity](https://img.shields.io/github/commit-activity/y/carllerche/h2.svg?label=%20) | ![Tiny-http activity](https://img.shields.io/github/commit-activity/y/tiny-http/tiny-http.svg?label=%20) |
-| **Server**         | yes                                                          | yes                                                          | yes                                                          |
-| **Client**         | yes                                                          | yes                                                          | no                                                           |
-| **HTTPS support**  | yes                                                          | no                                                           | yes                                                          |
-| **HTTP/2 support** | yes (h2)                                                     | yes                                                          | no                                                           |
-| **Async**          | yes                                                          | yes                                                          | no                                                           |
+| Name               | [hyper](http://hyper.rs/)                                    | [tiny-http](https://github.com/frewsxcv/tiny-http)           |
+| ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **License**        | ![Hyper license](https://img.shields.io/crates/l/hyper.svg?label=%20) | ![Tiny-http license](https://img.shields.io/crates/l/tiny-http.svg?label=%20) |
+| **Version**        | ![Hyper version](https://img.shields.io/crates/v/hyper.svg?label=%20) | ![Tiny-http version](https://img.shields.io/crates/v/tiny-http.svg?label=%20) |
+| **Github Stars**   | ![Hyper stars](https://img.shields.io/github/stars/hyperium/hyper.svg?label=%20) | ![Tiny-http stars](https://img.shields.io/github/stars/tiny-http/tiny-http.svg?label=%20) |
+| **Contributors**   | ![Hyper contributors](https://img.shields.io/github/contributors/hyperium/hyper.svg?label=%20) | ![Tiny-http contributors](https://img.shields.io/github/contributors/tiny-http/tiny-http.svg?label=%20) |
+| **Activity**       | ![Hyper activity](https://img.shields.io/github/commit-activity/y/hyperium/hyper.svg?label=%20) | ![Tiny-http activity](https://img.shields.io/github/commit-activity/y/tiny-http/tiny-http.svg?label=%20) |
+| **Server**         | yes                                                          | yes                                                          |
+| **Client**         | yes                                                          | no                                                           |
+| **HTTPS support**  | yes                                                          | yes                                                          |
+| **HTTP/2 support** | yes (h2)                                                     | no                                                           |
+| **Async**          | yes                                                          | no                                                           |
+
+If you need a more low level control you can choose between these libraries:
+
+- **hyper**     ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)       / [documentation](https://docs.rs/hyper/))
+- **tiny-http** ( -                           / [repository](https://github.com/tiny-http/tiny-http))  / [documentation](https://docs.rs/tiny_http/))
 
 ### Outdated server frameworks
 
