@@ -88,10 +88,10 @@ This overview only contains framworks that support async execution.
 | **Contributors**   | ![Hyper contributors](https://img.shields.io/github/contributors/hyperium/hyper.svg?label=%20) | ![H2 contributors](https://img.shields.io/github/contributors/carllerche/h2.svg?label=%20) | ![Tiny-http contributors](https://img.shields.io/github/contributors/tiny-http/tiny-http.svg?label=%20) |
 | **Activity**       | ![Hyper activity](https://img.shields.io/github/commit-activity/y/hyperium/hyper.svg?label=%20) | ![H2 activity](https://img.shields.io/github/commit-activity/y/carllerche/h2.svg?label=%20) | ![Tiny-http activity](https://img.shields.io/github/commit-activity/y/tiny-http/tiny-http.svg?label=%20) |
 | **Server**         | yes                                                          | yes                                                          | yes                                                          |
-| **Client**         | yes                                                          | yes                                                          | ?                                                            |
+| **Client**         | yes                                                          | yes                                                          | no                                                           |
 | **HTTPS support**  | yes                                                          | no                                                           | yes                                                          |
-| **HTTP/2 support** | solicit                                                      | yes                                                          | ?                                                            |
-| **Async**          | yes                                                          | yes                                                          |                                                              |
+| **HTTP/2 support** | yes (h2)                                                     | yes                                                          | no                                                           |
+| **Async**          | yes                                                          | yes                                                          | no                                                           |
 
 ### Outdated server frameworks
 
