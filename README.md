@@ -78,7 +78,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 ### Low-Level Frameworks
 
-| Name               | hyper                                                        | h2                                                           | tiny-http                                                    |
+| Name               | [hyper](http://hyper.rs/)                                    | [h2](https://github.com/carllerche/h2)                       | [tiny-http](https://github.com/frewsxcv/tiny-http)           |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **License**        | ![Hyper license](https://img.shields.io/crates/l/hyper.svg?label=%20) | ![H2 license](https://img.shields.io/crates/l/h2.svg?label=%20) | ![Tiny-http license](https://img.shields.io/crates/l/tiny-http.svg?label=%20) |
 | **Version**        | ![Hyper version](https://img.shields.io/crates/v/hyper.svg?label=%20) | ![H2 version](https://img.shields.io/crates/v/h2.svg?label=%20) | ![Tiny-http version](https://img.shields.io/crates/v/tiny-http.svg?label=%20) |
@@ -90,12 +90,6 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 | **HTTPS support**  | yes                                                          | no                                                           | yes                                                          |
 | **HTTP/2 support** | solicit                                                      | yes                                                          | ?                                                            |
 | **Async**          | yes                                                          | yes                                                          |                                                              |
-
-If you need a more low level control you can choose between these libraries:
-
-- **hyper**     ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)       / [documentation](http://hyper.rs/hyper))
-- **tiny-http** ( -                           / [repository](https://github.com/frewsxcv/tiny-http))  / [documentation](http://frewsxcv.github.io/tiny-http/tiny_http/index.html))
-- **h2**        ( -                           / [repository](https://github.com/carllerche/h2)        / - )
 
 ### Outdated server frameworks
 
