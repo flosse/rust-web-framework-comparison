@@ -133,6 +133,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Templating
 
+- **sailfish**       ([homepage](https://sailfish.netlify.app)          / [repository](https://github.com/Kogia-sima/sailfish/)     / [documentation](https://docs.rs/sailfish))
 - **tera**       ([homepage](https://tera.netlify.com/)                 / [repository](https://github.com/Keats/tera)               / [documentation](https://docs.rs/tera/))
 - **mustache**   (-                                                     / [repository](https://github.com/nickel-org/rust-mustache) / [documentation](http://nickel-org.github.io/rust-mustache))
 - **liquid**     (-                                                     / [repository](https://github.com/cobalt-org/liquid-rust)   / - )
