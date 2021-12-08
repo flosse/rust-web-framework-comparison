@@ -2,7 +2,7 @@
 
 A comparison of some web frameworks written in [Rust](https://www.rust-lang.org).
 
-This overview only contains framworks that work on stable Rust.
+This overview only contains frameworks that work on stable Rust.
 
 ## Table of Contents
 
@@ -55,7 +55,7 @@ Since [WASM](http://webassembly.org/) support is available in most browsers we c
 
 ### High-Level Server Frameworks
 
-This overview only contains framworks that support async execution.
+This overview only contains frameworks that support async execution.
 
 | Name               | rocket                                                       | warp                                                         | actix-web                                                    | gotham                                                       | Thruster                                                     | tide                                                         | salvo                                                        | trillium                                                     | axum                                                         |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
