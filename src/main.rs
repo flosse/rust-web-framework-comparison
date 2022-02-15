@@ -13,10 +13,22 @@ fn main() -> Result<()> {
     let mut toml_string = String::new();
     file.read_to_string(&mut toml_string)?;
     let data: Data = toml::from_str(&toml_string)?;
-    let table = frontends_to_table(data.frontend);
+
+    let active_frontends = data
+        .frontend
+        .iter()
+        .filter(|f| f.outdated.is_none() || f.outdated == Some(false));
+    let table = frontends_to_table(active_frontends);
     let md = table_to_markdown(&table);
     let mut file = File::create("frontends.md")?;
     file.write_all(md.as_bytes())?;
+
+    let outdated_frontends = data.frontend.iter().filter(|f| f.outdated == Some(true));
+    let table = frontends_to_table(outdated_frontends);
+    let md = table_to_markdown(&table);
+    let mut file = File::create("outdated-frontends.md")?;
+    file.write_all(md.as_bytes())?;
+
     Ok(())
 }
 
@@ -33,13 +45,14 @@ struct Frontend {
     crates_io: Option<String>,
     vdom: Option<bool>,
     ssr: Option<bool>,
+    outdated: Option<bool>,
 }
 
 type Table = Vec<Row>;
 type Row = Vec<Column>;
 type Column = String;
 
-fn frontends_to_table(frontends: Vec<Frontend>) -> Table {
+fn frontends_to_table<'a>(frontends: impl Iterator<Item = &'a Frontend>) -> Table {
     let mut rows = vec![vec![
         "Name".to_string(),
         "Repo".to_string(),
@@ -61,6 +74,7 @@ fn frontends_to_table(frontends: Vec<Frontend>) -> Table {
             crates_io,
             vdom,
             ssr,
+            ..
         } = f;
 
         let (repo, stars, contributors, activity) = match repo.host() {

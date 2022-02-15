@@ -53,3 +53,53 @@ crates_io = "dioxus"
 name = "MoonZoon"
 homepage = "http://moonzoon.rs/"
 repo = "https://github.com/MoonZoon/MoonZoon"
+
+[[frontend]]
+outdated = true
+name = "dodrio"
+repo = "https://github.com/fitzgen/dodrio"
+
+[[frontend]]
+outdated = true
+name = "draco"
+repo = "https://github.com/utkarshkukreti/draco"
+
+[[frontend]]
+outdated = true
+name = "dumle"
+repo = "https://github.com/axelf4/dumle"
+
+[[frontend]]
+outdated = true
+name = "mika"
+repo = "https://gitlab.com/limira-rs/mika"
+
+[[frontend]]
+outdated = true
+name = "percy"
+repo = "https://github.com/chinedufn/percy"
+
+[[frontend]]
+outdated = true
+name = "ruukh"
+repo = "https://github.com/csharad/ruukh"
+
+[[frontend]]
+outdated = true
+name = "smithy"
+repo = "https://github.com/rbalicki2/smithy"
+
+[[frontend]]
+outdated = true
+name = "squark"
+repo = "https://github.com/rail44/squark"
+
+[[frontend]]
+outdated = true
+name = "stdweb"
+repo = "https://github.com/koute/stdweb"
+
+[[frontend]]
+outdated = true
+name = "willow"
+repo = "https://github.com/sindreij/willow"
