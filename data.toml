@@ -1,0 +1,44 @@
+[[frontend]]
+name = "yew"
+crates_io = "Yew"
+homepage = "https://yew.rs"
+repo = "https://github.com/yewstack/yew"
+vdom = true
+ssr = false
+
+[[frontend]]
+name = "Seed"
+crates_io = "seed"
+homepage = "http://seed-rs.org/"
+repo = "https://github.com/seed-rs/seed"
+vdom = true
+ssr = false
+
+[[frontend]]
+name = "sauron"
+repo = "https://github.com/ivanceras/sauron"
+crates_io = "sauron"
+vdom = true
+ssr = true
+
+[[frontend]]
+name = "mogwai"
+repo = "https://github.com/schell/mogwai"
+crates_io = "mogwai"
+vdom = false
+ssr = true
+
+[[frontend]]
+name = "dominator"
+repo = "https://github.com/Pauan/rust-dominator"
+crates_io = "dominator"
+vdom = false
+ssr = false
+
+[[frontend]]
+name = "Sycamore"
+homepage = "https://sycamore-rs.netlify.app"
+repo = "https://github.com/sycamore-rs/sycamore"
+crates_io = "sycamore"
+vdom = false
+ssr = true
