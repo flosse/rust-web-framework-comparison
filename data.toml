@@ -48,14 +48,18 @@ name = "Dioxus"
 homepage = "https://dioxuslabs.com/"
 repo = "https://github.com/dioxuslabs/dioxus"
 crates_io = "dioxus"
+vdom = true
+ssr = true
 
 [[frontend]]
 name = "MoonZoon"
 homepage = "http://moonzoon.rs/"
 repo = "https://github.com/MoonZoon/MoonZoon"
+vdom = false
 
 [[frontend]]
 outdated = true
+crates_io = "dodrio"
 name = "dodrio"
 repo = "https://github.com/fitzgen/dodrio"
 
@@ -76,6 +80,7 @@ repo = "https://gitlab.com/limira-rs/mika"
 
 [[frontend]]
 outdated = true
+homepage = "https://chinedufn.github.io/percy/"
 name = "percy"
 repo = "https://github.com/chinedufn/percy"
 
@@ -87,7 +92,9 @@ repo = "https://github.com/csharad/ruukh"
 [[frontend]]
 outdated = true
 name = "smithy"
+crates_io = "smithy"
 repo = "https://github.com/rbalicki2/smithy"
+homepage = "https://www.smithy.rs/"
 
 [[frontend]]
 outdated = true
@@ -97,6 +104,7 @@ repo = "https://github.com/rail44/squark"
 [[frontend]]
 outdated = true
 name = "stdweb"
+crates_io = "stdweb"
 repo = "https://github.com/koute/stdweb"
 
 [[frontend]]
