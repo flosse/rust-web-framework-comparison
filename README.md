@@ -77,7 +77,7 @@ This overview only contains frameworks that support async execution.
 | **HTTPS support**  | yes                                                          | yes                                                          | yes                                                          | yes                                                          | yes                                                          |                                                              | yes                                                          | yes                                                          |                                                              | yes                                                          |
 | **HTTP/2 support** | yes                                                          | yes                                                          | yes                                                          | no                                                           | yes                                                          |                                                              | yes                                                          | no                                                           |                                                              | yes                                                          |
 
-- **actix-web** ([homepage](https://actix.rs/)            / [repository](https://github.com/actix/actix-web)       / [documentation](https://actix.github.io/actix-web/actix_web/) / [user guide](https://actix.rs/docs/))
+- **actix-web** ([homepage](https://actix.rs/)            / [repository](https://github.com/actix/actix-web)       / [documentation](https://docs.rs/actix-web) / [examples](https://github.com/actix/examples#community-showcase))
 - **axum** (            / [repository](https://github.com/tokio-rs/axum)       / [documentation](https://docs.rs/axum) / [examples](https://github.com/tokio-rs/axum/tree/main/examples) )
 - **gotham**    ([homepage](http://gotham.rs/)            / [repository](https://github.com/gotham-rs/gotham/)     / [documentation](https://docs.rs/gotham/) / [examples](https://github.com/gotham-rs/gotham/tree/master/examples))
 - **rocket**    ([homepage](https://rocket.rs/)           / [repository](https://github.com/SergioBenitez/rocket)  / [documentation](https://rocket.rs/guide/))
@@ -90,23 +90,24 @@ This overview only contains frameworks that support async execution.
 
 ### Low-Level Frameworks
 
-| Name               | [hyper](http://hyper.rs/)                                                                       | [tiny-http](https://github.com/frewsxcv/tiny-http)                                                       |
-| ------------------ | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| **License**        | ![Hyper license](https://img.shields.io/crates/l/hyper.svg?label=%20)                           | ![Tiny-http license](https://img.shields.io/crates/l/tiny-http.svg?label=%20)                            |
-| **Version**        | ![Hyper version](https://img.shields.io/crates/v/hyper.svg?label=%20)                           | ![Tiny-http version](https://img.shields.io/crates/v/tiny-http.svg?label=%20)                            |
-| **Github Stars**   | ![Hyper stars](https://img.shields.io/github/stars/hyperium/hyper.svg?label=%20)                | ![Tiny-http stars](https://img.shields.io/github/stars/tiny-http/tiny-http.svg?label=%20)                |
-| **Contributors**   | ![Hyper contributors](https://img.shields.io/github/contributors/hyperium/hyper.svg?label=%20)  | ![Tiny-http contributors](https://img.shields.io/github/contributors/tiny-http/tiny-http.svg?label=%20)  |
-| **Activity**       | ![Hyper activity](https://img.shields.io/github/commit-activity/y/hyperium/hyper.svg?label=%20) | ![Tiny-http activity](https://img.shields.io/github/commit-activity/y/tiny-http/tiny-http.svg?label=%20) |
-| **Server**         | yes                                                                                             | yes                                                                                                      |
-| **Client**         | yes                                                                                             | no                                                                                                       |
-| **HTTPS support**  | yes                                                                                             | yes                                                                                                      |
-| **HTTP/2 support** | yes (h2)                                                                                        | no                                                                                                       |
-| **Async**          | yes                                                                                             | no                                                                                                       |
+| Name               | [hyper](http://hyper.rs/)                                                                       | [tiny-http](https://github.com/frewsxcv/tiny-http)                                                       | [actix-http](https://github.com/actix/actix-web/tree/master/actix-http)                               |
+| ------------------ | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **License**        | ![Hyper license](https://img.shields.io/crates/l/hyper.svg?label=%20)                           | ![Tiny-http license](https://img.shields.io/crates/l/tiny-http.svg?label=%20)                            | ![actix-http license](https://img.shields.io/crates/l/actix-http.svg?label=%20)                       |
+| **Version**        | ![Hyper version](https://img.shields.io/crates/v/hyper.svg?label=%20)                           | ![Tiny-http version](https://img.shields.io/crates/v/tiny-http.svg?label=%20)                            | ![actix-http version](https://img.shields.io/crates/v/actix-http.svg?label=%20)                       |
+| **Github Stars**   | ![Hyper stars](https://img.shields.io/github/stars/hyperium/hyper.svg?label=%20)                | ![Tiny-http stars](https://img.shields.io/github/stars/tiny-http/tiny-http.svg?label=%20)                | ![actix-http stars](https://img.shields.io/github/stars/actix/actix-web.svg?label=%20)                |
+| **Contributors**   | ![Hyper contributors](https://img.shields.io/github/contributors/hyperium/hyper.svg?label=%20)  | ![Tiny-http contributors](https://img.shields.io/github/contributors/tiny-http/tiny-http.svg?label=%20)  | ![actix-http contributors](https://img.shields.io/github/contributors/actix/actix-web.svg?label=%20)  |
+| **Activity**       | ![Hyper activity](https://img.shields.io/github/commit-activity/y/hyperium/hyper.svg?label=%20) | ![Tiny-http activity](https://img.shields.io/github/commit-activity/y/tiny-http/tiny-http.svg?label=%20) | ![actix-http activity](https://img.shields.io/github/commit-activity/y/actix/actix-web.svg?label=%20) |
+| **Server**         | yes                                                                                             | yes                                                                                                      | yes                                                                                                   |
+| **Client**         | yes                                                                                             | no                                                                                                       | yes                                                                                                   |
+| **HTTPS support**  | yes                                                                                             | yes                                                                                                      | yes                                                                                                   |
+| **HTTP/2 support** | yes (h2)                                                                                        | no                                                                                                       | yes (h2)                                                                                              |
+| **Async**          | yes                                                                                             | no                                                                                                       | yes                                                                                                   |
 
 If you need a more low level control you can choose between these libraries:
 
 - **hyper**     ([homepage](http://hyper.rs/) / [repository](https://github.com/hyperium/hyper)       / [documentation](https://docs.rs/hyper/))
 - **tiny-http** ( -                           / [repository](https://github.com/tiny-http/tiny-http))  / [documentation](https://docs.rs/tiny_http/))
+- **actix-http** ( -                           / [repository](https://github.com/actix/actix-web/tree/master/actix-http))  / [documentation](https://docs.rs/actix-http))
 
 ### Outdated server frameworks
 
@@ -130,10 +131,10 @@ If you need a more low level control you can choose between these libraries:
 
 To build web clients with Rust, you can choose between these libraries:
 
-- **actix-web**  ([homepage](https://actix.rs/) / [repository](https://github.com/actix/actix-web)         / [api docs](https://actix.github.io/actix-web/actix_web/client/index.html))
-- **reqwest**    (-                             / [repository](https://github.com/seanmonstar/reqwest)     / [documentation](https://docs.rs/reqwest))
-- **hyper**      ([homepage](http://hyper.rs/)  / [repository](https://github.com/hyperium/hyper)          / [documentation](http://hyper.rs/hyper/hyper/))
-- **jsonrpc**    (-                             / [repository](https://github.com/apoelstra/rust-jsonrpc/) / [documentation](https://www.wpsoftware.net/rustdoc/jsonrpc/))
+- **reqwest**    (-                             / [repository](https://github.com/seanmonstar/reqwest)             / [documentation](https://docs.rs/reqwest))
+- **awc**        (-                             / [repository](https://github.com/actix/actix-web/tree/master/awc) / [api docs](https://docs.rs/awc))
+- **hyper**      ([homepage](http://hyper.rs/)  / [repository](https://github.com/hyperium/hyper)                  / [documentation](http://hyper.rs/hyper/hyper/))
+- **jsonrpc**    (-                             / [repository](https://github.com/apoelstra/rust-jsonrpc/        ) / [documentation](https://www.wpsoftware.net/rustdoc/jsonrpc/))
 
 ### Outdated client frameworks
 
