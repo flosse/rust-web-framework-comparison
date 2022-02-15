@@ -42,3 +42,14 @@ repo = "https://github.com/sycamore-rs/sycamore"
 crates_io = "sycamore"
 vdom = false
 ssr = true
+
+[[frontend]]
+name = "Dioxus"
+homepage = "https://dioxuslabs.com/"
+repo = "https://github.com/dioxuslabs/dioxus"
+crates_io = "dioxus"
+
+[[frontend]]
+name = "MoonZoon"
+homepage = "http://moonzoon.rs/"
+repo = "https://github.com/MoonZoon/MoonZoon"
