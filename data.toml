@@ -58,6 +58,13 @@ repo = "https://github.com/MoonZoon/MoonZoon"
 vdom = false
 
 [[frontend]]
+name = "Silkenweb"
+crates_io = "silkenweb"
+repo = "https://github.com/silkenweb/silkenweb"
+vdom = false
+ssr = true
+
+[[frontend]]
 outdated = true
 crates_io = "dodrio"
 name = "dodrio"
