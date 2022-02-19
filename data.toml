@@ -65,6 +65,14 @@ vdom = false
 ssr = true
 
 [[frontend]]
+homepage = "https://chinedufn.github.io/percy/"
+name = "percy"
+repo = "https://github.com/chinedufn/percy"
+ssr = true
+vdom = true
+outdated = false
+
+[[frontend]]
 outdated = true
 crates_io = "dodrio"
 name = "dodrio"
@@ -84,12 +92,6 @@ repo = "https://github.com/axelf4/dumle"
 outdated = true
 name = "mika"
 repo = "https://gitlab.com/limira-rs/mika"
-
-[[frontend]]
-outdated = true
-homepage = "https://chinedufn.github.io/percy/"
-name = "percy"
-repo = "https://github.com/chinedufn/percy"
 
 [[frontend]]
 outdated = true
