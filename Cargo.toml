@@ -10,4 +10,5 @@ anyhow = "1"
 pad = "0.1"
 serde = { version = "1", features = ["derive"] }
 toml = "0.5"
-url = { version = "2", features = ["serde"] } 
+tera = { version = "1", default-features = false }
+url = { version = "2", features = ["serde"] }

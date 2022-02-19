@@ -6,30 +6,43 @@ use std::{
     fs::File,
     io::{Read, Write},
 };
+use tera::{Context, Tera};
 use url::{Host, Url};
 
 fn main() -> Result<()> {
-    let mut file = File::open("data.toml")?;
-    let mut toml_string = String::new();
-    file.read_to_string(&mut toml_string)?;
-    let data: Data = toml::from_str(&toml_string)?;
+    let data = read_data()?;
 
     let active_frontends = data
         .frontend
         .iter()
         .filter(|f| f.outdated.is_none() || f.outdated == Some(false));
     let table = frontends_to_table(active_frontends);
-    let md = table_to_markdown(&table);
-    let mut file = File::create("frontends.md")?;
-    file.write_all(md.as_bytes())?;
+    let frontend_frameworks = table_to_markdown(&table);
 
     let outdated_frontends = data.frontend.iter().filter(|f| f.outdated == Some(true));
     let table = frontends_to_table(outdated_frontends);
-    let md = table_to_markdown(&table);
-    let mut file = File::create("outdated-frontends.md")?;
-    file.write_all(md.as_bytes())?;
+    let outdated_frontend_frameworks = table_to_markdown(&table);
+
+    let tera = Tera::new("*.tmpl")?;
+    let mut context = Context::new();
+    context.insert("frontend_frameworks", &frontend_frameworks);
+    context.insert(
+        "outdated_frontend_frameworks",
+        &outdated_frontend_frameworks,
+    );
+    let readme = tera.render("README.tmpl", &context)?;
+    let mut file = File::create("README.md")?;
+    file.write_all(readme.as_bytes())?;
 
     Ok(())
+}
+
+fn read_data() -> Result<Data> {
+    let mut file = File::open("data.toml")?;
+    let mut toml_string = String::new();
+    file.read_to_string(&mut toml_string)?;
+    let data = toml::from_str(&toml_string)?;
+    Ok(data)
 }
 
 #[derive(Debug, Deserialize)]
