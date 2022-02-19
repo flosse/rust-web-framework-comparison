@@ -120,3 +120,59 @@ repo = "https://github.com/koute/stdweb"
 outdated = true
 name = "willow"
 repo = "https://github.com/sindreij/willow"
+
+[[template]]
+name = "sailfish"
+homepage = "https://sailfish.netlify.app"
+repo = "https://github.com/Kogia-sima/sailfish/"
+crates_io = "sailfish"
+
+[[template]]
+name = "tera"
+homepage = "https://tera.netlify.com/"
+repo = "https://github.com/Keats/tera"
+crates_io = "tera"
+
+[[template]]
+name = "mustache"
+repo = "https://github.com/nickel-org/rust-mustache"
+crates_io = "mustache"
+
+[[template]]
+name = "liquid"
+repo = "https://github.com/cobalt-org/liquid-rust"
+
+[[template]]
+name = "handlebars"
+repo = "https://github.com/sunng87/handlebars-rust"
+crates_io = "handlebars"
+
+[[template]]
+name = "horrorshow"
+repo = "https://github.com/Stebalien/horrorshow-rs"
+crates_io = "horrorshow"
+
+[[template]]
+name = "maud"
+repo = "https://github.com/lfairy/maud"
+homepage = "https://lfairy.gitbooks.io/maud/content"
+crates_io = "maud"
+
+[[template]]
+name = "askama"
+repo = "https://github.com/djc/askama"
+crates_io = "askama"
+
+[[template]]
+name = "stpl"
+repo = "https://github.com/dpc/stpl"
+
+[[template]]
+name = "ructe"
+repo = "https://github.com/kaj/ructe"
+crates_io = "ructe"
+
+[[template]]
+name = "typed-html"
+repo = "https://github.com/bodil/typed-html"
+crates_io = "typed-html"
