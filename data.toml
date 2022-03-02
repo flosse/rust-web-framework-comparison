@@ -73,6 +73,15 @@ vdom = true
 outdated = false
 
 [[frontend]]
+name = "frender"
+crates_io = "frender"
+homepage = "https://frender-rs.github.io/frender/"
+repo = "https://github.com/frender-rs/frender"
+vdom = true
+ssr = false
+outdated = false
+
+[[frontend]]
 outdated = true
 crates_io = "dodrio"
 name = "dodrio"
