@@ -211,7 +211,8 @@ client = false
 
 [[server]]
 name = "actix-http"
-repo = "https://github.com/actix/actix-web/tree/master/actix-http"
+homepage = "https://github.com/actix/actix-web/tree/master/actix-http"
+repo = "https://github.com/actix/actix-web"
 crates-io = "actix-http"
 low-level = true
 outdated = false
