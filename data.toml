@@ -1,6 +1,6 @@
 [[frontend]]
 name = "yew"
-crates_io = "Yew"
+crates-io = "Yew"
 homepage = "https://yew.rs"
 repo = "https://github.com/yewstack/yew"
 vdom = true
@@ -8,7 +8,7 @@ ssr = false
 
 [[frontend]]
 name = "Seed"
-crates_io = "seed"
+crates-io = "seed"
 homepage = "http://seed-rs.org/"
 repo = "https://github.com/seed-rs/seed"
 vdom = true
@@ -17,21 +17,21 @@ ssr = false
 [[frontend]]
 name = "sauron"
 repo = "https://github.com/ivanceras/sauron"
-crates_io = "sauron"
+crates-io = "sauron"
 vdom = true
 ssr = true
 
 [[frontend]]
 name = "mogwai"
 repo = "https://github.com/schell/mogwai"
-crates_io = "mogwai"
+crates-io = "mogwai"
 vdom = false
 ssr = true
 
 [[frontend]]
 name = "dominator"
 repo = "https://github.com/Pauan/rust-dominator"
-crates_io = "dominator"
+crates-io = "dominator"
 vdom = false
 ssr = false
 
@@ -39,7 +39,7 @@ ssr = false
 name = "Sycamore"
 homepage = "https://sycamore-rs.netlify.app"
 repo = "https://github.com/sycamore-rs/sycamore"
-crates_io = "sycamore"
+crates-io = "sycamore"
 vdom = false
 ssr = true
 
@@ -47,7 +47,7 @@ ssr = true
 name = "Dioxus"
 homepage = "https://dioxuslabs.com/"
 repo = "https://github.com/dioxuslabs/dioxus"
-crates_io = "dioxus"
+crates-io = "dioxus"
 vdom = true
 ssr = true
 
@@ -59,7 +59,7 @@ vdom = false
 
 [[frontend]]
 name = "Silkenweb"
-crates_io = "silkenweb"
+crates-io = "silkenweb"
 repo = "https://github.com/silkenweb/silkenweb"
 vdom = false
 ssr = true
@@ -74,7 +74,7 @@ outdated = false
 
 [[frontend]]
 name = "frender"
-crates_io = "frender"
+crates-io = "frender"
 homepage = "https://frender-rs.github.io/frender/"
 repo = "https://github.com/frender-rs/frender"
 vdom = true
@@ -83,7 +83,7 @@ outdated = false
 
 [[frontend]]
 outdated = true
-crates_io = "dodrio"
+crates-io = "dodrio"
 name = "dodrio"
 repo = "https://github.com/fitzgen/dodrio"
 
@@ -110,7 +110,7 @@ repo = "https://github.com/csharad/ruukh"
 [[frontend]]
 outdated = true
 name = "smithy"
-crates_io = "smithy"
+crates-io = "smithy"
 repo = "https://github.com/rbalicki2/smithy"
 homepage = "https://www.smithy.rs/"
 
@@ -122,7 +122,7 @@ repo = "https://github.com/rail44/squark"
 [[frontend]]
 outdated = true
 name = "stdweb"
-crates_io = "stdweb"
+crates-io = "stdweb"
 repo = "https://github.com/koute/stdweb"
 
 [[frontend]]
@@ -134,18 +134,18 @@ repo = "https://github.com/sindreij/willow"
 name = "sailfish"
 homepage = "https://sailfish.netlify.app"
 repo = "https://github.com/Kogia-sima/sailfish/"
-crates_io = "sailfish"
+crates-io = "sailfish"
 
 [[template]]
 name = "tera"
 homepage = "https://tera.netlify.com/"
 repo = "https://github.com/Keats/tera"
-crates_io = "tera"
+crates-io = "tera"
 
 [[template]]
 name = "mustache"
 repo = "https://github.com/nickel-org/rust-mustache"
-crates_io = "mustache"
+crates-io = "mustache"
 
 [[template]]
 name = "liquid"
@@ -154,23 +154,23 @@ repo = "https://github.com/cobalt-org/liquid-rust"
 [[template]]
 name = "handlebars"
 repo = "https://github.com/sunng87/handlebars-rust"
-crates_io = "handlebars"
+crates-io = "handlebars"
 
 [[template]]
 name = "horrorshow"
 repo = "https://github.com/Stebalien/horrorshow-rs"
-crates_io = "horrorshow"
+crates-io = "horrorshow"
 
 [[template]]
 name = "maud"
 repo = "https://github.com/lfairy/maud"
 homepage = "https://lfairy.gitbooks.io/maud/content"
-crates_io = "maud"
+crates-io = "maud"
 
 [[template]]
 name = "askama"
 repo = "https://github.com/djc/askama"
-crates_io = "askama"
+crates-io = "askama"
 
 [[template]]
 name = "stpl"
@@ -179,9 +179,43 @@ repo = "https://github.com/dpc/stpl"
 [[template]]
 name = "ructe"
 repo = "https://github.com/kaj/ructe"
-crates_io = "ructe"
+crates-io = "ructe"
 
 [[template]]
 name = "typed-html"
 repo = "https://github.com/bodil/typed-html"
-crates_io = "typed-html"
+crates-io = "typed-html"
+
+[[server]]
+name = "hyper"
+homepage = "http://hyper.rs/"
+repo = "https://github.com/hyperium/hyper"
+crates-io = "hyper"
+low-level = true
+outdated = false
+async = true
+http2 = true
+https = true
+client = true
+
+[[server]]
+name = "tiny-http"
+repo = "https://github.com/tiny-http/tiny-http"
+crates-io = "tiny_http"
+low-level = true
+outdated = false
+async = false
+http2 = false
+https = true
+client = false
+
+[[server]]
+name = "actix-http"
+repo = "https://github.com/actix/actix-web/tree/master/actix-http"
+crates-io = "actix-http"
+low-level = true
+outdated = false
+async = true
+http2 = true
+https = true
+client = true

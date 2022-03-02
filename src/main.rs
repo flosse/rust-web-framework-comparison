@@ -28,6 +28,14 @@ fn main() -> Result<()> {
     let table = templates_to_table(active_templating);
     let templating = table::to_markdown(&table);
 
+    let low_level_server = data
+        .server
+        .iter()
+        .filter(|f| f.outdated.is_none() || f.outdated == Some(false))
+        .filter(|f| f.low_level == Some(true));
+    let table = server_to_table(low_level_server);
+    let low_level_server = table::to_markdown(&table);
+
     let tera = Tera::new("*.tmpl")?;
     let mut context = Context::new();
     context.insert("frontend_frameworks", &frontend_frameworks);
@@ -36,6 +44,7 @@ fn main() -> Result<()> {
         &outdated_frontend_frameworks,
     );
     context.insert("templating", &templating);
+    context.insert("low_level_server", &low_level_server);
 
     let readme = tera.render("README.tmpl", &context)?;
     let mut file = File::create("README.md")?;
@@ -88,14 +97,8 @@ fn frontends_to_table<'a>(frontends: impl Iterator<Item = &'a Frontend>) -> tabl
             version,
         } = crates_io_info(&name, crates_io);
 
-        let vdom = vdom
-            .map(|yes| if yes { "yes" } else { "no" })
-            .unwrap_or_default()
-            .to_string();
-        let ssr = ssr
-            .map(|yes| if yes { "yes" } else { "no" })
-            .unwrap_or_default()
-            .to_string();
+        let vdom = vdom.map(bool_to_str).unwrap_or_default().to_string();
+        let ssr = ssr.map(bool_to_str).unwrap_or_default().to_string();
 
         rows.push(vec![
             name,
@@ -111,6 +114,14 @@ fn frontends_to_table<'a>(frontends: impl Iterator<Item = &'a Frontend>) -> tabl
         ]);
     }
     rows
+}
+
+fn bool_to_str(b: bool) -> &'static str {
+    if b {
+        "yes"
+    } else {
+        "no"
+    }
 }
 
 fn templates_to_table<'a>(templates: impl Iterator<Item = &'a Template>) -> table::Table {
@@ -162,6 +173,72 @@ fn templates_to_table<'a>(templates: impl Iterator<Item = &'a Template>) -> tabl
             stars,
             contributors,
             activity,
+        ]);
+    }
+    rows
+}
+
+fn server_to_table<'a>(servers: impl Iterator<Item = &'a Server>) -> table::Table {
+    let mut rows = vec![vec![
+        "Name".to_string(),
+        "Repo".to_string(),
+        "Docs".to_string(),
+        "License".to_string(),
+        "Version".to_string(),
+        "Stars".to_string(),
+        "Contributors".to_string(),
+        "Activity".to_string(),
+        "Async".to_string(),
+        "HTTPS".to_string(),
+        "HTTP/2".to_string(),
+        "Client".to_string(),
+    ]];
+
+    for s in servers {
+        let Server {
+            name,
+            repo,
+            homepage,
+            crates_io,
+            r#async,
+            https,
+            http2,
+            client,
+            ..
+        } = s;
+
+        let RepoInfo {
+            repo,
+            stars,
+            contributors,
+            activity,
+        } = repo_info(name, repo);
+
+        let name = if let Some(hp) = homepage {
+            format!("**[{name}]({hp})**")
+        } else {
+            format!("**{name}**")
+        };
+
+        let CratesIoInfo {
+            license,
+            docs,
+            version,
+        } = crates_io_info(&name, crates_io);
+
+        rows.push(vec![
+            name,
+            repo,
+            docs,
+            license,
+            version,
+            stars,
+            contributors,
+            activity,
+            bool_to_str(*r#async).into(),
+            bool_to_str(*https).into(),
+            bool_to_str(*http2).into(),
+            bool_to_str(*client).into(),
         ]);
     }
     rows
