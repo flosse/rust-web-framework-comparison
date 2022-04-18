@@ -237,6 +237,7 @@ To build web clients with Rust, you can choose between these libraries:
 
 ### Demos
 
+- [rust-auth-demo](https://github.com/andregs/rust-auth-demo) - Rocket on Kubernetes with bells and whistles
 - [exoskeleton](https://github.com/redo-studios/exoskeleton) - Iron
 - [Example webapp using React + Webpack](https://github.com/cmsd2/rust-iron-react-webpack) - Iron
 - [rustwebapp](https://github.com/kordless/rustwebapp) - Iron and Postgres (r2d2)
