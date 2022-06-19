@@ -10,6 +10,9 @@ use data::*;
 
 fn main() -> Result<()> {
     let data = read_data()?;
+
+    // --- frontends --- //
+
     let active_frontends = data
         .frontend
         .iter()
@@ -21,12 +24,16 @@ fn main() -> Result<()> {
     let table = frontends_to_table(outdated_frontends);
     let outdated_frontend_frameworks = table::to_markdown(&table);
 
+    // --- templating --- //
+
     let active_templating = data
         .template
         .iter()
         .filter(|f| f.outdated.is_none() || f.outdated == Some(false));
     let table = templates_to_table(active_templating);
     let templating = table::to_markdown(&table);
+
+    // --- low level server --- //
 
     let low_level_server = data
         .server
@@ -35,6 +42,17 @@ fn main() -> Result<()> {
         .filter(|f| f.low_level == Some(true));
     let table = server_to_table(low_level_server);
     let low_level_server = table::to_markdown(&table);
+
+    // --- web sockets --- //
+
+    let websocket = data
+        .websocket
+        .iter()
+        .filter(|f| f.outdated.is_none() || f.outdated == Some(false));
+    let table = websocket_to_table(websocket);
+    let websocket = table::to_markdown(&table);
+
+    // --- render README --- //
 
     let tera = Tera::new("*.tmpl")?;
     let mut context = Context::new();
@@ -45,6 +63,7 @@ fn main() -> Result<()> {
     );
     context.insert("templating", &templating);
     context.insert("low_level_server", &low_level_server);
+    context.insert("websocket", &websocket);
 
     let readme = tera.render("README.tmpl", &context)?;
     let mut file = File::create("README.md")?;
@@ -239,6 +258,69 @@ fn server_to_table<'a>(servers: impl Iterator<Item = &'a Server>) -> table::Tabl
             bool_to_str(*https).into(),
             bool_to_str(*http2).into(),
             bool_to_str(*client).into(),
+        ]);
+    }
+    rows
+}
+
+fn websocket_to_table<'a>(websocket: impl Iterator<Item = &'a WebSocket>) -> table::Table {
+    let mut rows = vec![vec![
+        "Name".to_string(),
+        "Repo".to_string(),
+        "Docs".to_string(),
+        "License".to_string(),
+        "Version".to_string(),
+        "Stars".to_string(),
+        "Contributors".to_string(),
+        "Activity".to_string(),
+        "Client".to_string(),
+        "Server".to_string(),
+        "Async".to_string(),
+    ]];
+
+    for s in websocket {
+        let WebSocket {
+            name,
+            repo,
+            homepage,
+            crates_io,
+            r#async,
+            client,
+            server,
+            ..
+        } = s;
+
+        let RepoInfo {
+            repo,
+            stars,
+            contributors,
+            activity,
+        } = repo_info(name, repo);
+
+        let name = if let Some(hp) = homepage {
+            format!("**[{name}]({hp})**")
+        } else {
+            format!("**{name}**")
+        };
+
+        let CratesIoInfo {
+            license,
+            docs,
+            version,
+        } = crates_io_info(&name, crates_io);
+
+        rows.push(vec![
+            name,
+            repo,
+            docs,
+            license,
+            version,
+            stars,
+            contributors,
+            activity,
+            bool_to_str(*client).into(),
+            bool_to_str(*server).into(),
+            bool_to_str(*r#async).into(),
         ]);
     }
     rows

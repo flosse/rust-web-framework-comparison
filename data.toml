@@ -220,3 +220,46 @@ async = true
 http2 = true
 https = true
 client = true
+
+[[websocket]]
+name = "tungstenite"
+crates-io = "tungstenite"
+repo = "https://github.com/snapview/tungstenite-rs"
+server = true
+client = true
+async = true
+
+[[websocket]]
+name = "tokio-tungstenite"
+crates-io = "tokio-tungstenite"
+repo = "https://github.com/snapview/tokio-tungstenite"
+server = true
+client = true
+async = true
+
+[[websocket]]
+name = "actix-web"
+crates-io = "actix-web-actors"
+repo = "https://github.com/actix/actix-web"
+homepage = "https://actix.rs/docs/websockets/"
+server = true
+client = true
+async = true
+
+[[websocket]]
+name = "ws-rs"
+repo = "https://github.com/housleyjk/ws-rs"
+crates-io = "ws"
+server = true
+client = true
+async = true
+
+[[websocket]]
+name = "websocket"
+repo = "https://github.com/websockets-rs/rust-websocket"
+homepage = "https://websockets-rs.github.io/rust-websocket/"
+crates-io = "websocket"
+server = true
+client = true
+async = true
+outdated = true

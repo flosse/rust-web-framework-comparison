@@ -16,6 +16,7 @@ pub struct Data {
     pub frontend: Vec<Frontend>,
     pub template: Vec<Template>,
     pub server: Vec<Server>,
+    pub websocket: Vec<WebSocket>,
 }
 
 #[derive(Debug, Deserialize)]
@@ -54,4 +55,17 @@ pub struct Server {
     pub http2: bool,
     pub https: bool,
     pub client: bool,
+}
+
+#[derive(Debug, Deserialize)]
+pub struct WebSocket {
+    pub name: String,
+    pub repo: Url,
+    pub homepage: Option<Url>,
+    #[serde(rename = "crates-io")]
+    pub crates_io: Option<String>,
+    pub outdated: Option<bool>,
+    pub r#async: bool,
+    pub client: bool,
+    pub server: bool,
 }
