@@ -79,7 +79,7 @@ homepage = "https://frender-rs.github.io/frender/"
 repo = "https://github.com/frender-rs/frender"
 vdom = true
 ssr = false
-outdated = false
+outdated = true
 
 [[frontend]]
 outdated = true
