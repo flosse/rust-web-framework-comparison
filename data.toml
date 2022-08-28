@@ -85,7 +85,17 @@ rendering = "html"
 [[frontend]]
 homepage = "https://www.egui.rs/"
 name = "egui"
+crates-io = "egui"
 repo = "https://github.com/emilk/egui"
+ssr = false
+vdom = false
+rendering = "canvas"
+
+[[frontend]]
+homepage = "https://iced.rs/"
+name = "Iced"
+crates-io = "iced"
+repo = "https://github.com/iced-rs/iced"
 ssr = false
 vdom = false
 rendering = "canvas"
