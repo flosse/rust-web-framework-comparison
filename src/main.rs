@@ -75,10 +75,6 @@ fn main() -> Result<()> {
 fn frontends_to_table<'a>(frontends: impl Iterator<Item = &'a Frontend>) -> table::Table {
     let mut rows = vec![vec![
         "Name".to_string(),
-        "Repo".to_string(),
-        "Docs".to_string(),
-        "License".to_string(),
-        "Version".to_string(),
         "Stars".to_string(),
         "Contributors".to_string(),
         "Activity".to_string(),
@@ -86,6 +82,10 @@ fn frontends_to_table<'a>(frontends: impl Iterator<Item = &'a Frontend>) -> tabl
         "SSR".to_string(),
         "Rendering".to_string(),
         "Architecture".to_string(),
+        "Repo".to_string(),
+        "Docs".to_string(),
+        "License".to_string(),
+        "Version".to_string(),
     ]];
 
     for f in frontends {
@@ -127,10 +127,6 @@ fn frontends_to_table<'a>(frontends: impl Iterator<Item = &'a Frontend>) -> tabl
 
         rows.push(vec![
             name,
-            repo,
-            docs,
-            license,
-            version,
             stars,
             contributors,
             activity,
@@ -138,6 +134,10 @@ fn frontends_to_table<'a>(frontends: impl Iterator<Item = &'a Frontend>) -> tabl
             ssr,
             rendering,
             architecture,
+            repo,
+            docs,
+            license,
+            version,
         ]);
     }
     rows
