@@ -6,6 +6,7 @@ repo = "https://github.com/yewstack/yew"
 vdom = true
 ssr = false
 rendering = "html"
+architecture = "react"
 
 [[frontend]]
 name = "Seed"
@@ -15,6 +16,7 @@ repo = "https://github.com/seed-rs/seed"
 vdom = true
 ssr = false
 rendering = "html"
+architecture = "tea"
 
 [[frontend]]
 name = "sauron"
@@ -23,6 +25,7 @@ crates-io = "sauron"
 vdom = true
 ssr = true
 rendering = "html"
+architecture = "tea"
 
 [[frontend]]
 name = "mogwai"
@@ -39,6 +42,7 @@ crates-io = "dominator"
 vdom = false
 ssr = false
 rendering = "html"
+architecture = "frp"
 
 [[frontend]]
 name = "Sycamore"
@@ -48,6 +52,7 @@ crates-io = "sycamore"
 vdom = false
 ssr = true
 rendering = "html"
+architecture = "frp"
 
 [[frontend]]
 name = "Dioxus"
@@ -64,6 +69,7 @@ homepage = "http://moonzoon.rs/"
 repo = "https://github.com/MoonZoon/MoonZoon"
 vdom = false
 rendering = "html"
+architecture = "frp"
 
 [[frontend]]
 name = "Silkenweb"
@@ -99,6 +105,7 @@ repo = "https://github.com/iced-rs/iced"
 ssr = false
 vdom = false
 rendering = "canvas"
+architecture = "tea"
 
 [[frontend]]
 name = "frender"

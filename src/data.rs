@@ -30,6 +30,7 @@ pub struct Frontend {
     pub ssr: Option<bool>,
     pub outdated: Option<bool>,
     pub rendering: Option<FrontendRendering>,
+    pub architecture: Option<FrontendArchitecture>,
 }
 
 #[derive(Clone, Copy, Debug, Deserialize)]
@@ -45,6 +46,27 @@ impl ToString for FrontendRendering {
         match self {
             Self::Html => "HTML",
             Self::Canvas => "Canvas",
+        }
+        .to_string()
+    }
+}
+
+#[derive(Clone, Copy, Debug, Deserialize)]
+pub enum FrontendArchitecture {
+    #[serde(rename = "tea")]
+    Tea,
+    #[serde(rename = "react")]
+    React,
+    #[serde(rename = "frp")]
+    Frp,
+}
+
+impl ToString for FrontendArchitecture {
+    fn to_string(&self) -> String {
+        match self {
+            Self::Tea => "TEA",
+            Self::React => "React/Redux",
+            Self::Frp => "FRP",
         }
         .to_string()
     }
