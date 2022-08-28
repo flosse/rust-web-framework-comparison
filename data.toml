@@ -5,6 +5,7 @@ homepage = "https://yew.rs"
 repo = "https://github.com/yewstack/yew"
 vdom = true
 ssr = false
+rendering = "html"
 
 [[frontend]]
 name = "Seed"
@@ -13,6 +14,7 @@ homepage = "http://seed-rs.org/"
 repo = "https://github.com/seed-rs/seed"
 vdom = true
 ssr = false
+rendering = "html"
 
 [[frontend]]
 name = "sauron"
@@ -20,6 +22,7 @@ repo = "https://github.com/ivanceras/sauron"
 crates-io = "sauron"
 vdom = true
 ssr = true
+rendering = "html"
 
 [[frontend]]
 name = "mogwai"
@@ -27,6 +30,7 @@ repo = "https://github.com/schell/mogwai"
 crates-io = "mogwai"
 vdom = false
 ssr = true
+rendering = "html"
 
 [[frontend]]
 name = "dominator"
@@ -34,6 +38,7 @@ repo = "https://github.com/Pauan/rust-dominator"
 crates-io = "dominator"
 vdom = false
 ssr = false
+rendering = "html"
 
 [[frontend]]
 name = "Sycamore"
@@ -42,6 +47,7 @@ repo = "https://github.com/sycamore-rs/sycamore"
 crates-io = "sycamore"
 vdom = false
 ssr = true
+rendering = "html"
 
 [[frontend]]
 name = "Dioxus"
@@ -50,12 +56,14 @@ repo = "https://github.com/dioxuslabs/dioxus"
 crates-io = "dioxus"
 vdom = true
 ssr = true
+rendering = "html"
 
 [[frontend]]
 name = "MoonZoon"
 homepage = "http://moonzoon.rs/"
 repo = "https://github.com/MoonZoon/MoonZoon"
 vdom = false
+rendering = "html"
 
 [[frontend]]
 name = "Silkenweb"
@@ -63,6 +71,7 @@ crates-io = "silkenweb"
 repo = "https://github.com/silkenweb/silkenweb"
 vdom = false
 ssr = true
+rendering = "html"
 
 [[frontend]]
 homepage = "https://chinedufn.github.io/percy/"
@@ -71,6 +80,15 @@ repo = "https://github.com/chinedufn/percy"
 ssr = true
 vdom = true
 outdated = false
+rendering = "html"
+
+[[frontend]]
+homepage = "https://www.egui.rs/"
+name = "egui"
+repo = "https://github.com/emilk/egui"
+ssr = false
+vdom = false
+rendering = "canvas"
 
 [[frontend]]
 name = "frender"

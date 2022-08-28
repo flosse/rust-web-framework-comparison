@@ -29,6 +29,25 @@ pub struct Frontend {
     pub vdom: Option<bool>,
     pub ssr: Option<bool>,
     pub outdated: Option<bool>,
+    pub rendering: Option<FrontendRendering>,
+}
+
+#[derive(Clone, Copy, Debug, Deserialize)]
+pub enum FrontendRendering {
+    #[serde(rename = "html")]
+    Html,
+    #[serde(rename = "canvas")]
+    Canvas,
+}
+
+impl ToString for FrontendRendering {
+    fn to_string(&self) -> String {
+        match self {
+            Self::Html => "HTML",
+            Self::Canvas => "Canvas",
+        }
+        .to_string()
+    }
 }
 
 #[derive(Debug, Deserialize)]

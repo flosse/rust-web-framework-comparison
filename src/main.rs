@@ -84,6 +84,7 @@ fn frontends_to_table<'a>(frontends: impl Iterator<Item = &'a Frontend>) -> tabl
         "Activity".to_string(),
         "Virtual DOM".to_string(),
         "SSR".to_string(),
+        "Rendering".to_string(),
     ]];
 
     for f in frontends {
@@ -94,6 +95,7 @@ fn frontends_to_table<'a>(frontends: impl Iterator<Item = &'a Frontend>) -> tabl
             crates_io,
             vdom,
             ssr,
+            rendering,
             ..
         } = f;
 
@@ -118,6 +120,7 @@ fn frontends_to_table<'a>(frontends: impl Iterator<Item = &'a Frontend>) -> tabl
 
         let vdom = vdom.map(bool_to_str).unwrap_or_default().to_string();
         let ssr = ssr.map(bool_to_str).unwrap_or_default().to_string();
+        let rendering = rendering.map(|r| r.to_string()).unwrap_or_default();
 
         rows.push(vec![
             name,
@@ -130,6 +133,7 @@ fn frontends_to_table<'a>(frontends: impl Iterator<Item = &'a Frontend>) -> tabl
             activity,
             vdom,
             ssr,
+            rendering,
         ]);
     }
     rows
