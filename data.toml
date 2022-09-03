@@ -34,6 +34,7 @@ crates-io = "mogwai"
 vdom = false
 ssr = true
 rendering = "html"
+outdated = true
 
 [[frontend]]
 name = "dominator"
@@ -78,6 +79,7 @@ repo = "https://github.com/silkenweb/silkenweb"
 vdom = false
 ssr = true
 rendering = "html"
+outdated = true
 
 [[frontend]]
 homepage = "https://chinedufn.github.io/percy/"
