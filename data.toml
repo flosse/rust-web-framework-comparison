@@ -91,6 +91,11 @@ outdated = false
 rendering = "html"
 
 [[frontend]]
+name = "spair"
+repo = "https://github.com/aclueless/spair"
+rendering = "html"
+
+[[frontend]]
 homepage = "https://www.egui.rs/"
 name = "egui"
 crates-io = "egui"
