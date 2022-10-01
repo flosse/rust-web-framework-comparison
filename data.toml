@@ -92,7 +92,10 @@ rendering = "html"
 
 [[frontend]]
 name = "spair"
+crates-io = "spair"
 repo = "https://github.com/aclueless/spair"
+ssr = false
+vdom = false
 rendering = "html"
 
 [[frontend]]
