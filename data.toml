@@ -79,7 +79,8 @@ repo = "https://github.com/silkenweb/silkenweb"
 vdom = false
 ssr = true
 rendering = "html"
-outdated = true
+outdated = false
+architecture = "frp"
 
 [[frontend]]
 homepage = "https://chinedufn.github.io/percy/"
