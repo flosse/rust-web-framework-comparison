@@ -17,6 +17,7 @@ vdom = true
 ssr = false
 rendering = "html"
 architecture = "tea"
+outdated = true
 
 [[frontend]]
 name = "sauron"
@@ -88,7 +89,7 @@ name = "percy"
 repo = "https://github.com/chinedufn/percy"
 ssr = true
 vdom = true
-outdated = false
+outdated = true
 rendering = "html"
 
 [[frontend]]
