@@ -154,6 +154,7 @@ repo = "https://github.com/axelf4/dumle"
 outdated = true
 name = "mika"
 repo = "https://gitlab.com/limira-rs/mika"
+crates-io = "mika"
 
 [[frontend]]
 outdated = true
@@ -336,6 +337,96 @@ async = true
 http2 = true
 https = true
 client = true
+
+[[server]]
+name = "civet"
+repo = "https://github.com/wycats/rust-civet"
+outdated = true
+crates-io = "civet"
+
+[[server]]
+name = "conduit"
+repo = "https://github.com/conduit-rust/conduit"
+outdated = true
+crates-io = "conduit"
+
+[[server]]
+name = "cargonaouts"
+repo = "https://github.com/cargonauts-rs/cargonauts"
+outdated = true
+crates-io = "cargonaouts"
+
+[[server]]
+name = "hydrogen"
+repo = "https://github.com/nathansizemore/hydrogen"
+outdated = true
+crates-io = "hydrogen"
+
+[[server]]
+name = "iron"
+repo = "https://github.com/iron/iron"
+outdated = true
+crates-io = "iron"
+
+[[server]]
+name = "kinglet"
+repo = "https://github.com/pyfisch/kinglet"
+outdated = true
+crates-io = "kinglet"
+
+[[server]]
+name = "nickel"
+repo = "https://github.com/nickel-org/nickel.rs/"
+outdated = true
+crates-io = "nickel"
+
+[[server]]
+name = "rouille"
+repo = "https://github.com/tomaka/rouille"
+outdated = true
+crates-io = "rouille"
+
+[[server]]
+name = "rustless"
+repo = "https://github.com/rustless/rustless"
+outdated = true
+crates-io = "rustless"
+
+[[server]]
+name = "rustful"
+repo = "https://github.com/Ogeon/rustful"
+outdated = true
+crates-io = "rustful"
+
+[[server]]
+name = "shio"
+repo = "https://github.com/mehcode/shio-rs"
+outdated = true
+crates-io = "shio"
+
+[[server]]
+name = "sappers"
+repo = "https://github.com/sappworks/sapper"
+outdated = true
+crates-io = "sappers"
+
+[[server]]
+name = "solicit"
+repo = "https://github.com/mlalic/solicit"
+outdated = true
+crates-io = "solicit"
+
+[[server]]
+name = "tower-web"
+repo = "https://github.com/carllerche/tower-web"
+outdated = true
+crates-io = "tower-web"
+
+[[server]]
+name = "tk-http"
+repo = "https://github.com/swindon-rs/tk-http"
+outdated = true
+crates-io = "tk-http"
 
 #############
 # Template  #

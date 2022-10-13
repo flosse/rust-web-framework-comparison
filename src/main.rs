@@ -53,6 +53,12 @@ fn main() -> Result<()> {
     let table = server_to_table(low_level_server);
     let low_level_server = table::to_markdown(&table);
 
+    // --- outdated server --- //
+
+    let outdated_server = data.server.iter().filter(|f| f.outdated == Some(true));
+    let table = server_to_table(outdated_server);
+    let outdated_server = table::to_markdown(&table);
+
     // --- web sockets --- //
 
     let websocket = data
@@ -73,6 +79,7 @@ fn main() -> Result<()> {
     );
     context.insert("templating", &templating);
     context.insert("server", &server);
+    context.insert("outdated_server", &outdated_server);
     context.insert("low_level_server", &low_level_server);
     context.insert("websocket", &websocket);
 
@@ -160,11 +167,19 @@ fn frontends_to_table<'a>(frontends: impl Iterator<Item = &'a Frontend>) -> tabl
     rows
 }
 
-fn bool_to_str(b: bool) -> &'static str {
+const fn bool_to_str(b: bool) -> &'static str {
     if b {
         "yes"
     } else {
         "no"
+    }
+}
+
+const fn opt_bool_to_str(b: Option<bool>) -> &'static str {
+    if let Some(b) = b {
+        bool_to_str(b)
+    } else {
+        ""
     }
 }
 
@@ -283,11 +298,11 @@ fn server_to_table<'a>(servers: impl Iterator<Item = &'a Server>) -> table::Tabl
             docs,
             license,
             version,
-            bool_to_str(*r#async).into(),
-            bool_to_str(*https).into(),
-            bool_to_str(*http2).into(),
+            opt_bool_to_str(*r#async).into(),
+            opt_bool_to_str(*https).into(),
+            opt_bool_to_str(*http2).into(),
             base,
-            bool_to_str(*client).into(),
+            opt_bool_to_str(*client).into(),
         ]);
     }
     rows

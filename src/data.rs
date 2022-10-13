@@ -109,11 +109,11 @@ pub struct Server {
     pub outdated: Option<bool>,
     #[serde(rename = "low-level")]
     pub low_level: Option<bool>,
-    pub r#async: bool,
-    pub http2: bool,
-    pub https: bool,
+    pub r#async: Option<bool>,
+    pub http2: Option<bool>,
+    pub https: Option<bool>,
     pub base: Option<String>,
-    pub client: bool,
+    pub client: Option<bool>,
 }
 
 #[derive(Debug, Deserialize)]
