@@ -225,13 +225,13 @@ fn templates_to_table<'a>(templates: impl Iterator<Item = &'a Template>) -> tabl
 fn server_to_table<'a>(servers: impl Iterator<Item = &'a Server>) -> table::Table {
     let mut rows = vec![vec![
         "Name".to_string(),
+        "Stars".to_string(),
+        "Contributors".to_string(),
+        "Activity".to_string(),
         "Repo".to_string(),
         "Docs".to_string(),
         "License".to_string(),
         "Version".to_string(),
-        "Stars".to_string(),
-        "Contributors".to_string(),
-        "Activity".to_string(),
         "Async".to_string(),
         "HTTPS".to_string(),
         "HTTP/2".to_string(),
@@ -276,13 +276,13 @@ fn server_to_table<'a>(servers: impl Iterator<Item = &'a Server>) -> table::Tabl
 
         rows.push(vec![
             name,
+            stars,
+            contributors,
+            activity,
             repo,
             docs,
             license,
             version,
-            stars,
-            contributors,
-            activity,
             bool_to_str(*r#async).into(),
             bool_to_str(*https).into(),
             bool_to_str(*http2).into(),
