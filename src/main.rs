@@ -235,6 +235,7 @@ fn server_to_table<'a>(servers: impl Iterator<Item = &'a Server>) -> table::Tabl
         "Async".to_string(),
         "HTTPS".to_string(),
         "HTTP/2".to_string(),
+        "Base".to_string(),
         "Client".to_string(),
     ]];
 
@@ -247,6 +248,7 @@ fn server_to_table<'a>(servers: impl Iterator<Item = &'a Server>) -> table::Tabl
             r#async,
             https,
             http2,
+            base,
             client,
             ..
         } = s;
@@ -270,6 +272,8 @@ fn server_to_table<'a>(servers: impl Iterator<Item = &'a Server>) -> table::Tabl
             version,
         } = crates_io_info(&name, crates_io);
 
+        let base = base.as_ref().map(|b| b.to_string()).unwrap_or_default();
+
         rows.push(vec![
             name,
             repo,
@@ -282,6 +286,7 @@ fn server_to_table<'a>(servers: impl Iterator<Item = &'a Server>) -> table::Tabl
             bool_to_str(*r#async).into(),
             bool_to_str(*https).into(),
             bool_to_str(*http2).into(),
+            base,
             bool_to_str(*client).into(),
         ]);
     }

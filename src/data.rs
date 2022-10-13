@@ -112,6 +112,7 @@ pub struct Server {
     pub r#async: bool,
     pub http2: bool,
     pub https: bool,
+    pub base: Option<String>,
     pub client: bool,
 }
 
