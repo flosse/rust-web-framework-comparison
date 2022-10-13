@@ -184,6 +184,15 @@ outdated = true
 name = "willow"
 repo = "https://github.com/sindreij/willow"
 
+[[frontend]]
+name = "Leptos"
+repo = "https://github.com/gbj/leptos"
+crates-io = "leptos"
+vdom = false
+architecture = "frp"
+ssr = true
+rendering = "html"
+
 ############
 #  Server  #
 ############
