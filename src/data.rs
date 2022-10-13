@@ -63,13 +63,27 @@ pub enum FrontendArchitecture {
     Imgui,
 }
 
+impl FrontendArchitecture {
+    pub fn info_url(&self) -> Url {
+        let url = match self {
+            Self::Tea => "https://guide.elm-lang.org/architecture/",
+            Self::React => {
+                "https://medium.com/mofed/react-redux-architecture-overview-7b3e52004b6e"
+            }
+            Self::Frp => "https://en.wikipedia.org/wiki/Functional_reactive_programming",
+            Self::Imgui => "https://en.wikipedia.org/wiki/Immediate_mode_GUI",
+        };
+        Url::parse(url).unwrap()
+    }
+}
+
 impl ToString for FrontendArchitecture {
     fn to_string(&self) -> String {
         match self {
             Self::Tea => "TEA",
             Self::React => "React/Redux",
             Self::Frp => "FRP",
-            Self::Imgui => "Immediate mode GUI"
+            Self::Imgui => "ImGUI",
         }
         .to_string()
     }
