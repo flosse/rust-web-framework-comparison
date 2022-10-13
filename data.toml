@@ -1,3 +1,7 @@
+#############
+# Frontend  #
+#############
+
 [[frontend]]
 name = "yew"
 crates-io = "Yew"
@@ -179,6 +183,164 @@ outdated = true
 name = "willow"
 repo = "https://github.com/sindreij/willow"
 
+############
+#  Server  #
+############
+
+[[server]]
+name = "actix-web"
+homepage = "https://actix.rs/"
+repo = "https://github.com/actix/actix-web"
+crates-io = "actix-web"
+https = true
+http2 = true
+base = "tokio"
+async = true
+client = false
+
+[[server]]
+name = "axum"
+repo = "https://github.com/tokio-rs/axum"
+crates-io = "axum"
+https = true
+http2 = true
+base = "hyper"
+async = true
+client = false
+
+[[server]]
+name = "gotham"
+homepage = "http://gotham.rs"
+repo = "https://github.com/gotham-rs/gotham"
+crates-io = "gotham"
+https = true
+http2 = false
+base = "hyper"
+async = true
+client = false
+
+[[server]]
+name = "rocket"
+homepage = "https://rocket.rs"
+repo = "https://github.com/SergioBenitez/rocket"
+crates-io = "rocket"
+https = true
+http2 = true
+base = "hyper"
+async = true
+client = false
+
+[[server]]
+name = "Thruster"
+repo = "https://github.com/trezm/Thruster"
+crates-io = "thruster"
+https = true
+http2 = true
+base = "tokio (or hyper)"
+async = true
+client = false
+
+[[server]]
+name = "Tide"
+repo = "https://github.com/rustasync/tide"
+crates-io = "tide"
+https = true
+http2 = false
+base = "async-std"
+async = true
+client = false
+
+[[server]]
+name = "warp"
+repo = "https://github.com/seanmonstar/warp"
+crates-io = "warp"
+https = true
+http2 = true
+base = "hyper"
+async = true
+client = false
+
+[[server]]
+name = "salvo"
+repo = "https://github.com/salvo-rs/salvo"
+crates-io = "salvo"
+https = true
+http2 = true
+base = "hyper"
+async = true
+client = false
+
+[[server]]
+name = "trillium"
+repo = "https://github.com/trillium-rs/trillium"
+crates-io = "trillium"
+homepage = "https://trillium.rs"
+https = true
+http2 = false
+base = "tokio"
+async = true
+client = false
+
+[[server]]
+name = "Poem"
+repo = "https://github.com/poem-web/poem"
+crates-io = "poem"
+https = true
+http2 = true
+base = "hyper"
+async = true
+client = false
+
+[[server]]
+name = "Viz"
+repo = "https://github.com/viz-rs/viz"
+homepage = "https://viz.rs"
+crates-io = "viz"
+https = true
+http2 = true
+base = "hyper"
+async = true
+client = false
+
+[[server]]
+name = "hyper"
+homepage = "http://hyper.rs/"
+repo = "https://github.com/hyperium/hyper"
+crates-io = "hyper"
+low-level = true
+outdated = false
+async = true
+http2 = true
+https = true
+client = true
+
+[[server]]
+name = "tiny-http"
+repo = "https://github.com/tiny-http/tiny-http"
+crates-io = "tiny_http"
+low-level = true
+outdated = false
+async = false
+http2 = false
+https = true
+client = false
+
+[[server]]
+name = "actix-http"
+homepage = "https://github.com/actix/actix-web/tree/master/actix-http"
+repo = "https://github.com/actix/actix-web"
+crates-io = "actix-http"
+low-level = true
+outdated = false
+async = true
+http2 = true
+https = true
+client = true
+
+#############
+# Template  #
+#############
+
 [[template]]
 name = "sailfish"
 homepage = "https://sailfish.netlify.app"
@@ -235,40 +397,9 @@ name = "typed-html"
 repo = "https://github.com/bodil/typed-html"
 crates-io = "typed-html"
 
-[[server]]
-name = "hyper"
-homepage = "http://hyper.rs/"
-repo = "https://github.com/hyperium/hyper"
-crates-io = "hyper"
-low-level = true
-outdated = false
-async = true
-http2 = true
-https = true
-client = true
-
-[[server]]
-name = "tiny-http"
-repo = "https://github.com/tiny-http/tiny-http"
-crates-io = "tiny_http"
-low-level = true
-outdated = false
-async = false
-http2 = false
-https = true
-client = false
-
-[[server]]
-name = "actix-http"
-homepage = "https://github.com/actix/actix-web/tree/master/actix-http"
-repo = "https://github.com/actix/actix-web"
-crates-io = "actix-http"
-low-level = true
-outdated = false
-async = true
-http2 = true
-https = true
-client = true
+#############
+# Websocket #
+#############
 
 [[websocket]]
 name = "tungstenite"

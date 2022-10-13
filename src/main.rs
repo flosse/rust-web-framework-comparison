@@ -33,6 +33,16 @@ fn main() -> Result<()> {
     let table = templates_to_table(active_templating);
     let templating = table::to_markdown(&table);
 
+    // --- server --- //
+
+    let server = data
+        .server
+        .iter()
+        .filter(|f| f.outdated.is_none() || f.outdated == Some(false))
+        .filter(|f| f.low_level == None || f.low_level == Some(false));
+    let table = server_to_table(server);
+    let server = table::to_markdown(&table);
+
     // --- low level server --- //
 
     let low_level_server = data
@@ -62,6 +72,7 @@ fn main() -> Result<()> {
         &outdated_frontend_frameworks,
     );
     context.insert("templating", &templating);
+    context.insert("server", &server);
     context.insert("low_level_server", &low_level_server);
     context.insert("websocket", &websocket);
 
