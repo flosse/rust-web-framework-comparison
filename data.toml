@@ -109,6 +109,7 @@ repo = "https://github.com/emilk/egui"
 ssr = false
 vdom = false
 rendering = "canvas"
+architecture = "imgui"
 
 [[frontend]]
 homepage = "https://iced.rs/"

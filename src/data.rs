@@ -59,6 +59,8 @@ pub enum FrontendArchitecture {
     React,
     #[serde(rename = "frp")]
     Frp,
+    #[serde(rename = "imgui")]
+    Imgui,
 }
 
 impl ToString for FrontendArchitecture {
@@ -67,6 +69,7 @@ impl ToString for FrontendArchitecture {
             Self::Tea => "TEA",
             Self::React => "React/Redux",
             Self::Frp => "FRP",
+            Self::Imgui => "Immediate mode GUI"
         }
         .to_string()
     }
