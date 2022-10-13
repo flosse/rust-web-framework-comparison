@@ -70,6 +70,7 @@ name = "MoonZoon"
 homepage = "http://moonzoon.rs/"
 repo = "https://github.com/MoonZoon/MoonZoon"
 vdom = false
+ssr = false
 rendering = "html"
 architecture = "frp"
 
