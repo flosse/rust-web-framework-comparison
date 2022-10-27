@@ -104,6 +104,7 @@ repo = "https://github.com/aclueless/spair"
 ssr = false
 vdom = false
 rendering = "html"
+outdated = true
 
 [[frontend]]
 homepage = "https://www.egui.rs/"
