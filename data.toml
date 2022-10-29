@@ -394,6 +394,9 @@ crates-io = "nickel"
 name = "rouille"
 repo = "https://github.com/tomaka/rouille"
 crates-io = "rouille"
+https = true
+async = false
+client = false
 
 [[server]]
 name = "rustless"
