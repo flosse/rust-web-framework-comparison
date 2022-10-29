@@ -13,59 +13,79 @@ fn main() -> Result<()> {
 
     // --- frontends --- //
 
-    let active_frontends = data
+    let mut active_frontends = data
         .frontend
         .iter()
-        .filter(|f| f.outdated.is_none() || f.outdated == Some(false));
-    let table = frontends_to_table(active_frontends);
+        .filter(|f| f.outdated.is_none() || f.outdated == Some(false))
+        .collect::<Vec<_>>();
+    active_frontends.sort_by(|a, b| a.name.to_lowercase().cmp(&b.name.to_lowercase()));
+    let table = frontends_to_table(&active_frontends);
     let frontend_frameworks = table::to_markdown(&table);
 
-    let outdated_frontends = data.frontend.iter().filter(|f| f.outdated == Some(true));
-    let table = frontends_to_table(outdated_frontends);
+    let mut outdated_frontends = data
+        .frontend
+        .iter()
+        .filter(|f| f.outdated == Some(true))
+        .collect::<Vec<_>>();
+    outdated_frontends.sort_by(|a, b| a.name.to_lowercase().cmp(&b.name.to_lowercase()));
+    let table = frontends_to_table(&outdated_frontends);
     let outdated_frontend_frameworks = table::to_markdown(&table);
 
     // --- templating --- //
 
-    let active_templating = data
+    let mut active_templating = data
         .template
         .iter()
-        .filter(|f| f.outdated.is_none() || f.outdated == Some(false));
-    let table = templates_to_table(active_templating);
+        .filter(|f| f.outdated.is_none() || f.outdated == Some(false))
+        .collect::<Vec<_>>();
+    active_templating.sort_by(|a, b| a.name.to_lowercase().cmp(&b.name.to_lowercase()));
+    let table = templates_to_table(&active_templating);
     let templating = table::to_markdown(&table);
 
     // --- server --- //
 
-    let server = data
+    let mut server = data
         .server
         .iter()
         .filter(|f| f.outdated.is_none() || f.outdated == Some(false))
-        .filter(|f| f.low_level == None || f.low_level == Some(false));
-    let table = server_to_table(server);
+        .filter(|f| f.low_level == None || f.low_level == Some(false))
+        .collect::<Vec<_>>();
+    server.sort_by(|a, b| a.name.to_lowercase().cmp(&b.name.to_lowercase()));
+    let table = server_to_table(&server);
     let server = table::to_markdown(&table);
 
     // --- low level server --- //
 
-    let low_level_server = data
+    let mut low_level_server = data
         .server
         .iter()
         .filter(|f| f.outdated.is_none() || f.outdated == Some(false))
-        .filter(|f| f.low_level == Some(true));
-    let table = server_to_table(low_level_server);
+        .filter(|f| f.low_level == Some(true))
+        .collect::<Vec<_>>();
+    low_level_server.sort_by(|a, b| a.name.to_lowercase().cmp(&b.name.to_lowercase()));
+    let table = server_to_table(&low_level_server);
     let low_level_server = table::to_markdown(&table);
 
     // --- outdated server --- //
 
-    let outdated_server = data.server.iter().filter(|f| f.outdated == Some(true));
-    let table = server_to_table(outdated_server);
+    let mut outdated_server = data
+        .server
+        .iter()
+        .filter(|f| f.outdated == Some(true))
+        .collect::<Vec<_>>();
+    outdated_server.sort_by(|a, b| a.name.to_lowercase().cmp(&b.name.to_lowercase()));
+    let table = server_to_table(&outdated_server);
     let outdated_server = table::to_markdown(&table);
 
     // --- web sockets --- //
 
-    let websocket = data
+    let mut websocket = data
         .websocket
         .iter()
-        .filter(|f| f.outdated.is_none() || f.outdated == Some(false));
-    let table = websocket_to_table(websocket);
+        .filter(|f| f.outdated.is_none() || f.outdated == Some(false))
+        .collect::<Vec<_>>();
+    websocket.sort_by(|a, b| a.name.to_lowercase().cmp(&b.name.to_lowercase()));
+    let table = websocket_to_table(&websocket);
     let websocket = table::to_markdown(&table);
 
     // --- render README --- //
@@ -90,7 +110,7 @@ fn main() -> Result<()> {
     Ok(())
 }
 
-fn frontends_to_table<'a>(frontends: impl Iterator<Item = &'a Frontend>) -> table::Table {
+fn frontends_to_table(frontends: &[&Frontend]) -> table::Table {
     let mut rows = vec![vec![
         "Name".to_string(),
         "Stars".to_string(),
@@ -183,7 +203,7 @@ const fn opt_bool_to_str(b: Option<bool>) -> &'static str {
     }
 }
 
-fn templates_to_table<'a>(templates: impl Iterator<Item = &'a Template>) -> table::Table {
+fn templates_to_table<'a>(templates: &[&Template]) -> table::Table {
     let mut rows = vec![vec![
         "Name".to_string(),
         "Repo".to_string(),
@@ -237,7 +257,7 @@ fn templates_to_table<'a>(templates: impl Iterator<Item = &'a Template>) -> tabl
     rows
 }
 
-fn server_to_table<'a>(servers: impl Iterator<Item = &'a Server>) -> table::Table {
+fn server_to_table<'a>(servers: &[&Server]) -> table::Table {
     let mut rows = vec![vec![
         "Name".to_string(),
         "Stars".to_string(),
@@ -308,7 +328,7 @@ fn server_to_table<'a>(servers: impl Iterator<Item = &'a Server>) -> table::Tabl
     rows
 }
 
-fn websocket_to_table<'a>(websocket: impl Iterator<Item = &'a WebSocket>) -> table::Table {
+fn websocket_to_table<'a>(websocket: &[&WebSocket]) -> table::Table {
     let mut rows = vec![vec![
         "Name".to_string(),
         "Repo".to_string(),
