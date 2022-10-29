@@ -393,7 +393,6 @@ crates-io = "nickel"
 [[server]]
 name = "rouille"
 repo = "https://github.com/tomaka/rouille"
-outdated = true
 crates-io = "rouille"
 
 [[server]]
