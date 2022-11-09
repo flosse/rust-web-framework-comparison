@@ -1,5 +1,5 @@
 use anyhow::Result;
-use std::{fs::File, io::Write};
+use std::{env, fs::File, io::Write, time::Duration};
 use tera::{Context, Tera};
 use url::{Host, Url};
 
@@ -8,10 +8,35 @@ mod table;
 
 use data::*;
 
+const CRATES_IO_USER_AGENT: &str = "rust-web-framework-comparison bot";
+const CRATES_IO_CONTACT: &str = "rwfc-bot@slowtec.de";
+
 fn main() -> Result<()> {
-    let data = read_data()?;
+    if env::var("RUST_LOG").is_err() {
+        env::set_var("RUST_LOG", "info");
+    }
+    env_logger::init();
+
+    let mut data = read_data()?;
+
+    let crates_io_client = crates_io_api::SyncClient::new(
+        &format!("{CRATES_IO_USER_AGENT} ({CRATES_IO_CONTACT})"),
+        Duration::from_millis(1000),
+    )?;
 
     // --- frontends --- //
+
+    for f in &mut data.frontend {
+        if let Some(crate_name) = &f.crates_io {
+            log::info!("Fetch current download stats for {crate_name}");
+            let downloads = crates_io_client.crate_downloads(crate_name)?;
+            let total_downloads = downloads
+                .version_downloads
+                .iter()
+                .fold(0, |acc, d| acc + d.downloads);
+            f.crate_downloads = Some(total_downloads);
+        }
+    }
 
     let mut active_frontends = data
         .frontend
@@ -116,6 +141,7 @@ fn frontends_to_table(frontends: &[&Frontend]) -> table::Table {
         "Stars".to_string(),
         "Contributors".to_string(),
         "Activity".to_string(),
+        "Downloads".to_string(),
         "Virtual DOM".to_string(),
         "SSR".to_string(),
         "Rendering".to_string(),
@@ -136,6 +162,7 @@ fn frontends_to_table(frontends: &[&Frontend]) -> table::Table {
             ssr,
             rendering,
             architecture,
+            crate_downloads,
             ..
         } = f;
 
@@ -168,12 +195,16 @@ fn frontends_to_table(frontends: &[&Frontend]) -> table::Table {
                 format!("[{label}]({url})")
             })
             .unwrap_or_default();
+        let downloads = crate_downloads
+            .map(|n| format!("{:.1}k", n as f64 / 1_000.0))
+            .unwrap_or(" - ".to_string());
 
         rows.push(vec![
             name,
             stars,
             contributors,
             activity,
+            downloads,
             vdom,
             ssr,
             rendering,

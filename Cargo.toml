@@ -7,8 +7,20 @@ publish = false
 
 [dependencies]
 anyhow = "1"
+env_logger = "0.9"
+log = "0.4"
 pad = "0.1"
 serde = { version = "1", features = ["derive"] }
-toml = "0.5"
 tera = { version = "1", default-features = false }
+toml = "0.5"
 url = { version = "2", features = ["serde"] }
+
+[dependencies.reqwest]
+version = "0.11"
+default-features = false
+features = ["rustls", "blocking", "json"]
+
+[dependencies.crates_io_api]
+version = "0.8"
+default-features = false
+features = ["rustls"]

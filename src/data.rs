@@ -31,6 +31,7 @@ pub struct Frontend {
     pub outdated: Option<bool>,
     pub rendering: Option<FrontendRendering>,
     pub architecture: Option<FrontendArchitecture>,
+    pub crate_downloads: Option<u64>,
 }
 
 #[derive(Clone, Copy, Debug, Deserialize)]
