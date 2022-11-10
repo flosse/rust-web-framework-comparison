@@ -220,12 +220,22 @@ async = true
 client = false
 
 [[server]]
-name = "gotham"
-homepage = "http://gotham.rs"
-repo = "https://github.com/gotham-rs/gotham"
-crates-io = "gotham"
+name = "axum"
+repo = "https://github.com/tokio-rs/axum"
+crates-io = "axum"
 https = true
-http2 = false
+http2 = true
+base = "hyper"
+async = true
+client = false
+
+[[server]]
+name = "graphul"
+homepage = "https://graphul-rs.github.io/"
+repo = "https://github.com/graphul-rs/graphul"
+crates-io = "graphul"
+https = true
+http2 = true
 base = "hyper"
 async = true
 client = false
