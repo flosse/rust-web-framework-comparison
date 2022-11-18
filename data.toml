@@ -500,6 +500,11 @@ name = "typed-html"
 repo = "https://github.com/bodil/typed-html"
 crates-io = "typed-html"
 
+[[template]]
+name = "yew-template"
+repo = "https://github.com/INSAgenda/yew-template"
+crates-io = "yew-template"
+
 #############
 # Websocket #
 #############
