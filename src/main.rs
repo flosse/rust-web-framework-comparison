@@ -29,12 +29,8 @@ fn main() -> Result<()> {
     for f in &mut data.frontend {
         if let Some(crate_name) = &f.crates_io {
             log::info!("Fetch current download stats for {crate_name}");
-            let downloads = crates_io_client.crate_downloads(crate_name)?;
-            let total_downloads = downloads
-                .version_downloads
-                .iter()
-                .fold(0, |acc, d| acc + d.downloads);
-            f.crate_downloads = Some(total_downloads);
+            let downloads = crates_io_client.get_crate(crate_name)?.crate_data.downloads;
+            f.crate_downloads = Some(downloads);
         }
     }
 
