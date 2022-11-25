@@ -8,7 +8,7 @@ crates-io = "Yew"
 homepage = "https://yew.rs"
 repo = "https://github.com/yewstack/yew"
 vdom = true
-ssr = false
+ssr = true
 rendering = "html"
 architecture = "react"
 
