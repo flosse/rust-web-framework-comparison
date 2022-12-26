@@ -230,6 +230,7 @@ http2 = false
 base = "hyper"
 async = true
 client = false
+outdated = true
 
 [[server]]
 name = "graphul"
