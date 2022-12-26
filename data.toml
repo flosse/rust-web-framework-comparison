@@ -68,6 +68,7 @@ crates-io = "dioxus"
 vdom = true
 ssr = true
 rendering = "html"
+architecture = "react"
 
 [[frontend]]
 name = "MoonZoon"
