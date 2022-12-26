@@ -272,6 +272,7 @@ http2 = false
 base = "async-std"
 async = true
 client = false
+outdated = true
 
 [[server]]
 name = "warp"
