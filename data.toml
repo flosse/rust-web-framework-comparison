@@ -253,6 +253,7 @@ http2 = true
 base = "hyper"
 async = true
 client = false
+outdated = true
 
 [[server]]
 name = "Thruster"
