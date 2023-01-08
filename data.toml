@@ -39,7 +39,7 @@ crates-io = "mogwai"
 vdom = false
 ssr = true
 rendering = "html"
-outdated = true
+outdated = false
 
 [[frontend]]
 name = "dominator"
