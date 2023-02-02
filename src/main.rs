@@ -467,7 +467,7 @@ struct CratesIoInfo {
 
 fn crates_io_info(name: &str, crates_io: &Option<String>) -> CratesIoInfo {
     if let Some(crate_name) = crates_io {
-        let docs = format!("[![Docs](https://img.shields.io/badge/docs.rs-{crate_name}-green)](https://docs.rs/{crate_name}/)");
+        let docs = format!("[![Docs](https://img.shields.io/static/v1?label=docs.rs&message={crate_name}&color=green)](https://docs.rs/{crate_name}/)");
         let license = format!(
             "![{name} license](https://img.shields.io/crates/l/{crate_name}.svg?label=%20)"
         );
