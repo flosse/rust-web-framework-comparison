@@ -401,7 +401,7 @@ crates-io = "kinglet"
 
 [[server]]
 name = "nickel"
-repo = "https://github.com/nickel-org/nickel.rs/"
+repo = "https://github.com/nickel-org/nickel.rs"
 outdated = true
 crates-io = "nickel"
 
@@ -462,7 +462,7 @@ crates-io = "tk-http"
 [[template]]
 name = "sailfish"
 homepage = "https://sailfish.netlify.app"
-repo = "https://github.com/Kogia-sima/sailfish/"
+repo = "https://github.com/Kogia-sima/sailfish"
 crates-io = "sailfish"
 
 [[template]]
