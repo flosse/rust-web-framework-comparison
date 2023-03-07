@@ -21,7 +21,7 @@ vdom = true
 ssr = false
 rendering = "html"
 architecture = "tea"
-outdated = true
+outdated = false
 
 [[frontend]]
 name = "sauron"
@@ -105,7 +105,7 @@ repo = "https://github.com/aclueless/spair"
 ssr = false
 vdom = false
 rendering = "html"
-outdated = true
+outdated = false
 
 [[frontend]]
 homepage = "https://www.egui.rs/"
