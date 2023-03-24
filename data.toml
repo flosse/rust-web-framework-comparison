@@ -195,6 +195,15 @@ architecture = "frp"
 ssr = true
 rendering = "html"
 
+[[frontend]]
+name = "Kobold"
+crates-io = "kobold"
+repo = "https://github.com/maciejhirsz/kobold"
+vdom = false
+#ssr = true
+rendering = "html"
+architecture = "react"
+
 ############
 #  Server  #
 ############
