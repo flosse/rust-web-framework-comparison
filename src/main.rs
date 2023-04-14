@@ -57,11 +57,20 @@ fn main() -> Result<()> {
     let mut active_templating = data
         .template
         .iter()
-        .filter(|f| f.outdated.is_none() || f.outdated == Some(false))
+        .filter(|t| t.outdated.is_none() || t.outdated == Some(false))
         .collect::<Vec<_>>();
     active_templating.sort_by(|a, b| a.name.to_lowercase().cmp(&b.name.to_lowercase()));
     let table = templates_to_table(&active_templating);
     let templating = table::to_markdown(&table);
+
+    let mut outdated_templating = data
+        .template
+        .iter()
+        .filter(|t| t.outdated == Some(true))
+        .collect::<Vec<_>>();
+    outdated_templating.sort_by(|a, b| a.name.to_lowercase().cmp(&b.name.to_lowercase()));
+    let table = templates_to_table(&outdated_templating);
+    let outdated_templating = table::to_markdown(&table);
 
     // --- server --- //
 
@@ -119,6 +128,7 @@ fn main() -> Result<()> {
         &outdated_frontend_frameworks,
     );
     context.insert("templating", &templating);
+    context.insert("outdated_templating", &outdated_templating);
     context.insert("server", &server);
     context.insert("outdated_server", &outdated_server);
     context.insert("low_level_server", &low_level_server);

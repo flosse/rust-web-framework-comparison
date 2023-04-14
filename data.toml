@@ -484,6 +484,7 @@ crates-io = "tera"
 name = "mustache"
 repo = "https://github.com/nickel-org/rust-mustache"
 crates-io = "mustache"
+outdated = true
 
 [[template]]
 name = "liquid"
@@ -498,6 +499,7 @@ crates-io = "handlebars"
 name = "horrorshow"
 repo = "https://github.com/Stebalien/horrorshow-rs"
 crates-io = "horrorshow"
+outdated = true
 
 [[template]]
 name = "maud"
@@ -513,6 +515,7 @@ crates-io = "askama"
 [[template]]
 name = "stpl"
 repo = "https://github.com/dpc/stpl"
+outdated = true
 
 [[template]]
 name = "ructe"
@@ -523,6 +526,7 @@ crates-io = "ructe"
 name = "typed-html"
 repo = "https://github.com/bodil/typed-html"
 crates-io = "typed-html"
+outdated = true
 
 [[template]]
 name = "yew-template"
