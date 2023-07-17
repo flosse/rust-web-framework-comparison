@@ -21,7 +21,7 @@ vdom = true
 ssr = false
 rendering = "html"
 architecture = "tea"
-outdated = false
+outdated = true
 
 [[frontend]]
 name = "sauron"
