@@ -533,6 +533,11 @@ name = "yew-template"
 repo = "https://github.com/INSAgenda/yew-template"
 crates-io = "yew-template"
 
+[[template]]
+name = "minijinja"
+repo = "https://github.com/mitsuhiko/minijinja"
+crates-io = "minijinja"
+
 #############
 # Websocket #
 #############
