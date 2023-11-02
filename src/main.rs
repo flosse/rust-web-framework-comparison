@@ -172,18 +172,18 @@ fn frontends_to_table(frontends: &[&Frontend]) -> table::Table {
             ..
         } = f;
 
+        let name_link = if let Some(hp) = homepage {
+            format!("**[{name}]({hp})**")
+        } else {
+            format!("**[{name}]({repo})**")
+        };
+
         let RepoInfo {
             repo,
             stars,
             contributors,
             activity,
         } = repo_info(name, repo);
-
-        let name = if let Some(hp) = homepage {
-            format!("**[{name}]({hp})**")
-        } else {
-            format!("**{name}**")
-        };
 
         let CratesIoInfo {
             license,
@@ -206,7 +206,7 @@ fn frontends_to_table(frontends: &[&Frontend]) -> table::Table {
             .unwrap_or(" - ".to_string());
 
         rows.push(vec![
-            name,
+            name_link,
             stars,
             contributors,
             activity,
@@ -261,18 +261,18 @@ fn templates_to_table<'a>(templates: &[&Template]) -> table::Table {
             ..
         } = t;
 
+        let name_link = if let Some(hp) = homepage {
+            format!("**[{name}]({hp})**")
+        } else {
+            format!("**[{name}]({repo})**")
+        };
+
         let RepoInfo {
             repo,
             stars,
             contributors,
             activity,
         } = repo_info(name, repo);
-
-        let name = if let Some(hp) = homepage {
-            format!("**[{name}]({hp})**")
-        } else {
-            format!("**{name}**")
-        };
 
         let CratesIoInfo {
             license,
@@ -281,7 +281,7 @@ fn templates_to_table<'a>(templates: &[&Template]) -> table::Table {
         } = crates_io_info(&name, crates_io);
 
         rows.push(vec![
-            name,
+            name_link,
             repo,
             docs,
             license,
@@ -325,18 +325,18 @@ fn server_to_table<'a>(servers: &[&Server]) -> table::Table {
             ..
         } = s;
 
+        let name_link = if let Some(hp) = homepage {
+            format!("**[{name}]({hp})**")
+        } else {
+            format!("**[{name}]({repo})**")
+        };
+
         let RepoInfo {
             repo,
             stars,
             contributors,
             activity,
         } = repo_info(name, repo);
-
-        let name = if let Some(hp) = homepage {
-            format!("**[{name}]({hp})**")
-        } else {
-            format!("**{name}**")
-        };
 
         let CratesIoInfo {
             license,
@@ -347,7 +347,7 @@ fn server_to_table<'a>(servers: &[&Server]) -> table::Table {
         let base = base.as_ref().map(|b| b.to_string()).unwrap_or_default();
 
         rows.push(vec![
-            name,
+            name_link,
             stars,
             contributors,
             activity,
@@ -392,18 +392,18 @@ fn websocket_to_table<'a>(websocket: &[&WebSocket]) -> table::Table {
             ..
         } = s;
 
+        let name_link = if let Some(hp) = homepage {
+            format!("**[{name}]({hp})**")
+        } else {
+            format!("**[{name}]({repo})**")
+        };
+
         let RepoInfo {
             repo,
             stars,
             contributors,
             activity,
         } = repo_info(name, repo);
-
-        let name = if let Some(hp) = homepage {
-            format!("**[{name}]({hp})**")
-        } else {
-            format!("**{name}**")
-        };
 
         let CratesIoInfo {
             license,
@@ -412,7 +412,7 @@ fn websocket_to_table<'a>(websocket: &[&WebSocket]) -> table::Table {
         } = crates_io_info(&name, crates_io);
 
         rows.push(vec![
-            name,
+            name_link,
             repo,
             docs,
             license,
