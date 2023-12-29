@@ -373,6 +373,13 @@ https = true
 client = true
 
 [[server]]
+name = "zino"
+repo = "https://github.com/photino/zino"
+crates-io = "zino"
+outdated = false
+async = true
+
+[[server]]
 name = "civet"
 repo = "https://github.com/wycats/rust-civet"
 outdated = true
