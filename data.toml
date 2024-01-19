@@ -476,7 +476,7 @@ crates-io = "sailfish"
 
 [[template]]
 name = "tera"
-homepage = "https://tera.netlify.com/"
+homepage = "https://keats.github.io/tera/"
 repo = "https://github.com/Keats/tera"
 crates-io = "tera"
 
