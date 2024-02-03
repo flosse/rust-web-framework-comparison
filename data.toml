@@ -39,7 +39,7 @@ crates-io = "mogwai"
 vdom = false
 ssr = true
 rendering = "html"
-outdated = false
+outdated = true
 
 [[frontend]]
 name = "dominator"
@@ -105,7 +105,7 @@ repo = "https://github.com/aclueless/spair"
 ssr = false
 vdom = false
 rendering = "html"
-outdated = false
+outdated = true
 
 [[frontend]]
 homepage = "https://www.egui.rs/"
