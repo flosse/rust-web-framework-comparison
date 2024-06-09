@@ -262,6 +262,7 @@ http2 = true
 base = "hyper"
 async = true
 client = false
+outdated = true
 
 [[server]]
 name = "rocket"
@@ -284,6 +285,7 @@ http2 = true
 base = "tokio (or hyper)"
 async = true
 client = false
+outdated = true
 
 [[server]]
 name = "Tide"
@@ -365,11 +367,11 @@ name = "tiny-http"
 repo = "https://github.com/tiny-http/tiny-http"
 crates-io = "tiny_http"
 low-level = true
-outdated = false
 async = false
 http2 = false
 https = true
 client = false
+outdated = true
 
 [[server]]
 name = "actix-http"
@@ -439,6 +441,7 @@ crates-io = "rouille"
 https = true
 async = false
 client = false
+outdated = true
 
 [[server]]
 name = "rustless"
