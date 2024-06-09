@@ -49,6 +49,7 @@ vdom = false
 ssr = false
 rendering = "html"
 architecture = "frp"
+outdated = true
 
 [[frontend]]
 name = "Sycamore"
@@ -59,6 +60,7 @@ vdom = false
 ssr = true
 rendering = "html"
 architecture = "frp"
+outdated = true
 
 [[frontend]]
 name = "Dioxus"
@@ -211,6 +213,7 @@ vdom = false
 #ssr = true
 rendering = "html"
 architecture = "react"
+outdated = true
 
 ############
 #  Server  #
