@@ -11,6 +11,7 @@ vdom = true
 ssr = true
 rendering = "html"
 architecture = "react"
+outdated = true
 
 [[frontend]]
 name = "Seed"
@@ -80,6 +81,7 @@ vdom = false
 ssr = false
 rendering = "html"
 architecture = "frp"
+outdated = true
 
 [[frontend]]
 name = "Silkenweb"
@@ -307,6 +309,7 @@ http2 = true
 base = "hyper"
 async = true
 client = false
+outdated = true
 
 [[server]]
 name = "salvo"
