@@ -6,19 +6,16 @@ This overview only contains frameworks that work on stable Rust.
 
 ## Table of Contents
 
-- [Rust web framework comparison](#rust-web-framework-comparison)
-  - [Table of Contents](#table-of-contents)
-  - [Frontend frameworks (WASM)](#frontend-frameworks-wasm)
-    - [Outdated frontend frameworks](#outdated-frontend-frameworks)
-  - [Server frameworks](#server-frameworks)
-    - [High-Level Server Frameworks](#high-level-server-frameworks)
-    - [Low-Level Frameworks](#low-level-frameworks)
-    - [Outdated server frameworks](#outdated-server-frameworks)
-  - [Client frameworks](#client-frameworks)
-    - [Outdated client frameworks](#outdated-client-frameworks)
-  - [Supplemental libraries](#supplemental-libraries)
-    - [Templating](#templating)
-    - [Websocket Libraries](#websocket-libraries)
+- [Frontend frameworks (WASM)](#frontend-frameworks-wasm)
+  - [Outdated frontend frameworks](#outdated-frontend-frameworks)
+- [Server frameworks](#server-frameworks)
+  - [High-Level Server Frameworks](#high-level-server-frameworks)
+  - [Low-Level Frameworks](#low-level-frameworks)
+  - [Outdated server frameworks](#outdated-server-frameworks)
+- [Client frameworks](#client-frameworks)
+  - [Outdated client frameworks](#outdated-client-frameworks)
+- [Templating](#templating)
+- [Websocket Libraries](#websocket-libraries)
 
 ## Frontend frameworks (WASM)
 
@@ -119,9 +116,8 @@ To build web clients with Rust, you can choose between these libraries:
 
 - [ease](https://github.com/SimonPersson/ease)
 
-## Supplemental libraries
 
-### Templating
+## Templating
 
 | Name                                                         | Repo                                                                                                           | Docs                                                                                                                  | License                                                                         | Version                                                                         | Stars                                                                                          | Contributors                                                                                                 | Activity                                                                                                      |
 |--------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -135,7 +131,7 @@ To build web clients with Rust, you can choose between these libraries:
 | **[sailfish](https://sailfish.netlify.app/)**                | [![sailfish repo](https://img.shields.io/badge/GitHub-git-blue)](https://github.com/Kogia-sima/sailfish)       | [![Docs](https://img.shields.io/static/v1?label=docs.rs&message=sailfish&color=green)](https://docs.rs/sailfish/)     | ![sailfish license](https://img.shields.io/crates/l/sailfish.svg?label=%20)     | ![sailfish version](https://img.shields.io/crates/v/sailfish.svg?label=%20)     | ![sailfish stars](https://img.shields.io/github/stars/Kogia-sima/sailfish.svg?label=%20)       | ![sailfish contributors](https://img.shields.io/github/contributors/Kogia-sima/sailfish.svg?label=%20)       | ![sailfish activity](https://img.shields.io/github/commit-activity/y/Kogia-sima/sailfish.svg?label=%20)       |
 | **[tera](https://keats.github.io/tera/)**                    | [![tera repo](https://img.shields.io/badge/GitHub-git-blue)](https://github.com/Keats/tera)                    | [![Docs](https://img.shields.io/static/v1?label=docs.rs&message=tera&color=green)](https://docs.rs/tera/)             | ![tera license](https://img.shields.io/crates/l/tera.svg?label=%20)             | ![tera version](https://img.shields.io/crates/v/tera.svg?label=%20)             | ![tera stars](https://img.shields.io/github/stars/Keats/tera.svg?label=%20)                    | ![tera contributors](https://img.shields.io/github/contributors/Keats/tera.svg?label=%20)                    | ![tera activity](https://img.shields.io/github/commit-activity/y/Keats/tera.svg?label=%20)                    |
 
-#### Outdated templating libraries
+### Outdated templating libraries
 
 | Name                                                          | Repo                                                                                                            | Docs                                                                                                                      | License                                                                             | Version                                                                             | Stars                                                                                           | Contributors                                                                                                  | Activity                                                                                                       |
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -145,7 +141,7 @@ To build web clients with Rust, you can choose between these libraries:
 | **[typed-html](https://github.com/bodil/typed-html)**         | [![typed-html repo](https://img.shields.io/badge/GitHub-git-blue)](https://github.com/bodil/typed-html)         | [![Docs](https://img.shields.io/static/v1?label=docs.rs&message=typed-html&color=green)](https://docs.rs/typed-html/)     | ![typed-html license](https://img.shields.io/crates/l/typed-html.svg?label=%20)     | ![typed-html version](https://img.shields.io/crates/v/typed-html.svg?label=%20)     | ![typed-html stars](https://img.shields.io/github/stars/bodil/typed-html.svg?label=%20)         | ![typed-html contributors](https://img.shields.io/github/contributors/bodil/typed-html.svg?label=%20)         | ![typed-html activity](https://img.shields.io/github/commit-activity/y/bodil/typed-html.svg?label=%20)         |
 | **[yew-template](https://github.com/INSAgenda/yew-template)** | [![yew-template repo](https://img.shields.io/badge/GitHub-git-blue)](https://github.com/INSAgenda/yew-template) | [![Docs](https://img.shields.io/static/v1?label=docs.rs&message=yew-template&color=green)](https://docs.rs/yew-template/) | ![yew-template license](https://img.shields.io/crates/l/yew-template.svg?label=%20) | ![yew-template version](https://img.shields.io/crates/v/yew-template.svg?label=%20) | ![yew-template stars](https://img.shields.io/github/stars/INSAgenda/yew-template.svg?label=%20) | ![yew-template contributors](https://img.shields.io/github/contributors/INSAgenda/yew-template.svg?label=%20) | ![yew-template activity](https://img.shields.io/github/commit-activity/y/INSAgenda/yew-template.svg?label=%20) |
 
-### Websocket Libraries
+## Websocket Libraries
 
 | Name                                                                   | Repo                                                                                                                     | Docs                                                                                                                                | License                                                                                       | Version                                                                                       | Stars                                                                                                    | Contributors                                                                                                           | Activity                                                                                                                | Client | Server | Async |
 |------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|--------|--------|-------|
