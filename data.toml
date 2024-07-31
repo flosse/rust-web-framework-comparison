@@ -556,6 +556,7 @@ outdated = true
 name = "yew-template"
 repo = "https://github.com/INSAgenda/yew-template"
 crates-io = "yew-template"
+outdated = true
 
 [[template]]
 name = "minijinja"
