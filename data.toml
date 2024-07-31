@@ -562,6 +562,11 @@ name = "minijinja"
 repo = "https://github.com/mitsuhiko/minijinja"
 crates-io = "minijinja"
 
+[[template]]
+name = "rinja"
+repo = "https://github.com/rinja-rs/rinja"
+crates-io = "rinja"
+
 #############
 # Websocket #
 #############
