@@ -554,12 +554,6 @@ crates-io = "typed-html"
 outdated = true
 
 [[template]]
-name = "yew-template"
-repo = "https://github.com/INSAgenda/yew-template"
-crates-io = "yew-template"
-outdated = true
-
-[[template]]
 name = "minijinja"
 repo = "https://github.com/mitsuhiko/minijinja"
 crates-io = "minijinja"
@@ -568,6 +562,18 @@ crates-io = "minijinja"
 name = "rinja"
 repo = "https://github.com/rinja-rs/rinja"
 crates-io = "rinja"
+
+[[template]]
+name = "markup"
+repo = "https://github.com/utkarshkukreti/markup.rs"
+crates-io = "markup"
+outdated = true
+
+[[template]]
+name = "tinytemplate"
+repo = "https://github.com/bheisler/TinyTemplate"
+crates-io = "tinytemplate"
+outdated = true
 
 #############
 # Websocket #
