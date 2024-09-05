@@ -489,6 +489,12 @@ repo = "https://github.com/swindon-rs/tk-http"
 outdated = true
 crates-io = "tk-http"
 
+[[server]]
+name = "xita-web"
+repo = "https://github.com/HFQR/xitca-web"
+low-level = true
+async = true
+
 #############
 # Template  #
 #############
