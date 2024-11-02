@@ -61,7 +61,7 @@ vdom = false
 ssr = true
 rendering = "html"
 architecture = "frp"
-outdated = true
+outdated = false
 
 [[frontend]]
 name = "Dioxus"
