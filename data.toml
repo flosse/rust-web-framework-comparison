@@ -397,6 +397,17 @@ outdated = false
 async = true
 
 [[server]]
+name = "wtx"
+repo = "https://github.com/c410-f3r/wtx"
+homepage = "https://c410-f3r.github.io/wtx/"
+crates-io = "wtx"
+async = true
+base = "wtx"
+http2 = true
+https = true
+client = true
+
+[[server]]
 name = "civet"
 repo = "https://github.com/wycats/rust-civet"
 outdated = true
@@ -627,3 +638,12 @@ server = true
 client = true
 async = true
 outdated = true
+
+[[websocket]]
+name = "wtx"
+repo = "https://github.com/c410-f3r/wtx"
+homepage = "https://c410-f3r.github.io/wtx/"
+crates-io = "wtx"
+server = true
+client = true
+async = true
