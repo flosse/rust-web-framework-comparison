@@ -130,7 +130,6 @@ ssr = false
 vdom = false
 rendering = "canvas"
 architecture = "tea"
-outdated = true
 
 [[frontend]]
 name = "Vizia"
