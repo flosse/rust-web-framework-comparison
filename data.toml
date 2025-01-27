@@ -410,7 +410,7 @@ client = true
 [[server]]
 name = "Ohkami"
 repo = "https://github.com/ohkami-rs/ohkami"
-crates.io = "ohkami"
+crates-io = "ohkami"
 async = true
 
 [[server]]
