@@ -653,3 +653,19 @@ crates-io = "wtx"
 server = true
 client = true
 async = true
+
+[[websocket]]
+name = "mews"
+repo = "https://github.com/ohkami-rs/mews"
+crates-io = "mews"
+async = true
+server = true
+client = false
+
+[[websocket]]
+name = "Ohkami"
+repo = "https://github.com/ohkami-rs/ohkami"
+crates-io = "ohkami"
+async = true
+server = true
+client = false
