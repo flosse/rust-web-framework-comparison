@@ -572,6 +572,12 @@ repo = "https://github.com/djc/askama"
 crates-io = "askama"
 
 [[template]]
+name = "srtemplate"
+repo = "https://github.com/SergioRibera/srtemplate"
+homepage = "https://sergioribera.github.io/srtemplate"
+crates-io = "srtemplate"
+
+[[template]]
 name = "stpl"
 repo = "https://github.com/dpc/stpl"
 outdated = true
