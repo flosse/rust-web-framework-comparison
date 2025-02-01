@@ -268,6 +268,17 @@ client = false
 outdated = true
 
 [[server]]
+name = "loco"
+repo = "https://github.com/loco-rs/loco"
+outdated = false
+crates-io = "loco-rs"
+https = true
+http2 = true
+base = "tokio"
+async = true
+client = false
+
+[[server]]
 name = "rocket"
 homepage = "https://rocket.rs"
 repo = "https://github.com/SergioBenitez/rocket"
@@ -406,6 +417,12 @@ base = "wtx"
 http2 = true
 https = true
 client = true
+
+[[server]]
+name = "Ohkami"
+repo = "https://github.com/ohkami-rs/ohkami"
+crates-io = "ohkami"
+async = true
 
 [[server]]
 name = "civet"
@@ -653,3 +670,19 @@ crates-io = "wtx"
 server = true
 client = true
 async = true
+
+[[websocket]]
+name = "mews"
+repo = "https://github.com/ohkami-rs/mews"
+crates-io = "mews"
+async = true
+server = true
+client = false
+
+[[websocket]]
+name = "Ohkami"
+repo = "https://github.com/ohkami-rs/ohkami"
+crates-io = "ohkami"
+async = true
+server = true
+client = false
