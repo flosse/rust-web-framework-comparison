@@ -423,6 +423,8 @@ name = "Ohkami"
 repo = "https://github.com/ohkami-rs/ohkami"
 crates-io = "ohkami"
 async = true
+base = "various runtimes"
+client = false
 
 [[server]]
 name = "civet"
