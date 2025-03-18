@@ -520,7 +520,7 @@ outdated = true
 crates-io = "tk-http"
 
 [[server]]
-name = "xita-web"
+name = "xitca-web"
 repo = "https://github.com/HFQR/xitca-web"
 low-level = true
 async = true
