@@ -279,6 +279,16 @@ async = true
 client = false
 
 [[server]]
+name = "ntex"
+repo = "https://github.com/ntex-rs/ntex"
+crates-io = "ntex"
+https = true
+http2 = true
+base = "ntex-rt"
+async = true
+client = true
+
+[[server]]
 name = "rocket"
 homepage = "https://rocket.rs"
 repo = "https://github.com/SergioBenitez/rocket"
