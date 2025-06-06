@@ -580,7 +580,8 @@ crates-io = "maud"
 
 [[template]]
 name = "askama"
-repo = "https://github.com/djc/askama"
+repo = "https://github.com/askama-rs/askama"
+homepage = "https://askama.readthedocs.io/"
 crates-io = "askama"
 
 [[template]]
@@ -609,11 +610,6 @@ outdated = true
 name = "minijinja"
 repo = "https://github.com/mitsuhiko/minijinja"
 crates-io = "minijinja"
-
-[[template]]
-name = "rinja"
-repo = "https://github.com/rinja-rs/rinja"
-crates-io = "rinja"
 
 [[template]]
 name = "markup"
