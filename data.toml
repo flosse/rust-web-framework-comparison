@@ -627,6 +627,11 @@ repo = "https://github.com/bheisler/TinyTemplate"
 crates-io = "tinytemplate"
 outdated = true
 
+[[template]]
+name = "UIBeam"
+repo = "https://github.com/ohkami-rs/uibeam"
+crates-io = "uibeam"
+
 #############
 # Websocket #
 #############
