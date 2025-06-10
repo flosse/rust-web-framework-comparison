@@ -96,6 +96,7 @@ architecture = "frp"
 [[frontend]]
 homepage = "https://chinedufn.github.io/percy/"
 name = "percy"
+crates-io = "percy-dom"
 repo = "https://github.com/chinedufn/percy"
 ssr = true
 vdom = true
@@ -158,6 +159,7 @@ repo = "https://github.com/fitzgen/dodrio"
 [[frontend]]
 outdated = true
 name = "draco"
+crates-io = "draco"
 repo = "https://github.com/utkarshkukreti/draco"
 
 [[frontend]]
@@ -174,6 +176,7 @@ crates-io = "mika"
 [[frontend]]
 outdated = true
 name = "ruukh"
+crates-io = "ruukh"
 repo = "https://github.com/csharad/ruukh"
 
 [[frontend]]
@@ -186,6 +189,7 @@ homepage = "https://www.smithy.rs/"
 [[frontend]]
 outdated = true
 name = "squark"
+crates-io = "squark"
 repo = "https://github.com/rail44/squark"
 
 [[frontend]]
@@ -201,7 +205,8 @@ repo = "https://github.com/sindreij/willow"
 
 [[frontend]]
 name = "Leptos"
-repo = "https://github.com/gbj/leptos"
+repo = "https://github.com/leptos-rs/leptos"
+homepage = "https://leptos.dev/"
 crates-io = "leptos"
 vdom = false
 architecture = "frp"
@@ -531,6 +536,7 @@ crates-io = "tk-http"
 
 [[server]]
 name = "xitca-web"
+crates-io = "xitca-web"
 repo = "https://github.com/HFQR/xitca-web"
 low-level = true
 async = true
@@ -541,8 +547,8 @@ async = true
 
 [[template]]
 name = "sailfish"
-homepage = "https://sailfish.netlify.app"
-repo = "https://github.com/Kogia-sima/sailfish"
+homepage = "https://rust-sailfish.github.io/sailfish/"
+repo = "https://github.com/rust-sailfish/sailfish"
 crates-io = "sailfish"
 
 [[template]]
@@ -560,6 +566,7 @@ outdated = true
 [[template]]
 name = "liquid"
 repo = "https://github.com/cobalt-org/liquid-rust"
+crates-io = "liquid"
 
 [[template]]
 name = "handlebars"
@@ -580,7 +587,8 @@ crates-io = "maud"
 
 [[template]]
 name = "askama"
-repo = "https://github.com/djc/askama"
+repo = "https://github.com/askama-rs/askama"
+homepage = "https://askama.readthedocs.io/"
 crates-io = "askama"
 
 [[template]]
@@ -592,6 +600,7 @@ crates-io = "srtemplate"
 [[template]]
 name = "stpl"
 repo = "https://github.com/dpc/stpl"
+crates-io = "stpl"
 outdated = true
 
 [[template]]
@@ -609,11 +618,6 @@ outdated = true
 name = "minijinja"
 repo = "https://github.com/mitsuhiko/minijinja"
 crates-io = "minijinja"
-
-[[template]]
-name = "rinja"
-repo = "https://github.com/rinja-rs/rinja"
-crates-io = "rinja"
 
 [[template]]
 name = "markup"
