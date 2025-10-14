@@ -223,6 +223,14 @@ rendering = "html"
 architecture = "react"
 outdated = true
 
+[[frontend]]
+name = "natrix"
+crates-io = "natrix"
+repo = "https://github.com/Serpent-Tools/natrix"
+vdom = false
+rendering = "html"
+architecture = "frp"
+
 ############
 #  Server  #
 ############
