@@ -50,7 +50,7 @@ vdom = false
 ssr = false
 rendering = "html"
 architecture = "frp"
-outdated = false
+outdated = true
 
 [[frontend]]
 name = "Sycamore"
