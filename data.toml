@@ -257,6 +257,18 @@ async = true
 client = false
 
 [[server]]
+name = "cot"
+homepage = "https://cot.rs"
+repo = "https://github.com/cot-rs/cot"
+outdated = false
+crates-io = "cot"
+https = true
+http2 = true
+base = "tokio"
+async = true
+client = false
+
+[[server]]
 name = "gotham"
 homepage = "http://gotham.rs"
 repo = "https://github.com/gotham-rs/gotham"
