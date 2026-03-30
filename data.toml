@@ -633,6 +633,12 @@ crates-io = "stpl"
 outdated = true
 
 [[template]]
+name = "rshtml"
+repo = "https://github.com/rshtml/rshtml"
+homepage = "https://rshtml.github.io"
+crates-io = "rshtml"
+
+[[template]]
 name = "ructe"
 repo = "https://github.com/kaj/ructe"
 crates-io = "ructe"
