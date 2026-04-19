@@ -692,9 +692,9 @@ client = true
 async = true
 
 [[websocket]]
-name = "actix-web"
-crates-io = "actix-web-actors"
-repo = "https://github.com/actix/actix-web"
+name = "actix-ws"
+crates-io = "actix-ws"
+repo = "https://github.com/actix/actix-extras"
 homepage = "https://actix.rs/docs/websockets/"
 server = true
 client = true
