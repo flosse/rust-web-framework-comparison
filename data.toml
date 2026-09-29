@@ -377,6 +377,17 @@ async = true
 client = false
 
 [[server]]
+name = "tako"
+homepage = "https://tako.rust-dd.com"
+repo = "https://github.com/rust-dd/tako"
+crates-io = "tako-rs"
+https = true
+http2 = true
+base = "hyper"
+async = true
+client = true
+
+[[server]]
 name = "trillium"
 repo = "https://github.com/trillium-rs/trillium"
 crates-io = "trillium"
