@@ -322,6 +322,14 @@ async = true
 client = true
 
 [[server]]
+name = "Proa"
+homepage = "https://proa.so"
+repo = "https://github.com/Proa-Labs/proa"
+crates-io = "proa_framework_axum"
+base = "axum"
+async = true
+
+[[server]]
 name = "rocket"
 homepage = "https://rocket.rs"
 repo = "https://github.com/SergioBenitez/rocket"
