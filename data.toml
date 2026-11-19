@@ -312,6 +312,18 @@ async = true
 client = false
 
 [[server]]
+name = "runique"
+homepage = "https://runique.io"
+repo = "https://github.com/seb-alliot/runique"
+outdated = false
+crates-io = "runique"
+https = true
+http2 = true
+base = "tokio"
+async = true
+client = false
+
+[[server]]
 name = "ntex"
 repo = "https://github.com/ntex-rs/ntex"
 crates-io = "ntex"
